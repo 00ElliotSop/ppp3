@@ -1,0 +1,105 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Backdrops = () => {
+  const backdrops = [
+    { id: 1, name: 'White', image: '/2a.png', category: 'Simple' },
+    { id: 2, name: 'White with Gold Lines', image: '/2b.png', category: 'Elegant' },
+    { id: 3, name: 'Pink with Gold Confetti', image: '/3a.png', category: 'Elegant' },
+    { id: 4, name: 'Silver Sprinkling', image: '/3b.png', category: 'Sequins' },
+    { id: 5, name: 'Silver Sequence', image: '/3c.png', category: 'Sequins' },
+    { id: 6, name: 'Champagne Sequence', image: '/3d.png', category: 'Sequins' },
+    { id: 7, name: 'Gold Sprinkling', image: '/3e.png', category: 'Sequins' },
+    { id: 8, name: 'Black Gold Lines', image: '/4a.png', category: 'Elegant' },
+    { id: 9, name: 'Black', image: '/4b.png', category: 'Simple' },
+    { id: 10, name: 'Black and Gold Confetti', image: '/5a.png', category: 'Elegant' },
+    { id: 11, name: 'Green Boxwood', image: '/5b.png', category: 'Floral' },
+    { id: 12, name: 'White Flower Wall', image: '/5c.png', category: 'Floral' },
+    { id: 13, name: 'Rose Gold Sequins', image: '/5d.png', category: 'Sequins' },
+    { id: 14, name: 'Navy Blue Sequins', image: '/6a.png', category: 'Sequins' },
+    { id: 15, name: 'Purple Sequins', image: '/6b.png', category: 'Sequins' },
+    { id: 16, name: 'Red Sequins', image: '/7a.png', category: 'Sequins' },
+    { id: 17, name: 'Emerald Green Sequins', image: '/7b.png', category: 'Sequins' },
+    { id: 18, name: 'Blush Pink Floral', image: '/8a.png', category: 'Floral' },
+    { id: 19, name: 'Eucalyptus Greenery', image: '/8b.png', category: 'Floral' },
+    { id: 20, name: 'Tropical Palm', image: '/8c.png', category: 'Floral' },
+    { id: 21, name: 'Marble White', image: '/9a.png', category: 'Elegant' },
+    { id: 22, name: 'Marble Black', image: '/9b.png', category: 'Elegant' },
+    { id: 23, name: 'Holographic Silver', image: '/10a.png', category: 'Sequins' },
+    { id: 24, name: 'Holographic Gold', image: '/10b.png', category: 'Sequins' },
+    { id: 25, name: 'Burgundy Velvet', image: '/11a.png', category: 'Elegant' },
+    { id: 26, name: 'Royal Blue Velvet', image: '/11b.png', category: 'Elegant' },
+    { id: 27, name: 'Dusty Rose Floral', image: '/11c.png', category: 'Floral' },
+    { id: 28, name: 'Sage Green Floral', image: '/11d.png', category: 'Floral' },
+    { id: 29, name: 'Copper Sequins', image: '/11e.png', category: 'Sequins' },
+    { id: 30, name: 'Iridescent White', image: '/1a.png', category: 'Sequins' },
+    { id: 31, name: 'Vintage Lace', image: '/1b.png', category: 'Elegant' },
+    { id: 32, name: 'Geometric Gold', image: '/1c.png', category: 'Elegant' }
+  ];
+
+  return (
+    <div className="pt-24">
+      {/* Hero Section */}
+      <section className="relative h-96 bg-gradient-to-r from-[#F7E7CE] to-[#B5A99A] flex items-center justify-center">
+        <div className="text-center text-white">
+          <h1 className="text-5xl font-bold mb-4">BACKDROPS</h1>
+          <p className="text-xl">Choose from our stunning collection of professional backdrops</p>
+        </div>
+      </section>
+
+      {/* Backdrops Grid */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {backdrops.map((backdrop) => (
+              <div
+                key={backdrop.id}
+                className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+              >
+                <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                  <img
+                    src={backdrop.image}
+                    alt={backdrop.name}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                    <h3 className="text-white font-semibold text-lg">{backdrop.name}</h3>
+                    <p className="text-gray-300 text-sm">{backdrop.category}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Easy Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-8">Easy Process</h2>
+          <p className="text-lg text-gray-600 mb-12 leading-relaxed">
+            Our streamlined booking process makes it simple to select your perfect backdrop and book your photobooth experience. 
+            From consultation to setup, we handle every detail to ensure your event is picture-perfect.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/book-now"
+              className="bg-[#F7E7CE] text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300"
+            >
+              BOOK NOW
+            </Link>
+            <a
+              href="mailto:info@projectpartyproductions.com"
+              className="bg-transparent border-2 border-[#B5A99A] text-[#B5A99A] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300"
+            >
+              CONTACT US
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Backdrops;
