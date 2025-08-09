@@ -33,7 +33,7 @@ const BookNow = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <img
-          src="/8a.png"
+          src="/360.jpg"
           alt="Book Now"
           className="w-full h-full object-cover"
         />

@@ -7,10 +7,10 @@ const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const heroImages = [
-    '/1f.png',
-    '/2a.png',
-    '/3a.png',
-    '/4a.png'
+    '/main.JPG',
+    '/main.JPG',
+    '/main.JPG',
+    '/main.JPG'
   ];
 
   const testimonials = [
@@ -78,32 +78,32 @@ const Home = () => {
 
   const whyChooseUsFeatures = [
     {
-      image: '/3a.png',
+      image: '/360.jpg',
       title: 'Forever Photobooth brings a professional studio ambience to your event',
       description: 'Professional lighting and high-quality equipment for stunning photos.'
     },
     {
-      image: '/3b.png',
+      image: '/360-1.jpg',
       title: 'High-Definition Images: Our photo booths deliver high-definition images, ensuring every smile and detail is captured in stunning clarity.',
       description: 'Crystal clear photos that capture every moment perfectly.'
     },
     {
-      image: '/3c.png',
+      image: '/360.jpg',
       title: 'We offer a variety of backdrops to suit any taste, ensuring your photos are unique and memorable.',
       description: 'Choose from our extensive collection of beautiful backdrops.'
     },
     {
-      image: '/5a.png',
+      image: '/360-1.jpg',
       title: 'Our modern, fun props will create hilarious photo opportunities and keep your guests entertained.',
       description: 'Extensive prop collection to make your photos fun and memorable.'
     },
     {
-      image: '/5b.png',
+      image: '/360.jpg',
       title: 'We create a seamless and easy booking process.',
       description: 'Simple booking process from start to finish.'
     },
     {
-      image: '/5c.png',
+      image: '/360-1.jpg',
       title: 'Excellent customer service and a first-class experience is our top priority.',
       description: 'Dedicated support team ensuring your event runs smoothly.'
     }
@@ -215,7 +215,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/1b.png"
+                src="/Group.jpeg"
                 alt="Meet the Team"
                 className="w-full rounded-2xl shadow-lg"
               />

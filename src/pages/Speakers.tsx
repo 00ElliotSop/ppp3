@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Speakers = () => {
   const galleryImages = [
-    '/10a.png', '/10b.png', '/11a.png', '/11b.png', '/11c.png', '/11d.png'
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg'
   ];
 
   return (
@@ -11,7 +11,7 @@ const Speakers = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <img
-          src="/10a.png"
+          src="/360.jpg"
           alt="Professional Speakers"
           className="w-full h-full object-cover"
         />

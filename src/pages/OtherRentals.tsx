@@ -5,31 +5,31 @@ const OtherRentals = () => {
   const rentals = [
     {
       name: 'Speakers',
-      image: '/9a.png',
+      image: '/360.jpg',
       description: 'Professional sound systems for any event size',
       link: '/speakers'
     },
     {
       name: 'Stanchions + Red Carpet',
-      image: '/9b.png', 
+      image: '/360-1.jpg', 
       description: 'Create a VIP entrance with our elegant stanchions and red carpet',
       link: '/stanchions'
     },
     {
       name: 'Power Station',
-      image: '/10a.png',
+      image: '/360.jpg',
       description: 'Portable power solutions for outdoor events',
       link: '/power-station'
     },
     {
       name: 'Props',
-      image: '/10b.png',
+      image: '/360-1.jpg',
       description: 'Fun and creative props to enhance your photobooth experience',
       link: '/props'
     },
     {
       name: 'Lighting',
-      image: '/11a.png',
+      image: '/360.jpg',
       description: 'Professional lighting equipment to set the perfect mood',
       link: '/lighting'
     }

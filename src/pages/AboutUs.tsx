@@ -4,49 +4,49 @@ const AboutUs = () => {
   const teamMembers = [
     {
       name: "Sasha R",
-      image: "/1b.png",
+      image: "/Group.jpeg",
       quote: "WE BRING THE ENERGY, HANDLE EVERY DETAIL, AND CRAFT UNFORGETTABLE MOMENTS. PROFESSIONALLY, PASSIONATELY, AND ALWAYS WITH A SMILE",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Vick L",
-      image: "/1c.png", 
+      image: "/Group.jpeg", 
       quote: "CREATING MEMORABLE EXPERIENCES THROUGH ATTENTION TO DETAIL AND GENUINE PASSION FOR EVERY EVENT WE SERVE",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Prince A",
-      image: "/1d.png",
+      image: "/Group.jpeg",
       quote: "BRINGING CREATIVITY AND TECHNICAL EXPERTISE TO CAPTURE EVERY PERFECT MOMENT WITH STYLE AND PRECISION",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Matthew L",
-      image: "/1e.png",
+      image: "/Group.jpeg",
       quote: "ENSURING EVERY PIECE OF EQUIPMENT RUNS FLAWLESSLY SO YOUR EVENT IS NOTHING SHORT OF SPECTACULAR",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Victoria G",
-      image: "/2a.png",
+      image: "/Group.jpeg",
       quote: "MAKING EVERY CLIENT FEEL VALUED AND ENSURING THEIR VISION COMES TO LIFE WITH SEAMLESS COORDINATION",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Sarah R",
-      image: "/2b.png",
+      image: "/Group.jpeg",
       quote: "CAPTURING AND SHARING THE MAGIC OF EVERY EVENT TO INSPIRE OTHERS AND SPREAD THE JOY OF CELEBRATION",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Keval N",
-      image: "/3a.png",
+      image: "/Group.jpeg",
       quote: "PROVIDING RELIABLE SUPPORT AND TECHNICAL SKILLS TO ENSURE EVERY EVENT RUNS SMOOTHLY FROM START TO FINISH",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
       name: "Nivake S",
-      image: "/3b.png",
+      image: "/Group.jpeg",
       quote: "BRINGING ENTHUSIASM AND ORGANIZATIONAL EXCELLENCE TO CREATE THE PERFECT ATMOSPHERE FOR UNFORGETTABLE PHOTOS",
       description: "At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     }
@@ -57,7 +57,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section className="relative h-screen">
         <img
-          src="/6a.png"
+          src="/Group.jpeg"
           alt="About Us - Project Party Productions"
           className="w-full h-full object-cover"
         />

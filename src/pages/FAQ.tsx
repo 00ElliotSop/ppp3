@@ -8,17 +8,17 @@ const FAQ = () => {
     {
       question: "How far in advance should I book?",
       answer: "We recommend booking at least 2-4 weeks in advance, especially during peak wedding season (May-October). However, we can sometimes accommodate last-minute bookings depending on availability.",
-      image: "/5a.png"
+      image: "/360.jpg"
     },
     {
       question: "What's included in your photobooth packages?",
       answer: "All packages include professional lighting, backdrop of your choice, props, on-site attendant, digital copies of all photos, and custom photo templates. Print packages also include unlimited prints during your event.",
-      image: "/5b.png"
+      image: "/360-1.jpg"
     },
     {
       question: "Do you provide props?",
       answer: "Yes! We provide a wide variety of fun and professional props including signs, glasses, hats, masks, and themed accessories. We can also customize props to match your event theme.",
-      image: "/5c.png"
+      image: "/360.jpg"
     },
     {
       question: "How long does setup take?",
@@ -79,7 +79,7 @@ const FAQ = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <img
-          src="/5a.png"
+          src="/360.jpg"
           alt="FAQ Hero"
           className="w-full h-full object-cover"
         />

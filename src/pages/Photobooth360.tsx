@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Photobooth360 = () => {
   const galleryImages = [
-    '/3a.png', '/3b.png', '/3c.png', '/3d.png', '/3e.png',
-    '/4a.png', '/4b.png', '/5a.png', '/5b.png', '/5c.png',
-    '/5d.png', '/6a.png', '/6b.png', '/7a.png', '/7b.png'
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg',
+    '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg'
   ];
 
   return (
@@ -13,7 +13,7 @@ const Photobooth360 = () => {
       {/* Hero Section */}
       <section className="relative h-screen">
         <img
-          src="/3a.png"
+          src="/360.jpg"
           alt="360 Photobooth"
           className="w-full h-full object-cover"
         />
@@ -47,7 +47,7 @@ const Photobooth360 = () => {
                 playsInline
               >
                 <source src="/360-booth-demo.mp4" type="video/mp4" />
-                <img src="/3b.png" alt="360 Booth Demo" className="w-full rounded-2xl" />
+                <img src="/360-1.jpg" alt="360 Booth Demo" className="w-full rounded-2xl" />
               </video>
             </div>
             <div>
@@ -111,7 +111,7 @@ const Photobooth360 = () => {
             </div>
             <div className="relative">
               <img
-                src="/3d.png"
+                src="/360.jpg"
                 alt="360 Booth in Action"
                 className="w-full rounded-2xl shadow-lg"
               />

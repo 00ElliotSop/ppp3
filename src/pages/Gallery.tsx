@@ -5,12 +5,12 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-    '/1a.png', '/1b.png', '/1c.png', '/1d.png', '/1e.png', '/1f.png',
-    '/2a.png', '/2b.png', '/3a.png', '/3b.png', '/3c.png', '/3d.png',
-    '/3e.png', '/4a.png', '/4b.png', '/5a.png', '/5b.png', '/5c.png',
-    '/5d.png', '/6a.png', '/6b.png', '/7a.png', '/7b.png', '/8a.png',
-    '/8b.png', '/8c.png', '/9a.png', '/9b.png', '/10a.png', '/10b.png',
-    '/11a.png', '/11b.png', '/11c.png', '/11d.png', '/11e.png'
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg'
   ];
 
   const openModal = (index: number) => {
@@ -38,7 +38,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <img
-          src="/4a.png"
+          src="/360.jpg"
           alt="Gallery Hero"
           className="w-full h-full object-cover"
         />

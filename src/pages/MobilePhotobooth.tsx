@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const MobilePhotobooth = () => {
   const galleryImages = [
-    '/8a.png', '/8b.png', '/8c.png', '/9a.png', '/9b.png',
-    '/10a.png', '/10b.png', '/11a.png', '/11b.png', '/11c.png',
-    '/11d.png', '/11e.png', '/1a.png', '/1b.png', '/1c.png'
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg',
+    '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
+    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg'
   ];
 
   return (
@@ -13,7 +13,7 @@ const MobilePhotobooth = () => {
       {/* Hero Section */}
       <section className="relative h-screen">
         <img
-          src="/3a.png"
+          src="/360.jpg"
           alt="Mobile Photobooth"
           className="w-full h-full object-cover"
         />
@@ -40,7 +40,7 @@ const MobilePhotobooth = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/3c.png"
+                src="/360-1.jpg"
                 alt="Mobile Photobooth Setup"
                 className="w-full rounded-2xl shadow-lg"
               />
