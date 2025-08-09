@@ -54,7 +54,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/Logo-top-left-page.jpg" 
+              src="/full-logo-black.png" 
               alt="Project Party Productions" 
               className="h-[67px] w-auto rounded-full"
             />
