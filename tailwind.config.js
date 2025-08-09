@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Libre Baskerville', 'serif'],
+        'sans': ['Playfair Display', 'serif'],
       },
     },
   },
