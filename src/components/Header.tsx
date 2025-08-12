@@ -27,7 +27,7 @@ const Header = () => {
         isScrolled ? 'h-0 overflow-hidden opacity-0' : 'h-auto opacity-100'
       }`}>
         <div className="max-w-7xl mx-auto flex justify-end items-center text-sm">
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-col sm:flex-row items-end sm:items-center space-y-1 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
               <Phone size={16} />
               <span>416-616-1121</span>
@@ -36,14 +36,14 @@ const Header = () => {
               <Mail size={16} />
               <span>info@projectpartyproductions.com</span>
             </div>
-          <a 
-            href="https://instagram.com/projectpartyproductions" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
-          >
-            <Instagram size={16} />
-          </a>
+            <a 
+              href="https://instagram.com/projectpartyproductions" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <Instagram size={16} />
+            </a>
           </div>
         </div>
       </div>
