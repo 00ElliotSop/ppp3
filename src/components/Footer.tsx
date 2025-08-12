@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="-ml-[10%]">
+          <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               <li><Link to="/faq" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">FAQ</Link></li>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="-ml-[19%]">
+          <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
