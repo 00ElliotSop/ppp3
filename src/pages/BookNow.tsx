@@ -29,7 +29,7 @@ const BookNow = () => {
 
   const submitBookingForm = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/book-now', {
+      const response = await fetch('/api/book-now', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,31 @@ const BookNow = () => {
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('There was an error submitting your inquiry. Please try again or contact us directly at info@projectpartyproductions.com');
+      // Fallback: create mailto link if backend is not available
+      const subject = encodeURIComponent(`Booking Inquiry - ${formData.name} (${formData.eventDate})`);
+      const body = encodeURIComponent(`
+New Booking Inquiry - Project Party Productions
+
+CONTACT INFORMATION:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+EVENT DETAILS:
+Event Date: ${formData.eventDate}
+Event Type: ${formData.eventType}
+Expected Guest Count: ${formData.guestCount || 'Not specified'}
+Venue/Location: ${formData.venue || 'Not specified'}
+
+ADDITIONAL DETAILS:
+${formData.message || 'No additional details provided'}
+
+TEXT MESSAGE CONSENT:
+${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No, customer does not want text messages'}
+      `);
+      
+      window.location.href = `mailto:info@projectpartyproductions.com?subject=${subject}&body=${body}`;
+      alert('Opening your email client to send the inquiry. If this doesn\'t work, please contact us directly at info@projectpartyproductions.com');
     }
   };
 
