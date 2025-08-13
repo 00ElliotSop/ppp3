@@ -29,7 +29,7 @@ const BookNow = () => {
 
   const submitBookingForm = async () => {
     try {
-      const response = await fetch('/api/book-now', {
+      const response = await fetch('http://localhost:3001/api/book-now', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
