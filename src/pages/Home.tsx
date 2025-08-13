@@ -18,61 +18,61 @@ const Home = () => {
       name: "Samantha D.",
       location: "Edmonton, AB",
       rating: 5,
-      text: "SO WORTH IT — 10/10 WOULD BOOK AGAIN! If you're thinking about getting a photo booth — just do it! Forever Photobooth's setup looked premium and added so much fun to our wedding. The touchscreen was easy to use, and the print quality blew me away."
+      text: "Project Party Productions made our event unforgettable. The team was punctual, super friendly, and brought a level of professionalism that put us at ease. Communication was clear from the start and the setup looked amazing. Our guests had a blast at the 360 booth and couldn't stop talking about it."
     },
     {
       name: "Emily R.",
       location: "Toronto, ON",
       rating: 5,
-      text: "GREAT EXPERIENCE FROM START TO FINISH! We had the mirror booth at our reception and it was a total hit! Guests of all ages were lining up to use it. The props, quality of photos, and instant prints were amazing. I highly recommend them to anyone looking for that wow-factor at their event."
+      text: "We hired Project Party Productions for a corporate event and they knocked it out of the park. From the booking process to the execution, everything was smooth and stress free. Their team was enthusiastic and ensured all our guests had fun. We'll definitely be using them again."
     },
     {
       name: "Ahmed K.",
       location: "Mississauga, ON",
       rating: 5,
-      text: "PROFESSIONAL, FUN, AND COMPLETELY HASSLE-FREE! I booked them for my engagement party and everything was seamless. They responded quickly, customized the photo strip with our names and date, and even helped us with a guestbook using the prints. Best decision we made."
+      text: "I absolutely loved working with Project Party Productions. They were organized, responsive, and incredibly fun to work with. The booth was a huge hit and their team kept the energy high the whole night. It added a special touch to our wedding reception."
     },
     {
       name: "Jessica M.",
       location: "Vaughan, ON",
       rating: 5,
-      text: "Amazing service and quality! The 360 booth was the highlight of our corporate event. Everyone loved it and the videos came out incredible."
+      text: "What impressed me most was how well they handled everything from start to finish. Communication was fast and efficient, and they answered all our questions without hesitation. The team showed up early, looked professional, and brought a fun vibe that elevated our party."
     },
     {
       name: "Michael T.",
       location: "Brampton, ON",
       rating: 5,
-      text: "Professional team, great equipment, and fantastic results. Our wedding guests are still talking about the photobooth!"
+      text: "The level of service we received from Project Party Productions was top tier! They were easy to reach before the event and made sure every detail was covered. The booth experience itself was interactive and fun. Our guests were lined up the entire time and the staff kept the mood upbeat and lively."
     },
     {
       name: "Sarah L.",
       location: "Oakville, ON",
       rating: 5,
-      text: "Exceeded all expectations! The props were fun, the quality was amazing, and the team was so helpful throughout the entire process."
+      text: "We've worked with several vendors in the past, but none matched the professionalism and energy of Project Party Productions. Their team brought great energy and really cared about making the experience special for everyone. The communication leading up to the event was excellent."
     },
     {
       name: "David P.",
       location: "Richmond Hill, ON",
       rating: 5,
-      text: "Best photobooth experience ever! The mobile setup was perfect for our outdoor event and the prints were instant and high quality."
+      text: "Hiring Project Party Productions was one of the best decisions we made for our celebration. The 360 video booth was a showstopper and the team running it was full of personality and professionalism. They were responsive, punctual, and handled everything seamlessly."
     },
     {
       name: "Lisa K.",
       location: "Markham, ON",
       rating: 5,
-      text: "The team was incredibly professional and the equipment was top-notch. Our guests had a blast and we got amazing memories!"
+      text: "You can tell Project Party Productions takes pride in what they do. From the design of their booth to how they interacted with guests, everything felt intentional and well thought out. Their team was upbeat, organized, and made everyone feel comfortable in front of the camera."
     },
     {
       name: "Robert S.",
       location: "Toronto, ON",
       rating: 5,
-      text: "From booking to the actual event, everything was seamless. The 360 booth added such a unique element to our celebration."
+      text: "I'm still hearing compliments about the booth from our guests. Project Party Productions made the whole experience smooth and enjoyable. They communicated every step of the way and arrived ready to deliver fun. Their team helped hype people up and it really made our event feel next level."
     },
     {
       name: "Amanda W.",
       location: "Etobicoke, ON",
       rating: 5,
-      text: "Outstanding service! The backdrop options were beautiful and the final photos were magazine quality. Highly recommended!"
+      text: "Professional, fun, and reliable, that's how I would describe Project Party Productions! Their staff was warm and engaging, making sure every guest felt like a star. I appreciated how easy they were to work with before the event and how focused they were during it. Fantastic service all around."
     }
   ];
 
