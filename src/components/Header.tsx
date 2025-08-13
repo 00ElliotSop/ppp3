@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, Phone, Mail, Instagram } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,11 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setActiveDropdown(null);
+  }, [location.pathname]);
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
