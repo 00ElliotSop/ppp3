@@ -16,7 +16,7 @@ const Home = () => {
   const testimonials = [
     {
       name: "Samantha D.",
-      location: "Edmonton, AB",
+      location: "Toronto, ON",
       rating: 5,
       text: "Project Party Productions made our event unforgettable. The team was punctual, super friendly, and brought a level of professionalism that put us at ease. Communication was clear from the start and the setup looked amazing. Our guests had a blast at the 360 booth and couldn't stop talking about it."
     },
