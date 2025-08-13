@@ -13,7 +13,7 @@ app.use(express.json());
 // Create transporter for sending emails
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
+  port: parseInt(process.env.EMAIL_PORT, 10),
   secure: false,
   auth: {
     user: process.env.EMAIL_USER,
