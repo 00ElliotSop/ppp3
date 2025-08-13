@@ -24,38 +24,8 @@ const BookNow = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Create email body with form data
-    const emailBody = `
-New Booking Inquiry from ${formData.name}
-
-Contact Information:
-- Name: ${formData.name}
-- Email: ${formData.email}
-- Phone: ${formData.phone}
-
-Event Details:
-- Event Date: ${formData.eventDate}
-- Event Type: ${formData.eventType}
-- Guest Count: ${formData.guestCount}
-- Venue/Location: ${formData.venue}
-
-Additional Details:
-${formData.message}
-
-Text Message Agreement: ${formData.agreeToTexts ? 'Yes' : 'No'}
-    `.trim();
-
-    // Create mailto link
-    const subject = encodeURIComponent(`New Booking Inquiry - ${formData.name} - ${formData.eventDate}`);
-    const body = encodeURIComponent(emailBody);
-    const mailtoLink = `mailto:info@projectpartyproductions.com?subject=${subject}&body=${body}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show confirmation message
-    alert('Thank you for your inquiry! Your email client will open to send your booking request. We will contact you within 24 hours.');
+    console.log('Form submitted:', formData);
+    alert('Thank you for your inquiry! We will contact you within 24 hours.');
   };
 
   return (
