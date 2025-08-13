@@ -24,8 +24,42 @@ const BookNow = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your inquiry! We will contact you within 24 hours.');
+    submitBookingForm();
+  };
+
+  const submitBookingForm = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/api/book-now', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert(result.message);
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          eventDate: '',
+          eventType: '',
+          guestCount: '',
+          venue: '',
+          message: '',
+          agreeToTexts: false
+        });
+      } else {
+        alert(result.message || 'There was an error submitting your inquiry. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your inquiry. Please try again or contact us directly at info@projectpartyproductions.com');
+    }
   };
 
   return (
