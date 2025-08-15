@@ -7,7 +7,11 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-    strictPort: false
+    strictPort: false,
+    hmr: {
+      port: 5173,
+      host: 'localhost'
+    }
   },
   preview: {
     host: '0.0.0.0',
@@ -26,5 +30,6 @@ export default defineConfig({
         manualChunks: undefined,
       },
     },
-  }
+  },
+  base: './'
 });
