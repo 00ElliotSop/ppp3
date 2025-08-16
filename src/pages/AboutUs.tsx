@@ -92,6 +92,8 @@ const AboutUs = () => {
                       src={member.image}
                       alt={member.name}
                       className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="flex-1">

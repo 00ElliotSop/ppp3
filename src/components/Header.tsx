@@ -63,6 +63,8 @@ const Header = () => {
               src="/full-logo-black.png" 
               alt="Project Party Productions" 
               className="h-[67px] w-auto rounded-full"
+              loading="eager"
+              decoding="sync"
             />
           </Link>
 

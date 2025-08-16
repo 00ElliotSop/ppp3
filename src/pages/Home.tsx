@@ -8,9 +8,9 @@ const Home = () => {
 
   const heroImages = [
     '/main.JPG',
-    '/main.JPG',
-    '/main.JPG',
-    '/main.JPG'
+    '/360.jpg',
+    '/360-1.jpg',
+    '/Group.jpeg'
   ];
 
   const testimonials = [
@@ -145,6 +145,8 @@ const Home = () => {
     <div className="pt-24">
       {/* Hero Section with Carousel */}
       <section className="relative h-screen overflow-hidden">
+        {/* Preload first hero image */}
+        <link rel="preload" as="image" href={heroImages[0]} />
         <div className="relative w-full h-full">
           {heroImages.map((image, index) => (
             <div
@@ -157,6 +159,8 @@ const Home = () => {
                 src={image}
                 alt={`Hero ${index + 1}`}
                 className="w-full h-full object-cover"
+                loading={index === 0 ? "eager" : "lazy"}
+                decoding={index === 0 ? "sync" : "async"}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40" />
             </div>
@@ -218,6 +222,8 @@ const Home = () => {
                 src="/Group.jpeg"
                 alt="Meet the Team"
                 className="w-full rounded-2xl shadow-lg"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div>
@@ -251,6 +257,8 @@ const Home = () => {
                     src={feature.image}
                     alt={feature.title}
                     className="w-full h-64 object-cover rounded-2xl shadow-lg mx-auto"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-4 leading-tight">

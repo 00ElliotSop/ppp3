@@ -48,6 +48,8 @@ const Footer = () => {
               src="/Logo-wide-white-footer.png" 
               alt="Project Party Productions" 
               className="h-16 w-auto mb-4 rounded-lg"
+              loading="lazy"
+              decoding="async"
             />
             <p className="text-gray-300 mb-4">
               Creating unforgettable moments with professional photobooth services and event rentals.
