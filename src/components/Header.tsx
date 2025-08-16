@@ -150,6 +150,13 @@ const Header = () => {
                   >
                     Props
                   </Link>
+                  <Link
+                    to="/lighting"
+                    className="block px-4 py-2 text-gray-700 hover:bg-[#F7E7CE] hover:text-white transition-colors"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    Lighting
+                  </Link>
                 </div>
               )}
             </div>
@@ -193,9 +200,57 @@ const Header = () => {
               <Link to="/gallery" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
                 GALLERY
               </Link>
-              <Link to="/other-rentals" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
-                OTHER RENTALS
-              </Link>
+              
+              {/* Other Rentals Dropdown - Mobile */}
+              <div className="relative">
+                <button
+                  onClick={() => toggleDropdown('rentals')}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium"
+                >
+                  <span>OTHER RENTALS</span>
+                  <ChevronDown size={16} />
+                </button>
+                {activeDropdown === 'rentals' && (
+                  <div className="mt-2 ml-4 space-y-2">
+                    <Link
+                      to="/speakers"
+                      className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      Speakers
+                    </Link>
+                    <Link
+                      to="/stanchions"
+                      className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      Stanchions + Red Carpet
+                    </Link>
+                    <Link
+                      to="/power-station"
+                      className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      Power Station
+                    </Link>
+                    <Link
+                      to="/props"
+                      className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      Props
+                    </Link>
+                    <Link
+                      to="/lighting"
+                      className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      Lighting
+                    </Link>
+                  </div>
+                )}
+              </div>
+              
               <Link
                 to="/book-now"
                 className="bg-[#F7E7CE] text-white px-6 py-2 rounded-full hover:bg-[#B5A99A] transition-colors font-medium text-center"

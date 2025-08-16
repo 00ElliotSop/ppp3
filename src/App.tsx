@@ -11,7 +11,6 @@ import Gallery from './pages/Gallery';
 import FAQ from './pages/FAQ';
 import AboutUs from './pages/AboutUs';
 import BookNow from './pages/BookNow';
-import OtherRentals from './pages/OtherRentals';
 import Speakers from './pages/Speakers';
 import Stanchions from './pages/Stanchions';
 import PowerStation from './pages/PowerStation';
@@ -34,7 +33,6 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/book-now" element={<BookNow />} />
-            <Route path="/other-rentals" element={<OtherRentals />} />
             <Route path="/speakers" element={<Speakers />} />
             <Route path="/stanchions" element={<Stanchions />} />
             <Route path="/power-station" element={<PowerStation />} />
