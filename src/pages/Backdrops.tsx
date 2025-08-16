@@ -1,41 +1,261 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Backdrops = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [selectedBackdrop, setSelectedBackdrop] = useState<number | null>(null);
+
   const backdrops = [
-    { id: 1, name: 'White', image: '/360.jpg', category: 'Simple' },
-    { id: 2, name: 'White with Gold Lines', image: '/360-1.jpg', category: 'Elegant' },
-    { id: 3, name: 'Pink with Gold Confetti', image: '/360.jpg', category: 'Elegant' },
-    { id: 4, name: 'Silver Sprinkling', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 5, name: 'Silver Sequence', image: '/360.jpg', category: 'Sequins' },
-    { id: 6, name: 'Champagne Sequence', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 7, name: 'Gold Sprinkling', image: '/360.jpg', category: 'Sequins' },
-    { id: 8, name: 'Black Gold Lines', image: '/360-1.jpg', category: 'Elegant' },
-    { id: 9, name: 'Black', image: '/360.jpg', category: 'Simple' },
-    { id: 10, name: 'Black and Gold Confetti', image: '/360-1.jpg', category: 'Elegant' },
-    { id: 11, name: 'Green Boxwood', image: '/360.jpg', category: 'Floral' },
-    { id: 12, name: 'White Flower Wall', image: '/360-1.jpg', category: 'Floral' },
-    { id: 13, name: 'Rose Gold Sequins', image: '/360.jpg', category: 'Sequins' },
-    { id: 14, name: 'Navy Blue Sequins', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 15, name: 'Purple Sequins', image: '/360.jpg', category: 'Sequins' },
-    { id: 16, name: 'Red Sequins', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 17, name: 'Emerald Green Sequins', image: '/360.jpg', category: 'Sequins' },
-    { id: 18, name: 'Blush Pink Floral', image: '/360-1.jpg', category: 'Floral' },
-    { id: 19, name: 'Eucalyptus Greenery', image: '/360.jpg', category: 'Floral' },
-    { id: 20, name: 'Tropical Palm', image: '/360-1.jpg', category: 'Floral' },
-    { id: 21, name: 'Marble White', image: '/360.jpg', category: 'Elegant' },
-    { id: 22, name: 'Marble Black', image: '/360-1.jpg', category: 'Elegant' },
-    { id: 23, name: 'Holographic Silver', image: '/360.jpg', category: 'Sequins' },
-    { id: 24, name: 'Holographic Gold', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 25, name: 'Burgundy Velvet', image: '/360.jpg', category: 'Elegant' },
-    { id: 26, name: 'Royal Blue Velvet', image: '/360-1.jpg', category: 'Elegant' },
-    { id: 27, name: 'Dusty Rose Floral', image: '/360.jpg', category: 'Floral' },
-    { id: 28, name: 'Sage Green Floral', image: '/360-1.jpg', category: 'Floral' },
-    { id: 29, name: 'Copper Sequins', image: '/360.jpg', category: 'Sequins' },
-    { id: 30, name: 'Iridescent White', image: '/360-1.jpg', category: 'Sequins' },
-    { id: 31, name: 'Vintage Lace', image: '/360.jpg', category: 'Elegant' },
-    { id: 32, name: 'Geometric Gold', image: '/360-1.jpg', category: 'Elegant' }
+    { 
+      id: 1, 
+      name: 'White', 
+      image: '/360.jpg', 
+      category: 'Simple',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 2, 
+      name: 'White with Gold Lines', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 3, 
+      name: 'Pink with Gold Confetti', 
+      image: '/360.jpg', 
+      category: 'Elegant',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 4, 
+      name: 'Silver Sprinkling', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 5, 
+      name: 'Silver Sequence', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 6, 
+      name: 'Champagne Sequence', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 7, 
+      name: 'Gold Sprinkling', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 8, 
+      name: 'Black Gold Lines', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 9, 
+      name: 'Black', 
+      image: '/360.jpg', 
+      category: 'Simple',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 10, 
+      name: 'Black and Gold Confetti', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 11, 
+      name: 'Green Boxwood', 
+      image: '/360.jpg', 
+      category: 'Floral',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 12, 
+      name: 'White Flower Wall', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 13, 
+      name: 'Rose Gold Sequins', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 14, 
+      name: 'Navy Blue Sequins', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 15, 
+      name: 'Purple Sequins', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 16, 
+      name: 'Red Sequins', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 17, 
+      name: 'Emerald Green Sequins', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 18, 
+      name: 'Blush Pink Floral', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 19, 
+      name: 'Eucalyptus Greenery', 
+      image: '/360.jpg', 
+      category: 'Floral',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 20, 
+      name: 'Tropical Palm', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 21, 
+      name: 'Marble White', 
+      image: '/360.jpg', 
+      category: 'Elegant',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 22, 
+      name: 'Marble Black', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 23, 
+      name: 'Holographic Silver', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 24, 
+      name: 'Holographic Gold', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 25, 
+      name: 'Burgundy Velvet', 
+      image: '/360.jpg', 
+      category: 'Elegant',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 26, 
+      name: 'Royal Blue Velvet', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 27, 
+      name: 'Dusty Rose Floral', 
+      image: '/360.jpg', 
+      category: 'Floral',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 28, 
+      name: 'Sage Green Floral', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 29, 
+      name: 'Copper Sequins', 
+      image: '/360.jpg', 
+      category: 'Sequins',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 30, 
+      name: 'Iridescent White', 
+      image: '/360-1.jpg', 
+      category: 'Sequins',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 31, 
+      name: 'Vintage Lace', 
+      image: '/360.jpg', 
+      category: 'Elegant',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 32, 
+      name: 'Geometric Gold', 
+      image: '/360-1.jpg', 
+      category: 'Elegant',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    }
   ];
+
+  const openBackdropGallery = (backdropIndex: number) => {
+    setSelectedBackdrop(backdropIndex);
+    setSelectedImage(0);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setSelectedBackdrop(null);
+  };
+
+  const nextImage = () => {
+    if (selectedBackdrop !== null && selectedImage !== null) {
+      const currentGallery = backdrops[selectedBackdrop].gallery;
+      setSelectedImage((selectedImage + 1) % currentGallery.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedBackdrop !== null && selectedImage !== null) {
+      const currentGallery = backdrops[selectedBackdrop].gallery;
+      setSelectedImage((selectedImage - 1 + currentGallery.length) % currentGallery.length);
+    }
+  };
 
   return (
     <div className="pt-24">
@@ -51,10 +271,11 @@ const Backdrops = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {backdrops.map((backdrop) => (
+            {backdrops.map((backdrop, index) => (
               <div
                 key={backdrop.id}
                 className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+                onClick={() => openBackdropGallery(index)}
               >
                 <div className="relative overflow-hidden rounded-2xl shadow-lg">
                   <img
@@ -73,6 +294,47 @@ const Backdrops = () => {
           </div>
         </div>
       </section>
+
+      {/* Modal */}
+      {selectedBackdrop !== null && selectedImage !== null && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl max-h-full">
+            <img
+              src={backdrops[selectedBackdrop].gallery[selectedImage]}
+              alt={`${backdrops[selectedBackdrop].name} ${selectedImage + 1}`}
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+            
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-black bg-opacity-60 hover:bg-opacity-80 text-white p-3 rounded-full transition-all border-2 border-white shadow-lg"
+            >
+              <X size={28} />
+            </button>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
+            >
+              <ChevronRight size={24} />
+            </button>
+
+            {/* Image Info */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-6 py-3 rounded-full text-center">
+              <h3 className="font-semibold">{backdrops[selectedBackdrop].name}</h3>
+              <p className="text-sm opacity-80">{backdrops[selectedBackdrop].category} • {selectedImage + 1} / {backdrops[selectedBackdrop].gallery.length}</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Easy Process Section */}
       <section className="py-20 bg-gray-50">
