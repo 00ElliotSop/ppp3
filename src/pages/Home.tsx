@@ -8,8 +8,8 @@ const Home = () => {
 
   const heroImages = [
     '/main.JPG',
-    '/360.jpg',
-    '/360-1.jpg',
+    '/DSC_0376 2.JPG',
+    '/DSC_0376 2.JPG',
     '/Group.jpeg'
   ];
 
