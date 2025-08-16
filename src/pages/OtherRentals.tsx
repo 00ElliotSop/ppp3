@@ -81,7 +81,7 @@ const OtherRentals = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {rentals.map((rental, rentalIndex) => (
               <div
-                key={index}
+                key={rentalIndex}
                 className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
               >
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
