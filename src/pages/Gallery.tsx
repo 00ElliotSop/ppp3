@@ -38,8 +38,8 @@ const Gallery = () => {
     { src: '/DSC_0362 2.JPG', description: 'Professional event photography capturing memorable moments' },
     { src: '/IMG_8343.JPG', description: 'Event setup showcasing our professional equipment and service' },
     { src: '/DSC_0382.JPG', description: 'Behind the scenes of our photobooth experience in action' },
-    { src: '/DSC_0381 2.JPG', description: 'Guests enjoying our interactive photobooth entertainment' },
-    { src: '/DSC_0380 2.JPG', description: 'Professional event capture highlighting our service quality' }
+    { src: '/20250804_214331446.jpg', description: 'Professional event setup showcasing our premium service quality' },
+    { src: '/20250804_213017940.jpg', description: 'Event highlights capturing memorable moments and guest interactions' }
   ];
 
   const openModal = (index: number) => {
