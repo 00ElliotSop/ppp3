@@ -35,11 +35,11 @@ const Gallery = () => {
     { src: '/360-1.jpg', description: 'Milestone birthday celebration with personalized backdrop and special lighting' },
     { src: '/360.jpg', description: 'Grand opening event with branded materials and professional photography' },
     { src: '/360-1.jpg', description: 'Baptism celebration with elegant white backdrop and soft, natural lighting' },
-    { src: '/360.jpg', description: 'School dance with energetic lighting and fun, age-appropriate props' },
-    { src: '/360-1.jpg', description: 'Wedding ceremony with outdoor setup and natural backdrop integration' },
-    { src: '/360.jpg', description: 'Corporate awards ceremony with sophisticated backdrop and professional ambiance' },
-    { src: '/360-1.jpg', description: 'Halloween party with themed props and dramatic lighting effects' },
-    { src: '/360.jpg', description: 'Valentine\'s Day event with romantic red and pink backdrop and intimate lighting' }
+    { src: '/DSC_0362 2.JPG', description: 'Professional event photography capturing memorable moments' },
+    { src: '/IMG_8343.JPG', description: 'Event setup showcasing our professional equipment and service' },
+    { src: '/DSC_0382.JPG', description: 'Behind the scenes of our photobooth experience in action' },
+    { src: '/DSC_0381 2.JPG', description: 'Guests enjoying our interactive photobooth entertainment' },
+    { src: '/DSC_0380 2.JPG', description: 'Professional event capture highlighting our service quality' }
   ];
 
   const openModal = (index: number) => {
