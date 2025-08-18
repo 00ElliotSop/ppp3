@@ -93,7 +93,7 @@ const Home = () => {
       description: 'Choose from our extensive collection of beautiful backdrops.'
     },
     {
-      image: '/20250804_213017940 copy.jpg',
+      image: '/DSC_1148.JPG',
       title: 'Our modern, fun props will create hilarious photo opportunities and keep your guests entertained.',
       description: 'Extensive prop collection to make your photos fun and memorable.'
     },
@@ -145,8 +145,11 @@ const Home = () => {
     <div className="pt-24">
       {/* Hero Section with Carousel */}
       <section className="relative h-screen overflow-hidden">
-        {/* Preload first hero image */}
+        {/* Preload critical images */}
         <link rel="preload" as="image" href={heroImages[0]} />
+        <link rel="preload" as="image" href={heroImages[1]} />
+        <link rel="preload" as="image" href="/20250804_204800341.jpg" />
+        <link rel="preload" as="image" href="/DSC_0161.JPG" />
         <div className="relative w-full h-full">
           {heroImages.map((image, index) => (
             <div

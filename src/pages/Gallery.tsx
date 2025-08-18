@@ -66,10 +66,13 @@ const Gallery = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
+        <link rel="preload" as="image" href="/20250804_204800341.jpg" />
         <img
           src="/20250804_204800341.jpg"
           alt="Gallery Hero"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
@@ -85,6 +88,10 @@ const Gallery = () => {
       {/* Gallery Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
+          {/* Preload first few gallery images */}
+          <link rel="preload" as="image" href={galleryImages[0].src} />
+          <link rel="preload" as="image" href={galleryImages[1].src} />
+          <link rel="preload" as="image" href={galleryImages[2].src} />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
               <div
@@ -97,8 +104,8 @@ const Gallery = () => {
                     src={image.src}
                     alt={`Gallery ${index + 1}`}
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
+                    loading={index < 6 ? "eager" : "lazy"}
+                    decoding={index < 6 ? "sync" : "async"}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300" />
                 </div>

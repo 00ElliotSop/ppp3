@@ -8,6 +8,25 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
 
+  // Preload critical page images when component mounts
+  useEffect(() => {
+    // Preload common page hero images
+    const criticalImages = [
+      '/20250804_204800341.jpg', // Gallery hero
+      '/DSC_0161.JPG', // Backdrops hero
+      '/360.jpg', // Common service images
+      '/360-1.jpg'
+    ];
+    
+    criticalImages.forEach(src => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    });
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > window.innerHeight);
