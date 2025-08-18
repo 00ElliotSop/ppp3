@@ -277,19 +277,19 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">TESTIMONIALS</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12 sm:mb-16">TESTIMONIALS</h2>
           <div className="relative max-w-4xl mx-auto">
-            <div className="bg-[#B5A99A] rounded-2xl p-8 text-white min-h-[300px] flex flex-col justify-center">
+            <div className="bg-[#B5A99A] rounded-2xl p-6 sm:p-8 text-white min-h-[280px] sm:min-h-[300px] flex flex-col justify-center">
               <div className="flex justify-center mb-4">
                 {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                  <Star key={i} size={24} className="text-yellow-400 fill-current" />
+                  <Star key={i} size={20} className="text-yellow-400 fill-current sm:w-6 sm:h-6" />
                 ))}
               </div>
-              <blockquote className="text-xl text-center mb-6 leading-relaxed">
+              <blockquote className="text-base sm:text-lg lg:text-xl text-center mb-4 sm:mb-6 leading-relaxed px-2">
                 "{testimonials[currentTestimonial].text}"
               </blockquote>
               <div className="text-center">
-                <p className="text-[#F7E7CE] font-semibold text-lg">
+                <p className="text-[#F7E7CE] font-semibold text-base sm:text-lg">
                   {testimonials[currentTestimonial].name}, {testimonials[currentTestimonial].location}
                 </p>
               </div>
