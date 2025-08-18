@@ -38,7 +38,7 @@ const Gallery = () => {
     { src: '/20250804_210043845.jpg', description: 'Event highlights showcasing memorable guest interactions' },
     { src: '/20250804_205655968.jpg', description: 'Professional photography capturing special moments at the event' },
     { src: '/DSC_0382.JPG', description: 'Behind the scenes of our photobooth experience in action' },
-    { src: '/20250804_214331446.jpg', description: 'Professional event setup showcasing our premium service quality' },
+    { src: '/DSC_0376 2.JPG', description: 'Professional event setup showcasing our premium service quality' },
     { src: '/20250804_213017940.jpg', description: 'Event highlights capturing memorable moments and guest interactions' }
   ];
 
