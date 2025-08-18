@@ -219,7 +219,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/Group.jpeg"
+                src="/20250804_1829240671-ezgif.com-speed.gif"
                 alt="Meet the Team"
                 className="w-full rounded-2xl shadow-lg"
                 loading="lazy"
