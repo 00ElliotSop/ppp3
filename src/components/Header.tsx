@@ -51,14 +51,14 @@ const Header = () => {
       <div className={`bg-[#B5A99A] text-white py-2 px-4 transition-all duration-300 ${
         isScrolled ? 'h-0 overflow-hidden opacity-0' : 'h-auto opacity-100'
       }`}>
-        <div className="max-w-7xl mx-auto flex justify-end items-center text-sm">
+        <div className="max-w-7xl mx-auto flex justify-end items-center" style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}>
           <div className="flex flex-col sm:flex-row items-end sm:items-center space-y-1 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone size={16} />
+              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>416-616-1121</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail size={16} />
+              <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>info@projectpartyproductions.com</span>
             </div>
             <a 
@@ -67,7 +67,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <Instagram size={16} />
+              <Instagram className="w-3 h-3 sm:w-4 sm:h-4" />
             </a>
           </div>
         </div>
@@ -75,13 +75,13 @@ const Header = () => {
 
       {/* Main navigation */}
       <nav className="bg-white px-4 py-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src="/full-logo-black.png" 
               alt="Project Party Productions" 
-              className="h-[67px] w-auto rounded-full"
+              className="h-12 sm:h-16 md:h-[67px] w-auto rounded-full"
               fetchpriority="high"
               loading="eager"
               decoding="sync"
@@ -90,10 +90,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
+            <Link to="/" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium" style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1rem)' }}>
               HOME
             </Link>
-            <Link to="/backdrops" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
+            <Link to="/backdrops" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium" style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1rem)' }}>
               BACKDROPS
             </Link>
             

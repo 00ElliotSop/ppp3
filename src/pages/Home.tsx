@@ -171,17 +171,25 @@ const Home = () => {
           ))}
           
           {/* Hero Content */}
-          <div className="absolute inset-0 flex items-center justify-center text-center text-white z-10">
-            <div className="max-w-4xl px-4">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <div className="absolute inset-0 flex items-center justify-center text-center text-white z-10 px-2">
+            <div className="w-full max-w-4xl px-2">
+              <h1 className="font-bold mb-4 leading-tight" style={{ 
+                fontSize: 'clamp(1.5rem, 6vw, 4.5rem)',
+                wordWrap: 'break-word',
+                hyphens: 'auto'
+              }}>
                 PROJECT PARTY PRODUCTIONS
               </h1>
-              <p className="text-xl md:text-2xl mb-8">
+              <p className="mb-6 leading-tight px-1" style={{ 
+                fontSize: 'clamp(0.75rem, 3vw, 1.25rem)',
+                wordWrap: 'break-word'
+              }}>
                 Creating Unforgettable Moments with Professional Photobooth Services
               </p>
               <Link
                 to="/book-now"
-                className="bg-[#F7E7CE] text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300 inline-block"
+                className="bg-[#F7E7CE] text-gray-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300 inline-block"
+                style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)' }}
               >
                 BOOK NOW
               </Link>
@@ -219,7 +227,7 @@ const Home = () => {
 
       {/* Meet the Team Section */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
@@ -231,16 +239,26 @@ const Home = () => {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">MEET THE TEAM</h2>
-              <p className="text-[#B5A99A] text-xl font-semibold mb-6">
+              <h2 className="font-bold text-gray-800 mb-4 px-1" style={{ 
+                fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+                lineHeight: '1.2'
+              }}>MEET THE TEAM</h2>
+              <p className="text-[#B5A99A] font-semibold mb-4 px-1" style={{ 
+                fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)',
+                lineHeight: '1.3'
+              }}>
                 WE BRING THE ENERGY, HANDLE EVERY DETAIL, AND CRAFT UNFORGETTABLE MOMENTS. PROFESSIONALLY, PASSIONATELY, AND ALWAYS WITH A SMILE
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed px-1" style={{ 
+                fontSize: 'clamp(0.75rem, 2vw, 1rem)',
+                lineHeight: '1.4'
+              }}>
                 At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!
               </p>
               <Link
                 to="/about-us"
-                className="bg-[#B5A99A] text-white px-8 py-3 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block font-semibold"
+                className="bg-[#B5A99A] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block font-semibold"
+                style={{ fontSize: 'clamp(0.75rem, 2vw, 1rem)' }}
               >
                 ABOUT US
               </Link>
@@ -251,8 +269,11 @@ const Home = () => {
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">WHY CHOOSE US?</h2>
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+          <h2 className="text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 font-bold px-1" style={{ 
+            fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+            lineHeight: '1.2'
+          }}>WHY CHOOSE US?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUsFeatures.map((feature, index) => (
               <div key={index} className="text-center">
@@ -260,12 +281,15 @@ const Home = () => {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg mx-auto"
+                    className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-2xl shadow-lg mx-auto"
                     loading="eager"
                     decoding="sync"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4 leading-tight">
+                <h3 className="font-semibold text-gray-800 mb-2 sm:mb-4 leading-tight px-1" style={{ 
+                  fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)',
+                  lineHeight: '1.3'
+                }}>
                   {feature.title}
                 </h3>
               </div>
@@ -276,20 +300,29 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12 sm:mb-16">TESTIMONIALS</h2>
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+          <h2 className="font-bold text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 px-1" style={{ 
+            fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+            lineHeight: '1.2'
+          }}>TESTIMONIALS</h2>
           <div className="relative max-w-4xl mx-auto">
-            <div className="bg-[#B5A99A] rounded-2xl p-6 sm:p-8 text-white min-h-[280px] sm:min-h-[300px] flex flex-col justify-center">
-              <div className="flex justify-center mb-4">
+            <div className="bg-[#B5A99A] rounded-2xl p-4 sm:p-6 md:p-8 text-white min-h-[240px] sm:min-h-[280px] md:min-h-[300px] flex flex-col justify-center mx-2">
+              <div className="flex justify-center mb-3 sm:mb-4">
                 {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                  <Star key={i} size={20} className="text-yellow-400 fill-current sm:w-6 sm:h-6" />
+                  <Star key={i} className="text-yellow-400 fill-current w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 ))}
               </div>
-              <blockquote className="text-base sm:text-lg lg:text-xl text-center mb-4 sm:mb-6 leading-relaxed px-2">
+              <blockquote className="text-center mb-3 sm:mb-4 md:mb-6 leading-relaxed px-1 sm:px-2" style={{ 
+                fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)',
+                lineHeight: '1.4'
+              }}>
                 "{testimonials[currentTestimonial].text}"
               </blockquote>
               <div className="text-center">
-                <p className="text-[#F7E7CE] font-semibold text-base sm:text-lg">
+                <p className="text-[#F7E7CE] font-semibold px-1" style={{ 
+                  fontSize: 'clamp(0.75rem, 2vw, 1.125rem)',
+                  lineHeight: '1.3'
+                }}>
                   {testimonials[currentTestimonial].name}, {testimonials[currentTestimonial].location}
                 </p>
               </div>
