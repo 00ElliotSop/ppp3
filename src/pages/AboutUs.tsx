@@ -56,10 +56,13 @@ const AboutUs = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-screen">
+        <link rel="preload" as="image" href="/20250804_182858278 (2).jpg" />
         <img
           src="/20250804_182858278 (2).jpg"
           alt="About Us - Project Party Productions"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
@@ -92,8 +95,8 @@ const AboutUs = () => {
                       src={member.image}
                       alt={member.name}
                       className="w-full h-96 object-cover rounded-2xl shadow-lg"
-                      loading="lazy"
-                      decoding="async"
+                      loading="eager"
+                      decoding="sync"
                     />
                   </div>
                   <div className="flex-1">

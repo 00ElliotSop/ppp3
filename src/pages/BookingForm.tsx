@@ -99,6 +99,7 @@ const BookingForm = () => {
 
   return (
     <div className="pt-24 min-h-screen bg-gray-50">
+      <link rel="preload" as="image" href="/DSC_0376 2.JPG" />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           {/* Header */}

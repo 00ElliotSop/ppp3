@@ -162,8 +162,8 @@ const Home = () => {
                 src={image}
                 alt={`Hero ${index + 1}`}
                 className="w-full h-full object-cover"
-                loading={index === 0 ? "eager" : "lazy"}
-                decoding={index === 0 ? "sync" : "async"}
+                loading="eager"
+                decoding="sync"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40" />
             </div>
@@ -225,8 +225,8 @@ const Home = () => {
                 src="/20250804_1829240671-ezgif.com-speed.gif"
                 alt="Meet the Team"
                 className="w-full rounded-2xl shadow-lg"
-                loading="lazy"
-                decoding="async"
+                loading="eager"
+                decoding="sync"
               />
             </div>
             <div>
@@ -260,8 +260,8 @@ const Home = () => {
                     src={feature.image}
                     alt={feature.title}
                     className="w-full h-64 object-cover rounded-2xl shadow-lg mx-auto"
-                    loading="lazy"
-                    decoding="async"
+                    loading="eager"
+                    decoding="sync"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-4 leading-tight">

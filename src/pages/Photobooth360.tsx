@@ -136,10 +136,15 @@ const Photobooth360 = () => {
               </p>
             </div>
             <div className="relative">
+              <link rel="preload" as="image" href="/360-1.jpg" />
               <img
                 src="/360.jpg"
                 alt="360 Booth in Action"
                 className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+                loading="eager"
+                decoding="sync"
               />
             </div>
           </div>

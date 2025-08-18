@@ -33,10 +33,13 @@ const Stanchions = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
+        <link rel="preload" as="image" href="/360.jpg" />
         <img
           src="/360.jpg"
           alt="Stanchions and Red Carpet"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
@@ -121,6 +124,8 @@ const Stanchions = () => {
                   src={image}
                   alt={`Stanchions Setup ${index + 1}`}
                   className="w-full h-64 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110"
+                 loading="eager"
+                 decoding="sync"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-2xl" />
               </div>

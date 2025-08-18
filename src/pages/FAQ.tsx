@@ -78,10 +78,13 @@ const FAQ = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
+        <link rel="preload" as="image" href="/360.jpg" />
         <img
           src="/360.jpg"
           alt="FAQ Hero"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
@@ -116,6 +119,8 @@ const FAQ = () => {
                         src={faq.image}
                         alt={`FAQ ${index + 1}`}
                         className="w-full h-48 object-cover rounded-lg mb-4"
+                        loading="eager"
+                        decoding="sync"
                       />
                     )}
                     <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
