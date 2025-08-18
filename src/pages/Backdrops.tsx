@@ -260,16 +260,18 @@ const Backdrops = () => {
   return (
     <div className="pt-24">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-[#F7E7CE] to-[#B5A99A] flex items-center justify-center">
+      <section className="relative h-96">
         <img
           src="/DSC_0161.JPG"
           alt="Backdrops"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="text-center text-white">
-          <h1 className="text-5xl font-bold mb-4">BACKDROPS</h1>
-          <p className="text-xl">Choose from our stunning collection of professional backdrops</p>
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+          <div className="max-w-4xl px-4">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">BACKDROPS</h1>
+            <p className="text-xl md:text-2xl">Choose from our stunning collection of professional backdrops</p>
+          </div>
         </div>
       </section>
 
