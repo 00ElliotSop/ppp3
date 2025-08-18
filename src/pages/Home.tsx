@@ -83,7 +83,7 @@ const Home = () => {
       description: 'Professional lighting and high-quality equipment for stunning photos.'
     },
     {
-      image: '/360-1.jpg',
+      image: '/20250804_192508408.jpg',
       title: 'High-Definition Images: Our photo booths deliver high-definition images, ensuring every smile and detail is captured in stunning clarity.',
       description: 'Crystal clear photos that capture every moment perfectly.'
     },
