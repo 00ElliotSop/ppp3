@@ -98,12 +98,12 @@ const Home = () => {
       description: 'Extensive prop collection to make your photos fun and memorable.'
     },
     {
-      image: '/360.jpg',
+      image: '/DSC_0381 2.JPG',
       title: 'We create a seamless and easy booking process.',
       description: 'Simple booking process from start to finish.'
     },
     {
-      image: '/360-1.jpg',
+      image: '/DSC_0125.JPG',
       title: 'Excellent customer service and a first-class experience is our top priority.',
       description: 'Dedicated support team ensuring your event runs smoothly.'
     }
