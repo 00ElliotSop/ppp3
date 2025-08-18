@@ -79,7 +79,7 @@ const Home = () => {
   const whyChooseUsFeatures = [
     {
       image: '/360.jpg',
-      title: 'Forever Photobooth brings a professional studio ambience to your event',
+      title: 'We bring a professional studio ambience to every event',
       description: 'Professional lighting and high-quality equipment for stunning photos.'
     },
     {
@@ -88,12 +88,12 @@ const Home = () => {
       description: 'Crystal clear photos that capture every moment perfectly.'
     },
     {
-      image: '/360.jpg',
+      image: '/DSC_0160.JPG',
       title: 'We offer a variety of backdrops to suit any taste, ensuring your photos are unique and memorable.',
       description: 'Choose from our extensive collection of beautiful backdrops.'
     },
     {
-      image: '/360-1.jpg',
+      image: '/20250804_213017940 copy.jpg',
       title: 'Our modern, fun props will create hilarious photo opportunities and keep your guests entertained.',
       description: 'Extensive prop collection to make your photos fun and memorable.'
     },

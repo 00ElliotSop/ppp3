@@ -67,7 +67,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <img
-          src="/20250804_204800341.jpg"
+          src="/DSC_0161.JPG"
           alt="Gallery Hero"
           className="w-full h-full object-cover"
         />
