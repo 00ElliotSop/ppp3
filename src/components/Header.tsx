@@ -55,9 +55,7 @@ const Header = () => {
           <div className="flex flex-col sm:flex-row items-end sm:items-center space-y-1 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
-              <a href="tel:+14166161121" className="hover:opacity-80 transition-opacity">
-                416-616-1121
-              </a>
+              <span>416-616-1121</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
