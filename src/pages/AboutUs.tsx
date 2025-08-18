@@ -56,11 +56,12 @@ const AboutUs = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <link rel="preload" as="image" href="/20250804_182858278 (2).jpg" />
+        <link rel="preload" as="image" href="/20250804_182858278 (2).jpg" fetchpriority="high" />
         <img
           src="/20250804_182858278 (2).jpg"
           alt="About Us - Project Party Productions"
           className="w-full h-full object-cover"
+          fetchpriority="high"
           loading="eager"
           decoding="sync"
         />
@@ -95,6 +96,7 @@ const AboutUs = () => {
                       src={member.image}
                       alt={member.name}
                       className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                      fetchpriority="high"
                       loading="eager"
                       decoding="sync"
                     />

@@ -5,7 +5,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-    { src: '/20250804_192508408.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
+    { src: '/20250804_204800341.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
     { src: '/20250804_212732774.jpg', description: 'Mobile photobooth setup with professional lighting and backdrop at corporate event' },
     { src: '/20250804_205503768.jpg', description: 'Birthday party celebration with colorful props and happy guests' },
     { src: '/20250804_180956852.jpg', description: 'Elegant wedding setup with white flower wall backdrop and professional lighting' },
@@ -66,9 +66,9 @@ const Gallery = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/20250804_204800341.jpg" />
+        <link rel="preload" as="image" href="/20250804_192508408.jpg" />
         <img
-          src="/20250804_204800341.jpg"
+          src="/20250804_192508408.jpg"
           alt="Gallery Hero"
           className="w-full h-full object-cover"
           loading="eager"
@@ -89,9 +89,9 @@ const Gallery = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           {/* Preload first few gallery images */}
-          <link rel="preload" as="image" href={galleryImages[0].src} />
-          <link rel="preload" as="image" href={galleryImages[1].src} />
-          <link rel="preload" as="image" href={galleryImages[2].src} />
+          <link rel="preload" as="image" href={galleryImages[0].src} fetchpriority="high" />
+          <link rel="preload" as="image" href={galleryImages[1].src} fetchpriority="high" />
+          <link rel="preload" as="image" href={galleryImages[2].src} fetchpriority="high" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
               <div
@@ -103,7 +103,8 @@ const Gallery = () => {
                   <img
                     src={image.src}
                     alt={`Gallery ${index + 1}`}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    fetchpriority={index < 6 ? "high" : "auto"}
                     loading={index < 6 ? "eager" : "lazy"}
                     decoding={index < 6 ? "sync" : "async"}
                   />

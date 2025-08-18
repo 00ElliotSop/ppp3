@@ -82,6 +82,7 @@ const Header = () => {
               src="/full-logo-black.png" 
               alt="Project Party Productions" 
               className="h-[67px] w-auto rounded-full"
+              fetchpriority="high"
               loading="eager"
               decoding="sync"
             />

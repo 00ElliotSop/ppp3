@@ -42,10 +42,13 @@ const MobilePhotobooth = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
+              <link rel="preload" as="image" href="/360-1.jpg" />
               <img
                 src="/360-1.jpg"
                 alt="Mobile Photobooth Setup"
                 className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
               />
             </div>
             <div>
@@ -104,6 +107,8 @@ const MobilePhotobooth = () => {
                   src={image}
                   alt={`Gallery ${index + 1}`}
                   className="w-full h-48 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  loading="eager"
+                  decoding="sync"
                 />
               </div>
             ))}

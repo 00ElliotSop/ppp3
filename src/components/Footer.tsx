@@ -48,6 +48,7 @@ const Footer = () => {
               src="/Logo-wide-white-footer.png" 
               alt="Project Party Productions" 
               className="h-16 w-auto mb-4 rounded-lg"
+              fetchpriority="high"
               loading="lazy"
               decoding="async"
             />

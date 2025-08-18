@@ -146,10 +146,11 @@ const Home = () => {
       {/* Hero Section with Carousel */}
       <section className="relative h-screen overflow-hidden">
         {/* Preload critical images */}
-        <link rel="preload" as="image" href={heroImages[0]} />
-        <link rel="preload" as="image" href={heroImages[1]} />
-        <link rel="preload" as="image" href="/20250804_204800341.jpg" />
-        <link rel="preload" as="image" href="/DSC_0161.JPG" />
+        <link rel="preload" as="image" href={heroImages[0]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[1]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[2]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[3]} fetchpriority="high" />
+        <link rel="preload" as="image" href="/20250804_1829240671-ezgif.com-speed.gif" fetchpriority="high" />
         <div className="relative w-full h-full">
           {heroImages.map((image, index) => (
             <div

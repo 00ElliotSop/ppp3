@@ -261,11 +261,12 @@ const Backdrops = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/DSC_0161.JPG" />
+        <link rel="preload" as="image" href="/DSC_0161.JPG" fetchpriority="high" />
         <img
           src="/DSC_0161.JPG"
           alt="Backdrops"
           className="w-full h-full object-cover"
+          fetchpriority="high"
           loading="eager"
           decoding="sync"
         />
@@ -282,9 +283,9 @@ const Backdrops = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           {/* Preload first few backdrop images */}
-          <link rel="preload" as="image" href={backdrops[0].image} />
-          <link rel="preload" as="image" href={backdrops[1].image} />
-          <link rel="preload" as="image" href={backdrops[2].image} />
+          <link rel="preload" as="image" href={backdrops[0].image} fetchpriority="high" />
+          <link rel="preload" as="image" href={backdrops[1].image} fetchpriority="high" />
+          <link rel="preload" as="image" href={backdrops[2].image} fetchpriority="high" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {backdrops.map((backdrop, index) => (
               <div
@@ -297,6 +298,7 @@ const Backdrops = () => {
                     src={backdrop.image}
                     alt={backdrop.name}
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    fetchpriority={index < 8 ? "high" : "auto"}
                     loading={index < 8 ? "eager" : "lazy"}
                     decoding={index < 8 ? "sync" : "async"}
                   />
