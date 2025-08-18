@@ -174,14 +174,14 @@ const Home = () => {
           <div className="absolute inset-0 flex items-center justify-center text-center text-white z-10 px-2">
             <div className="w-full max-w-4xl px-2">
               <h1 className="font-bold mb-4 leading-tight" style={{ 
-                fontSize: 'clamp(1.5rem, 6vw, 4.5rem)',
+                fontSize: 'clamp(1.9rem, 7.7vw, 5.8rem)',
                 wordWrap: 'break-word',
                 hyphens: 'auto'
               }}>
                 PROJECT PARTY PRODUCTIONS
               </h1>
               <p className="mb-6 leading-tight px-1" style={{ 
-                fontSize: 'clamp(0.75rem, 3vw, 1.25rem)',
+                fontSize: 'clamp(0.95rem, 3.8vw, 1.6rem)',
                 wordWrap: 'break-word'
               }}>
                 Creating Unforgettable Moments with Professional Photobooth Services
@@ -189,7 +189,7 @@ const Home = () => {
               <Link
                 to="/book-now"
                 className="bg-[#F7E7CE] text-gray-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300 inline-block"
-                style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)' }}
+                style={{ fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)' }}
               >
                 BOOK NOW
               </Link>
@@ -240,17 +240,17 @@ const Home = () => {
             </div>
             <div>
               <h2 className="font-bold text-gray-800 mb-4 px-1" style={{ 
-                fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+                fontSize: 'clamp(1.6rem, 5.1vw, 3.2rem)',
                 lineHeight: '1.2'
               }}>MEET THE TEAM</h2>
               <p className="text-[#B5A99A] font-semibold mb-4 px-1" style={{ 
-                fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)',
+                fontSize: 'clamp(1.1rem, 3.2vw, 1.6rem)',
                 lineHeight: '1.3'
               }}>
                 WE BRING THE ENERGY, HANDLE EVERY DETAIL, AND CRAFT UNFORGETTABLE MOMENTS. PROFESSIONALLY, PASSIONATELY, AND ALWAYS WITH A SMILE
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed px-1" style={{ 
-                fontSize: 'clamp(0.75rem, 2vw, 1rem)',
+                fontSize: 'clamp(0.95rem, 2.6vw, 1.3rem)',
                 lineHeight: '1.4'
               }}>
                 At Project Party Productions, we're not just a team—we're owner-operators who live and breathe events. We know what it takes to make a party unforgettable because we've been to enough events to know what works (and what doesn't). You'll never see us just standing around like mannequins—we bring the energy, entertainment, and interaction that keeps guests laughing, spinning, and snapping all night long. Our crew is here to cater to every request with a smile, ensuring your event is not only seamless but full of life and fun. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!
@@ -258,7 +258,7 @@ const Home = () => {
               <Link
                 to="/about-us"
                 className="bg-[#B5A99A] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block font-semibold"
-                style={{ fontSize: 'clamp(0.75rem, 2vw, 1rem)' }}
+                style={{ fontSize: 'clamp(0.95rem, 2.6vw, 1.3rem)' }}
               >
                 ABOUT US
               </Link>
@@ -271,7 +271,7 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-2 sm:px-4">
           <h2 className="text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 font-bold px-1" style={{ 
-            fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+            fontSize: 'clamp(1.6rem, 5.1vw, 3.2rem)',
             lineHeight: '1.2'
           }}>WHY CHOOSE US?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -287,7 +287,7 @@ const Home = () => {
                   />
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2 sm:mb-4 leading-tight px-1" style={{ 
-                  fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)',
+                  fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)',
                   lineHeight: '1.3'
                 }}>
                   {feature.title}
@@ -302,7 +302,7 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-2 sm:px-4">
           <h2 className="font-bold text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 px-1" style={{ 
-            fontSize: 'clamp(1.25rem, 4vw, 2.5rem)',
+            fontSize: 'clamp(1.6rem, 5.1vw, 3.2rem)',
             lineHeight: '1.2'
           }}>TESTIMONIALS</h2>
           <div className="relative max-w-4xl mx-auto">
@@ -313,14 +313,14 @@ const Home = () => {
                 ))}
               </div>
               <blockquote className="text-center mb-3 sm:mb-4 md:mb-6 leading-relaxed px-1 sm:px-2" style={{ 
-                fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)',
+                fontSize: 'clamp(0.95rem, 3.2vw, 1.6rem)',
                 lineHeight: '1.4'
               }}>
                 "{testimonials[currentTestimonial].text}"
               </blockquote>
               <div className="text-center">
                 <p className="text-[#F7E7CE] font-semibold px-1" style={{ 
-                  fontSize: 'clamp(0.75rem, 2vw, 1.125rem)',
+                  fontSize: 'clamp(0.95rem, 2.6vw, 1.4rem)',
                   lineHeight: '1.3'
                 }}>
                   {testimonials[currentTestimonial].name}, {testimonials[currentTestimonial].location}
