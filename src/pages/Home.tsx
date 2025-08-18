@@ -9,8 +9,8 @@ const Home = () => {
   const heroImages = [
     '/DSC_0376 2.JPG',
     '/20250804_204800341.jpg',
-    '/DSC_0376 2.JPG',
-    '/main.JPG'
+    '/main.JPG',
+    '/DSC_0376 2.JPG'
   ];
 
   const testimonials = [
