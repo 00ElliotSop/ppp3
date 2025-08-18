@@ -10,7 +10,7 @@ const Home = () => {
     '/DSC_0376 2.JPG',
     '/20250804_204800341.jpg',
     '/main.JPG',
-    '/DSC_0376 2.JPG'
+    '/20250804_204445724.jpg'
   ];
 
   const testimonials = [
