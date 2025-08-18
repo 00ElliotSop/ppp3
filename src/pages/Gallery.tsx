@@ -5,10 +5,10 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-    { src: '/360.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
-    { src: '/360-1.jpg', description: 'Mobile photobooth setup with professional lighting and backdrop at corporate event' },
-    { src: '/360.jpg', description: 'Birthday party celebration with colorful props and happy guests' },
-    { src: '/360-1.jpg', description: 'Elegant wedding setup with white flower wall backdrop and professional lighting' },
+    { src: '/20250804_192508408.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
+    { src: '/20250804_212732774.jpg', description: 'Mobile photobooth setup with professional lighting and backdrop at corporate event' },
+    { src: '/20250804_205503768.jpg', description: 'Birthday party celebration with colorful props and happy guests' },
+    { src: '/20250804_180956852.jpg', description: 'Elegant wedding setup with white flower wall backdrop and professional lighting' },
     { src: '/20250804_193822216.jpg', description: 'Corporate gala event featuring our premium photobooth package' },
     { src: '/20250804_200807927.jpg', description: 'Outdoor wedding ceremony with portable power station and wireless setup' },
     { src: '/20250804_204137279.jpg', description: 'Anniversary celebration with gold sequin backdrop and romantic lighting' },
