@@ -77,51 +77,44 @@ const Photobooth360 = () => {
               </video>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate 360 Video Booth Experience</h2>
+              <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate 360 Booth Experience</h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Our 360 Video Booth platform is the biggest in the industry at 46 inches (117CM), and can easily fit over 6+ people</p>
+                  <p className="text-gray-700">Completely Wireless</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Completely wireless (we supply our own power, and do not need to be set up next to an outlet) meaning that we can setup virtually anywhere</p>
+                  <p className="text-gray-700">Come with lighting</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Customizable overlays and song of choice (we work with you to ensure that the overlay we create, fits your theme and aesthetics)</p>
+                  <p className="text-gray-700">6 Foot cable</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Bright wireless RGB lighting</p>
+                  <p className="text-gray-700">Signage</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">LED signage and LED party lights</p>
+                  <p className="text-gray-700">Led party lights</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
                   <Link to="/props" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Lots of props!
+                    Comes with props!
+                  </Link>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <Link to="/speakers" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
+                    Speakers
                   </Link>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
                   <Link to="/stanchions" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Stanchions and red carpet
-                  </Link>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">
-                    Optional: <Link to="/speakers" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">Wireless party speakers (200W) that come with wireless mics</Link>
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">
-                    Optional: <Link to="/power-station" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">Portable 1024wh power station (Ecoflow Delta 3)</Link>
-                  </p>
+                    Stanchions
                   </Link>
                 </div>
               </div>
