@@ -41,8 +41,22 @@ const Header = () => {
     setIsMenuOpen(false);
     setActiveDropdown(null);
   }, [location.pathname]);
+
+  // Close dropdown when mobile menu is closed
+  useEffect(() => {
+    if (!isMenuOpen) {
+      setActiveDropdown(null);
+    }
+  }, [isMenuOpen]);
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setActiveDropdown(null);
+    }
   };
 
   return (
@@ -193,7 +207,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={toggleMobileMenu}
             className="lg:hidden p-2"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
