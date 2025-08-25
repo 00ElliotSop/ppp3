@@ -77,45 +77,43 @@ const Photobooth360 = () => {
               </video>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate 360 Booth Experience</h2>
+              <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate 360 Video Booth Experience</h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Completely Wireless</p>
+                  <p className="text-gray-700">Our 360 Video Booth platform is the biggest in the industry at 46 inches (117CM), and can easily fit over 6+ people</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Come with lighting</p>
+                  <p className="text-gray-700">Completely wireless (we supply our own power, and do not need to be set up next to an outlet) meaning that we can setup virtually anywhere</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">6 Foot cable</p>
+                  <p className="text-gray-700">Customizable overlays and song of choice (we work with you to ensure that the overlay we create, fits your theme and aesthetics)</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Signage</p>
+                  <p className="text-gray-700">Bright wireless RGB lighting</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Led party lights</p>
+                  <p className="text-gray-700">LED signage and LED party lights</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <Link to="/props" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Comes with props!
-                  </Link>
+                  <p className="text-gray-700">Lots of props!</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <Link to="/speakers" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Speakers
-                  </Link>
+                  <p className="text-gray-700">Stanchions and red carpet</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <Link to="/stanchions" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Stanchions
-                  </Link>
+                  <p className="text-gray-700">Optional: Wireless party speakers (200W) that come with wireless mics</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Optional: Portable 1024wh power station (Ecoflow Delta 3)</p>
                 </div>
               </div>
             </div>
