@@ -136,7 +136,7 @@ const Photobooth360 = () => {
             <div className="relative">
               <link rel="preload" as="image" href="/360-1.jpg" />
               <img
-                src="public/20250808_221148916-ezgif.com-video-to-gif-converter (2).gif"
+                src="/20250808_221148916-ezgif.com-video-to-gif-converter (2).gif"
                 alt="360 Booth Demo"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
