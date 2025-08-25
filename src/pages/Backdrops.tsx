@@ -7,229 +7,225 @@ const Backdrops = () => {
   const [selectedBackdrop, setSelectedBackdrop] = useState<number | null>(null);
 
   const backdrops = [
+    // Regular Size Backdrops
     { 
       id: 1, 
-      name: 'White', 
+      name: 'White marble', 
       image: '/360.jpg', 
-      category: 'Simple',
+      category: 'Elegant',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 2, 
-      name: 'White with Gold Lines', 
+      name: 'Black', 
       image: '/360-1.jpg', 
-      category: 'Elegant',
+      category: 'Simple',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 3, 
-      name: 'Pink with Gold Confetti', 
+      name: 'Black with PPP logo', 
       image: '/360.jpg', 
-      category: 'Elegant',
+      category: 'Branded',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 4, 
-      name: 'Silver Sprinkling', 
+      name: 'Pink roses in enchanted forest', 
       image: '/360-1.jpg', 
-      category: 'Sequins',
+      category: 'Floral',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 5, 
-      name: 'Silver Sequence', 
-      image: '/360.jpg', 
-      category: 'Sequins',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
-    },
-    { 
-      id: 6, 
-      name: 'Champagne Sequence', 
-      image: '/360-1.jpg', 
-      category: 'Sequins',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
-    },
-    { 
-      id: 7, 
-      name: 'Gold Sprinkling', 
-      image: '/360.jpg', 
-      category: 'Sequins',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
-    },
-    { 
-      id: 8, 
-      name: 'Black Gold Lines', 
-      image: '/360-1.jpg', 
-      category: 'Elegant',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
-    },
-    { 
-      id: 9, 
-      name: 'Black', 
-      image: '/360.jpg', 
-      category: 'Simple',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
-    },
-    { 
-      id: 10, 
-      name: 'Black and Gold Confetti', 
-      image: '/360-1.jpg', 
-      category: 'Elegant',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
-    },
-    { 
-      id: 11, 
-      name: 'Green Boxwood', 
+      name: 'White, pink and purple flowerwall', 
       image: '/360.jpg', 
       category: 'Floral',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
+      id: 6, 
+      name: 'White and pink flowers with green leaves', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 7, 
+      name: 'Flowers around wedding arch', 
+      image: '/360.jpg', 
+      category: 'Wedding',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 8, 
+      name: 'Gold shimmer wall', 
+      image: '/360-1.jpg', 
+      category: 'Shimmer',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 9, 
+      name: 'Rose gold shimmer wall', 
+      image: '/360.jpg', 
+      category: 'Shimmer',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
+      id: 10, 
+      name: 'White and pink flower wall', 
+      image: '/360-1.jpg', 
+      category: 'Floral',
+      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+    },
+    { 
+      id: 11, 
+      name: 'VIP hollywood red carpet', 
+      image: '/360.jpg', 
+      category: 'VIP',
+      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+    },
+    { 
       id: 12, 
-      name: 'White Flower Wall', 
+      name: 'Red roses flowerwall', 
       image: '/360-1.jpg', 
       category: 'Floral',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 13, 
-      name: 'Rose Gold Sequins', 
+      name: 'White and pink flower wall', 
       image: '/360.jpg', 
-      category: 'Sequins',
+      category: 'Floral',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 14, 
-      name: 'Navy Blue Sequins', 
+      name: 'Yellow, purple, and pink flower wall', 
       image: '/360-1.jpg', 
-      category: 'Sequins',
+      category: 'Floral',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 15, 
-      name: 'Purple Sequins', 
+      name: 'Pink roses flower wall', 
       image: '/360.jpg', 
-      category: 'Sequins',
+      category: 'Floral',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 16, 
-      name: 'Red Sequins', 
+      name: 'Presents in front of fireplace and Christmas tree', 
       image: '/360-1.jpg', 
-      category: 'Sequins',
+      category: 'Holiday',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 17, 
-      name: 'Emerald Green Sequins', 
+      name: 'Red carpet going up stairs to Christmas tree', 
       image: '/360.jpg', 
-      category: 'Sequins',
+      category: 'Holiday',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
+    
+    // 7ft x 7ft Backdrops
     { 
       id: 18, 
-      name: 'Blush Pink Floral', 
+      name: 'Green Screen', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 19, 
-      name: 'Eucalyptus Greenery', 
+      name: 'Green leaves heart', 
       image: '/360.jpg', 
-      category: 'Floral',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 20, 
-      name: 'Tropical Palm', 
+      name: 'Purple, blue, white, and pink flower wall', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 21, 
-      name: 'Marble White', 
+      name: 'Blue and white flower wall', 
       image: '/360.jpg', 
-      category: 'Elegant',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 22, 
-      name: 'Marble Black', 
+      name: 'White, pink, blue, and purple flower wall', 
       image: '/360-1.jpg', 
-      category: 'Elegant',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 23, 
-      name: 'Holographic Silver', 
+      name: 'Toronto Skyline', 
       image: '/360.jpg', 
-      category: 'Sequins',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 24, 
-      name: 'Holographic Gold', 
+      name: 'Flower wall going down white brick', 
       image: '/360-1.jpg', 
-      category: 'Sequins',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 25, 
-      name: 'Burgundy Velvet', 
+      name: 'Gold shimmers going down', 
       image: '/360.jpg', 
-      category: 'Elegant',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 26, 
-      name: 'Royal Blue Velvet', 
+      name: 'Red shimmer wall', 
       image: '/360-1.jpg', 
-      category: 'Elegant',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 27, 
-      name: 'Dusty Rose Floral', 
+      name: 'White roses flower wall', 
       image: '/360.jpg', 
-      category: 'Floral',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 28, 
-      name: 'Sage Green Floral', 
+      name: 'Gold shimmer wall', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 29, 
-      name: 'Copper Sequins', 
+      name: 'Silver shimmer wall', 
       image: '/360.jpg', 
-      category: 'Sequins',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 30, 
-      name: 'Iridescent White', 
+      name: 'Ornaments from tree and wood', 
       image: '/360-1.jpg', 
-      category: 'Sequins',
+      category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 31, 
-      name: 'Vintage Lace', 
+      name: 'Gold lights around wood boards', 
       image: '/360.jpg', 
-      category: 'Elegant',
+      category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
-    },
-    { 
-      id: 32, 
-      name: 'Geometric Gold', 
-      image: '/360-1.jpg', 
-      category: 'Elegant',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     }
   ];
 
