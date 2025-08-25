@@ -90,14 +90,6 @@ const MobilePhotobooth = () => {
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
                   <p className="text-gray-700">Stanchions and red carpet</p>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: Wireless party speakers (200W) that come with wireless mics</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: Portable 1024wh power station (Ecoflow Delta 3)</p>
-                </div>
               </div>
             </div>
           </div>
