@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, Phone, Mail, Instagram } from 'lucide-react';
 
@@ -6,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   // Preload critical page images when component mounts
@@ -48,6 +50,25 @@ const Header = () => {
       setActiveDropdown(null);
     }
   }, [isMenuOpen]);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isMenuOpen && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+        setActiveDropdown(null);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
@@ -88,7 +109,7 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white px-4 py-4">
+      <nav className="bg-white px-4 py-4" ref={mobileMenuRef}>
         <div className="max-w-7xl mx-auto flex justify-between items-center px-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
