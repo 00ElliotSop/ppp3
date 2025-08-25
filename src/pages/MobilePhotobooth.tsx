@@ -56,39 +56,47 @@ const MobilePhotobooth = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Print in multiple formats! (2x3, 4x6 & more!)</p>
+                  <p className="text-gray-700">Our mobile photobooth is completely different from anything else in the market. We can setup anywhere and print anywhere (indoors or outdoors), because we have access to our own power</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Completely Wireless</p>
+                  <p className="text-gray-700">Print in multiple formats (2x3, 4x6, 5x7, 6x8, and much more!)</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">The best LED party lights!</p>
+                  <p className="text-gray-700">We use a DSLR camera for our pictures for the best and highest quality</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">DSLR camera</p>
+                  <p className="text-gray-700">The printer that we use is the DNP DS620A, the best and quickest in the market</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">DNP DS620 to print photos</p>
+                  <p className="text-gray-700">Customizable overlays and song of choice (we work with you to ensure that the overlay we create, fits your theme and aesthetics)</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Come with lighting</p>
+                  <p className="text-gray-700">Bright wireless RGB lighting</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <Link to="/props" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Comes with props!
-                  </Link>
+                  <p className="text-gray-700">LED signage and LED party lights</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <Link to="/speakers" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors underline">
-                    Speakers
-                  </Link>
+                  <p className="text-gray-700">Lots of props!</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Stanchions and red carpet</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Optional: Wireless party speakers (200W) that come with wireless mics</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Optional: Portable 1024wh power station (Ecoflow Delta 3)</p>
                 </div>
               </div>
             </div>
