@@ -79,8 +79,8 @@ const Home = () => {
   const whyChooseUsFeatures = [
     {
       image: '/360.jpg',
-      title: 'We bring a professional studio ambience to every event',
-      description: 'Professional lighting and high-quality equipment for stunning photos.'
+      title: 'Project Party Productions brings a professional studio ambience to your event, all of our equipment is fully mobile, no need to connect to any outlets!',
+      description: 'Professional mobile setup with no power requirements.'
     },
     {
       image: '/20250804_192508408.jpg',
@@ -89,23 +89,23 @@ const Home = () => {
     },
     {
       image: '/DSC_0160.JPG',
-      title: 'We offer a variety of backdrops to suit any taste, ensuring your photos are unique and memorable.',
-      description: 'Choose from our extensive collection of beautiful backdrops.'
+      title: 'We offer a variety of backdrops to suit any taste, ensuring your photos are unique and memorable. (32+ Backdrops and also custom backdrops available)',
+      description: 'Choose from 32+ backdrops plus custom options.'
     },
     {
       image: '/DSC_1148.JPG',
-      title: 'Our modern, fun props will create hilarious photo opportunities and keep your guests entertained.',
-      description: 'Extensive prop collection to make your photos fun and memorable.'
+      title: 'Our modern, fun props will create hilarious photo opportunities and keep your guests entertained. (We offer props for different events, seasons, holidays, and custom props).',
+      description: 'Props for every occasion including custom options.'
     },
     {
       image: '/DSC_0381 2.JPG',
-      title: 'We create a seamless and easy booking process.',
-      description: 'Simple booking process from start to finish.'
+      title: 'We are fully insured and incorporated and have a $2 million dollar insurance liability.',
+      description: 'Complete insurance coverage and professional business standing.'
     },
     {
       image: '/DSC_0125.JPG',
-      title: 'Excellent customer service and a first-class experience is our top priority.',
-      description: 'Dedicated support team ensuring your event runs smoothly.'
+      title: 'We will always have a minimum of 2 professional attendants. We provide excellent customer service and having a first-class experience is our top priority.',
+      description: 'Multiple professional attendants ensuring exceptional service.'
     }
   ];
 
@@ -188,7 +188,7 @@ const Home = () => {
               </p>
               <Link
                 to="/book-now"
-                className="bg-[#F7E7CE] text-gray-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#B5A99A] hover:text-white transition-all duration-300 inline-block"
+                className="bg-[#B5A99A] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block"
                 style={{ fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)' }}
               >
                 BOOK NOW

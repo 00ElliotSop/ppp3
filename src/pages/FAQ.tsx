@@ -149,7 +149,7 @@ const FAQ = () => {
                 <Phone className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
-              <p className="text-gray-600">416-616-1121</p>
+              <p className="text-gray-600">647-957-2057</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
