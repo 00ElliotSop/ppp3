@@ -249,7 +249,7 @@ ${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No,
 
                 <button
                   type="submit"
-                  className="w-full bg-[#B5A99A] text-white py-4 px-8 rounded-lg text-lg font-semibold hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300"
+                  className="w-full bg-[#B5A99A] text-black py-4 px-8 rounded-lg text-lg font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300"
                 >
                   Submit Inquiry
                 </button>

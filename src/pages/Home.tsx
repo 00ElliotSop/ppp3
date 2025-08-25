@@ -188,7 +188,7 @@ const Home = () => {
               </p>
               <Link
                 to="/book-now"
-                className="bg-[#B5A99A] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block"
+                className="bg-[#B5A99A] text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block"
                 style={{ fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)' }}
               >
                 BOOK NOW
@@ -257,7 +257,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about-us"
-                className="bg-[#B5A99A] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-all duration-300 inline-block font-semibold"
+                className="bg-[#B5A99A] text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block font-semibold"
                 style={{ fontSize: 'clamp(0.95rem, 2.6vw, 1.3rem)' }}
               >
                 ABOUT US

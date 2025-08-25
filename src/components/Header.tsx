@@ -185,7 +185,7 @@ const Header = () => {
 
             <Link
               to="/book-now"
-              className="bg-[#B5A99A] text-white px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-colors font-medium"
+              className="bg-[#B5A99A] text-black px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-white transition-colors font-medium"
             >
               BOOK NOW
             </Link>
