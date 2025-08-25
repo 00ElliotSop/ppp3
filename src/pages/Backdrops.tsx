@@ -12,119 +12,119 @@ const Backdrops = () => {
       id: 1, 
       name: 'White marble', 
       image: '/360.jpg', 
-      category: 'Elegant',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 2, 
       name: 'Black', 
       image: '/360-1.jpg', 
-      category: 'Simple',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 3, 
       name: 'Black with PPP logo', 
       image: '/360.jpg', 
-      category: 'Branded',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 4, 
       name: 'Pink roses in enchanted forest', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 5, 
       name: 'White, pink and purple flowerwall', 
       image: '/360.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 6, 
       name: 'White and pink flowers with green leaves', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 7, 
       name: 'Flowers around wedding arch', 
       image: '/360.jpg', 
-      category: 'Wedding',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 8, 
       name: 'Gold shimmer wall', 
       image: '/360-1.jpg', 
-      category: 'Shimmer',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 9, 
       name: 'Rose gold shimmer wall', 
       image: '/360.jpg', 
-      category: 'Shimmer',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 10, 
       name: 'White and pink flower wall', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 11, 
       name: 'VIP hollywood red carpet', 
       image: '/360.jpg', 
-      category: 'VIP',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 12, 
       name: 'Red roses flowerwall', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 13, 
       name: 'White and pink flower wall', 
       image: '/360.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 14, 
       name: 'Yellow, purple, and pink flower wall', 
       image: '/360-1.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 15, 
       name: 'Pink roses flower wall', 
       image: '/360.jpg', 
-      category: 'Floral',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 16, 
       name: 'Presents in front of fireplace and Christmas tree', 
       image: '/360-1.jpg', 
-      category: 'Holiday',
+      category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 17, 
       name: 'Red carpet going up stairs to Christmas tree', 
       image: '/360.jpg', 
-      category: 'Holiday',
+      category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     
