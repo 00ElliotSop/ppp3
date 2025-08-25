@@ -29,7 +29,7 @@ const MobilePhotobooth = () => {
             </p>
             <Link
               to="/book-now"
-              className="bg-[#B5A99A] text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block"
+              className="bg-[#B5A99A] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block"
             >
               BOOK NOW
             </Link>

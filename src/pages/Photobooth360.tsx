@@ -52,7 +52,7 @@ const Photobooth360 = () => {
             </p>
             <Link
               to="/book-now"
-              className="bg-[#B5A99A] text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block"
+              className="bg-[#B5A99A] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F7E7CE] hover:text-white transition-all duration-300 inline-block"
             >
               BOOK NOW
             </Link>
@@ -65,16 +65,13 @@ const Photobooth360 = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <video
+              <img
+                src="/20250808_221148916-ezgif.com-video-to-gif-converter (2).gif"
+                alt="360 Booth Demo"
                 className="w-full rounded-2xl shadow-lg"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/360-booth-demo.mp4" type="video/mp4" />
-                <img src="/360-1.jpg" alt="360 Booth Demo" className="w-full rounded-2xl" />
-              </video>
+                loading="eager"
+                decoding="sync"
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate 360 Video Booth Experience</h2>
@@ -136,8 +133,8 @@ const Photobooth360 = () => {
             <div className="relative">
               <link rel="preload" as="image" href="/360-1.jpg" />
               <img
-                src="/20250808_221148916-ezgif.com-video-to-gif-converter (2).gif"
-                alt="360 Booth Demo"
+                src="/360-1.jpg"
+                alt="360 Photobooth Experience"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
                 decoding="sync"
