@@ -57,9 +57,7 @@ const Stanchions = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">VIP Treatment for Your Guests</h2>
           <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-            Make your guests feel like celebrities with our elegant stanchions and red carpet setup. 
-            Perfect for creating a grand entrance, photo opportunities, and adding a touch of glamour 
-            to any event. Our professional-grade equipment ensures your event looks sophisticated and memorable.
+            Make your guests feel like celebrities with our elegant stanchions and red carpet setup. Perfect for creating a grand entrance, photo opportunities, and adding a touch of glamour to any event. Our stanchions also can create an elegant line-up to the photo booth or video booth.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -68,15 +66,15 @@ const Stanchions = () => {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
+                  <span>6x Gold stanchions</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
+                  <span>6x Red velvet rope barriers</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Premium red carpet runner</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Gold or silver stanchions</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Velvet rope barriers</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
