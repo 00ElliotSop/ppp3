@@ -117,9 +117,9 @@ const Photobooth360 = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-8">Capture The Moments From All Sides</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our 360 photobooth creates stunning slow-motion videos that capture every angle of your special moments. 
+                Our 360 video booth creates stunning slow-motion videos that capture every angle of your special moments. 
                 With professional lighting and high-quality cameras, your guests will feel like celebrities as they create 
-                unforgettable content that they'll want to share with everyone.
+                unforgettable content that they'll want to share with everyone. You spent so much putting together your perfect outfit, why not make sure every angle of your look is captured, so the whole fit shines!
               </p>
             </div>
             <div className="relative">
