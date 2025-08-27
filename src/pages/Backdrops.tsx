@@ -257,9 +257,9 @@ const Backdrops = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/DSC_0161.JPG" fetchpriority="high" />
+        <link rel="preload" as="image" href="/20250804_213815473.jpg" fetchpriority="high" />
         <img
-          src="/DSC_0161.JPG"
+          src="/20250804_213815473.jpg"
           alt="Backdrops"
           className="w-full h-full object-cover"
           fetchpriority="high"
