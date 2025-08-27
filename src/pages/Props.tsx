@@ -66,19 +66,19 @@ const Props = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-800">Themed Collections:</h3>
               <ul className="space-y-2 text-gray-600 text-center">
-                <li className="flex items-center space-x-3">
+                <li className="flex items-center justify-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Wedding and romantic themed props</span>
                 </li>
-                <li className="flex items-center space-x-3">
+                <li className="flex items-center justify-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Birthday and celebration props</span>
                 </li>
-                <li className="flex items-center space-x-3">
+                <li className="flex items-center justify-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Corporate and professional items</span>
                 </li>
-                <li className="flex items-center space-x-3">
+                <li className="flex items-center justify-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Seasonal and holiday themed props</span>
                 </li>
