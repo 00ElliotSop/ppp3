@@ -57,9 +57,7 @@ const PowerStation = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Portable Power Solutions</h2>
           <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-            Don't let power limitations restrict your event location. Our portable power stations provide 
-            reliable electricity for outdoor venues, remote locations, or anywhere you need additional power. 
-            Keep your photobooth, speakers, lighting, and other equipment running smoothly throughout your event.
+            All of our equipment (yes, everything!) do not need to be plugged into an outlet. We ensured this because we want to make sure that we are able to set up anywhere! Don't let power limitations restrict your event location. Our portable power station provides reliable electricity for outdoor venues, remote locations, or anywhere you need additional power. We utilize the Ecoflow Delta 3 plus as our main portable power station. We utilize the power station to power our picture printer (DNP DS620A), so we can set up virtually anywhere! Not only that but we always bring multiple power banks to each event to make sure that we are never out of power, ever!
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -68,7 +66,7 @@ const PowerStation = () => {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>High-capacity battery power</span>
+                  <span>Ecoflow Delta 3 Plus 1024Wah that can output up to 1800W</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
@@ -80,7 +78,7 @@ const PowerStation = () => {
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Weather-resistant design</span>
+                  <span>Weather resistant design</span>
                 </li>
               </ul>
             </div>
