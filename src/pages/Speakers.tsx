@@ -57,9 +57,9 @@ const Speakers = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Professional Audio Solutions</h2>
           <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-            Our professional speaker systems deliver exceptional sound quality for events of all sizes. 
+            We utilize 2 Soundcore Rave 3S. Our professional party speaker systems deliver exceptional sound quality for events of all sizes. 
             From intimate gatherings to large celebrations, we have the right audio equipment to ensure 
-            your music, announcements, and entertainment sound perfect.
+            your music, announcements, and entertainment sound perfect. Our speaker systems have a built-in AI vocal remover, meaning that any song that you play, our speakers can remove the words and leave the instrumentals! Each speaker delivers a bass shattering 200W of power, and we provide a total of 4 wireless mics. Our speakers are completely wireless and provide a 12-hour playback time. The Soundcore Rave 3S also is USB-C rechargeable, meaning that with a provided power bank, the playback time is essentially limitless.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -68,11 +68,15 @@ const Speakers = () => {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>High-quality wireless speakers</span>
+                  <span>2x Soundcore Rave 3S 200W party speakers (that pair seamlessly)</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Bluetooth connectivity</span>
+                  <span>4x High-quality wireless microphones</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
+                  <span>Bluetooth and AUX connectivity</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
@@ -102,6 +106,14 @@ const Speakers = () => {
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Outdoor events and festivals</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
+                  <span>Karaoke night</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
+                  <span>Mobile DJ setup</span>
                 </li>
               </ul>
             </div>
