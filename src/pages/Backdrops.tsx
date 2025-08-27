@@ -261,7 +261,7 @@ const Backdrops = () => {
         <img
           src="/20250804_213815473.jpg"
           alt="Backdrops"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-110 object-center"
           fetchpriority="high"
           loading="eager"
           decoding="sync"
