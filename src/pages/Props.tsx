@@ -65,7 +65,7 @@ const Props = () => {
           <div className="max-w-2xl mx-auto text-center">
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-800">Themed Collections:</h3>
-              <ul className="space-y-2 text-gray-600">
+              <ul className="space-y-2 text-gray-600 text-center">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
                   <span>Wedding and romantic themed props</span>
