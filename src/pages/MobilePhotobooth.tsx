@@ -60,7 +60,7 @@ const MobilePhotobooth = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Print in multiple formats (2x3, 4x6, 5x7, 6x8, and much more!)</p>
+                  <p className="text-gray-700">Print in multiple formats (2x3, 4x6, 5x7, 6x8, and much more!) {/* Maybe include picture of different formats */}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
