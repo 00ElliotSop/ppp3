@@ -57,39 +57,18 @@ const Props = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Endless Fun with Our Props Collection</h2>
           <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-            Our extensive collection of high-quality props adds personality and fun to every photo. 
+            Our extensive collection of high-quality props adds personality and fun to every photo/video. 
             From classic accessories to themed items, we have everything you need to create hilarious 
             and memorable photos that your guests will treasure forever.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-800">Prop Categories:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Funny glasses and sunglasses</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Hats and headwear</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Signs and speech bubbles</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Masks and mustaches</span>
-                </li>
-              </ul>
-            </div>
+          <div className="max-w-2xl mx-auto text-left">
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-800">Themed Collections:</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Wedding and romantic themes</span>
+                  <span>Wedding and romantic themed props</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
@@ -101,7 +80,7 @@ const Props = () => {
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full"></div>
-                  <span>Seasonal and holiday themes</span>
+                  <span>Seasonal and holiday themed props</span>
                 </li>
               </ul>
             </div>
