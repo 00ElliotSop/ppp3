@@ -13,13 +13,13 @@ const Home = () => {
     },
     { 
       src: '/20250804_204800341.jpg', 
-      title: '360 PHOTOBOOTH',
-      subtitle: 'Interactive Video Experience'
+      title: 'PROJECT PARTY PRODUCTIONS',
+      subtitle: 'Creating Unforgettable Moments'
     },
     { 
       src: '/20250804_204445724.jpg', 
-      title: 'MOBILE PHOTOBOOTH',
-      subtitle: 'Professional Photography'
+      title: 'PROJECT PARTY PRODUCTIONS',
+      subtitle: 'Creating Unforgettable Moments'
     }
   ];
 
