@@ -45,7 +45,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src="/Logo-wide-white-footer.png" 
+              src="https://via.placeholder.com/200x64/FFFFFF/000000?text=PROJECT+PARTY" 
               alt="Project Party Productions" 
               className="h-16 w-auto mb-4 rounded-lg"
               fetchpriority="high"

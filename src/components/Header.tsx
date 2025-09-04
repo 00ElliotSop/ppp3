@@ -113,7 +113,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/full-logo-black.png" 
+              src="https://via.placeholder.com/200x67/000000/FFFFFF?text=PROJECT+PARTY" 
               alt="Project Party Productions" 
               className="h-12 sm:h-16 md:h-[67px] w-auto rounded-full"
               fetchpriority="high"
