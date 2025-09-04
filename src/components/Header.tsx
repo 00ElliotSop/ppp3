@@ -1,156 +1,163 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  const navigation = [
-    { name: 'HOME', href: '/' },
-    { name: 'BACKDROPS', href: '/backdrops' },
-    { name: '360 PHOTOBOOTH', href: '/360-photobooth' },
-    { name: 'MOBILE PHOTOBOOTH', href: '/mobile-photobooth' },
-    { name: 'GALLERY', href: '/gallery' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'ABOUT US', href: '/about-us' },
+  const galleryImages = [
+    { src: '/20250804_204800341.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
+    { src: '/20250804_212732774.jpg', description: 'Mobile photobooth setup with professional lighting and backdrop at corporate event' },
+    { src: '/20250804_205503768.jpg', description: 'Birthday party celebration with colorful props and happy guests' },
+    { src: '/20250804_180956852.jpg', description: 'Elegant wedding setup with white flower wall backdrop and professional lighting' },
+    { src: '/20250804_193822216.jpg', description: 'Corporate gala event featuring our premium photobooth package' },
+    { src: '/20250804_200807927.jpg', description: 'Outdoor wedding ceremony with portable power station and wireless setup' },
+    { src: '/20250804_204137279.jpg', description: 'Anniversary celebration with gold sequin backdrop and romantic lighting' },
+    { src: '/20250804_205236101.jpg', description: 'Graduation party with fun props and instant photo printing' },
+    { src: '/20250804_210506449.jpg', description: 'Holiday party setup with seasonal decorations and themed props' },
+    { src: '/20250804_204450963.jpg', description: 'Baby shower event with pastel backdrop and delicate lighting' },
+    { src: '/20250804_204900014.jpg', description: 'Corporate team building event with interactive photobooth experience' },
+    { src: '/20250804_194812971.jpg', description: 'Sweet 16 party with vibrant lighting and trendy backdrop' },
+    { src: '/20250804_193618221.jpg', description: 'Wedding reception with red carpet entrance and stanchions' },
+    { src: '/20250804_181238676.jpg', description: 'Charity gala featuring our premium lighting package' },
+    { src: '/20250804_192508408.jpg', description: 'Engagement party with romantic floral backdrop and soft lighting' },
+    { src: '/20250804_212732774.jpg', description: 'Corporate product launch with branded backdrop and professional setup' },
+    { src: '/20250804_205503768.jpg', description: 'Quinceañera celebration with elegant gold and pink theme' },
+    { src: '/20250804_180956852.jpg', description: 'Retirement party with classic backdrop and timeless props' },
+    { src: '/20250804_193822216.jpg', description: 'New Year\'s Eve party with glittery backdrop and festive props' },
+    { src: '/20250804_200807927.jpg', description: 'Bridal shower with white and gold theme and delicate flowers' },
+    { src: '/20250804_204137279.jpg', description: 'Bar Mitzvah celebration with traditional and modern elements' },
+    { src: '/20250804_205236101.jpg', description: 'Company anniversary event with professional branding and setup' },
+    { src: '/20250804_210506449.jpg', description: 'Prom night setup with glamorous backdrop and elegant lighting' },
+    { src: '/20250804_204450963.jpg', description: 'Family reunion with multi-generational fun and classic props' },
+    { src: '/20250804_204900014.jpg', description: 'Fundraising event with branded backdrop and professional presentation' },
+    { src: '/20250804_194812971.jpg', description: 'Wedding anniversary with vintage-inspired backdrop and romantic ambiance' },
+    { src: '/20250804_212404754.jpg', description: 'Corporate holiday party with festive decorations and seasonal props' },
+    { src: '/20250804_212404754.jpg', description: 'Professional event setup with premium lighting and backdrop' },
+    { src: '/20250804_210722523.jpg', description: 'Guests enjoying the interactive photobooth experience' },
+    { src: '/20250804_210332810.jpg', description: 'Behind the scenes of our professional event service' },
+    { src: '/20250804_210043845.jpg', description: 'Event highlights showcasing memorable guest interactions' },
+    { src: '/20250804_205655968.jpg', description: 'Professional photography capturing special moments at the event' },
+    { src: '/20250804_214331446.jpg', description: 'Behind the scenes of our photobooth experience in action' },
+    { src: '/DSC_0376 2.JPG', description: 'Professional event setup showcasing our premium service quality' },
+    { src: '/20250804_213017940.jpg', description: 'Event highlights capturing memorable moments and guest interactions' }
   ];
 
-  const services = [
-    { name: 'SPEAKERS', href: '/speakers' },
-    { name: 'STANCHIONS', href: '/stanchions' },
-    { name: 'POWER STATION', href: '/power-station' },
-    { name: 'PROPS', href: '/props' },
-    { name: 'LIGHTING', href: '/lighting' },
-  ];
+  const openModal = (index: number) => {
+    setSelectedImage(index);
+  };
 
-  const isActive = (path: string) => {
-    return location.pathname === path;
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
+  const nextImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % galleryImages.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage - 1 + galleryImages.length) % galleryImages.length);
+    }
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
-            <img
-              src="/full-logo-black.png"
-              alt="Project Party Productions"
-              className="h-12 w-auto"
-              loading="eager"
-              decoding="sync"
-            />
-          </Link>
+    <div className="pt-24">
+      {/* Hero Section */}
+      <section className="relative h-96">
+        <link rel="preload" as="image" href="/20250804_192508408.jpg" />
+        <img
+          src="/20250804_192508408.jpg"
+          alt="Gallery Hero"
+          className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+          <div className="max-w-4xl px-4">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">GALLERY</h1>
+            <p className="text-xl md:text-2xl">
+              Explore our collection of memorable moments and stunning setups
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-[#B5A99A] ${
-                  isActive(item.href)
-                    ? 'text-[#B5A99A] border-b-2 border-[#B5A99A]'
-                    : 'text-gray-700'
-                }`}
+      {/* Gallery Grid */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Preload first few gallery images */}
+          <link rel="preload" as="image" href={galleryImages[0].src} fetchpriority="high" />
+          <link rel="preload" as="image" href={galleryImages[1].src} fetchpriority="high" />
+          <link rel="preload" as="image" href={galleryImages[2].src} fetchpriority="high" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+                onClick={() => openModal(index)}
               >
-                {item.name}
-              </Link>
-            ))}
-            
-            {/* Services Dropdown */}
-            <div className="relative group">
-              <button className="text-sm font-medium text-gray-700 hover:text-[#B5A99A] transition-colors">
-                SERVICES
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="py-2">
-                  {services.map((service) => (
-                    <Link
-                      key={service.name}
-                      to={service.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#F7E7CE] hover:text-[#B5A99A] transition-colors"
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
+                <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                  <img
+                    src={image.src}
+                    alt={`Gallery ${index + 1}`}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    fetchpriority={index < 6 ? "high" : "auto"}
+                    loading={index < 6 ? "eager" : "lazy"}
+                    decoding={index < 6 ? "sync" : "async"}
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300" />
                 </div>
               </div>
-            </div>
-          </nav>
-
-          {/* Book Now Button */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <Link
-              to="/book-now"
-              className="bg-[#B5A99A] text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#F7E7CE] hover:text-black transition-all duration-300"
-            >
-              BOOK NOW
-            </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-[#B5A99A] hover:bg-gray-100"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className={`block px-3 py-2 text-base font-medium transition-colors ${
-                  isActive(item.href)
-                    ? 'text-[#B5A99A] bg-[#F7E7CE] bg-opacity-20'
-                    : 'text-gray-700 hover:text-[#B5A99A] hover:bg-gray-50'
-                }`}
-              >
-                {item.name}
-              </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Modal */}
+      {selectedImage !== null && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl max-h-full">
+            <img
+              src={galleryImages[selectedImage].src}
+              alt={`Gallery ${selectedImage + 1}`}
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
             
-            {/* Mobile Services */}
-            <div className="border-t pt-2">
-              <p className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Services
-              </p>
-              {services.map((service) => (
-                <Link
-                  key={service.name}
-                  to={service.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#B5A99A] hover:bg-gray-50 transition-colors"
-                >
-                  {service.name}
-                </Link>
-              ))}
-            </div>
-            
-            {/* Mobile Book Now */}
-            <div className="border-t pt-2">
-              <Link
-                to="/book-now"
-                onClick={() => setIsMenuOpen(false)}
-                className="block mx-3 my-2 bg-[#B5A99A] text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-[#F7E7CE] hover:text-black transition-all duration-300"
-              >
-                BOOK NOW
-              </Link>
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-black bg-opacity-60 hover:bg-opacity-80 text-white p-3 rounded-full transition-all border-2 border-white shadow-lg"
+            >
+              <X size={28} />
+            </button>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
+            >
+              <ChevronRight size={24} />
+            </button>
+
+            {/* Image Description */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-70 text-white px-6 py-4 rounded-lg max-w-md text-center">
+              <p className="text-sm mb-2">{galleryImages[selectedImage].description}</p>
+              <p className="text-xs opacity-75">{selectedImage + 1} / {galleryImages.length}</p>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </div>
   );
 };
 
-export default Header;
+export default Gallery;
