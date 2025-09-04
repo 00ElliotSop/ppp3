@@ -5,7 +5,6 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-        <link rel="preload" as="image" href="/DSC_0125.JPG" />
     { src: '/20250804_204137279.jpg', description: 'Anniversary celebration with gold sequin backdrop and romantic lighting' },
     { src: '/20250804_205236101.jpg', description: 'Graduation party with fun props and instant photo printing' },
     { src: '/20250804_210506449.jpg', description: 'Holiday party setup with seasonal decorations and themed props' },
@@ -62,6 +61,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="relative h-96">
         <link rel="preload" as="image" href="/20250804_192508408.jpg" />
+        <link rel="preload" as="image" href="/DSC_0125.JPG" />
         <img
           src="/DSC_0125.JPG"
           alt="Gallery Hero"
@@ -139,9 +139,10 @@ const Gallery = () => {
             <button
               onClick={nextImage}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
+            >
               <link rel="preload" as="image" href="/DSC_0161.JPG" />
               <ChevronRight size={24} />
-                src="/DSC_0161.JPG"
+            </button>
 
             {/* Image Description */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-70 text-white px-6 py-4 rounded-lg max-w-md text-center">
