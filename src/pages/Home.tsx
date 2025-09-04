@@ -7,9 +7,8 @@ const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const heroImages = [
-    '/DSC_0376 2.JPG',
-    '/20250804_204800341.jpg',
     '/main.JPG',
+    '/20250804_204800341.jpg',
     '/20250804_204445724.jpg'
   ];
 
