@@ -1,163 +1,303 @@
 import React, { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
-const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photosDropdownOpen, setPhotosDropdownOpen] = useState(false);
+  const [rentalsDropdownOpen, setRentalsDropdownOpen] = useState(false);
+  const [mobilePhotosOpen, setMobilePhotosOpen] = useState(false);
+  const [mobileRentalsOpen, setMobileRentalsOpen] = useState(false);
 
-  const galleryImages = [
-    { src: '/20250804_204800341.jpg', description: '360 Photobooth in action at a wedding reception with guests enjoying the experience' },
-    { src: '/20250804_212732774.jpg', description: 'Mobile photobooth setup with professional lighting and backdrop at corporate event' },
-    { src: '/20250804_205503768.jpg', description: 'Birthday party celebration with colorful props and happy guests' },
-    { src: '/20250804_180956852.jpg', description: 'Elegant wedding setup with white flower wall backdrop and professional lighting' },
-    { src: '/20250804_193822216.jpg', description: 'Corporate gala event featuring our premium photobooth package' },
-    { src: '/20250804_200807927.jpg', description: 'Outdoor wedding ceremony with portable power station and wireless setup' },
-    { src: '/20250804_204137279.jpg', description: 'Anniversary celebration with gold sequin backdrop and romantic lighting' },
-    { src: '/20250804_205236101.jpg', description: 'Graduation party with fun props and instant photo printing' },
-    { src: '/20250804_210506449.jpg', description: 'Holiday party setup with seasonal decorations and themed props' },
-    { src: '/20250804_204450963.jpg', description: 'Baby shower event with pastel backdrop and delicate lighting' },
-    { src: '/20250804_204900014.jpg', description: 'Corporate team building event with interactive photobooth experience' },
-    { src: '/20250804_194812971.jpg', description: 'Sweet 16 party with vibrant lighting and trendy backdrop' },
-    { src: '/20250804_193618221.jpg', description: 'Wedding reception with red carpet entrance and stanchions' },
-    { src: '/20250804_181238676.jpg', description: 'Charity gala featuring our premium lighting package' },
-    { src: '/20250804_192508408.jpg', description: 'Engagement party with romantic floral backdrop and soft lighting' },
-    { src: '/20250804_212732774.jpg', description: 'Corporate product launch with branded backdrop and professional setup' },
-    { src: '/20250804_205503768.jpg', description: 'Quinceañera celebration with elegant gold and pink theme' },
-    { src: '/20250804_180956852.jpg', description: 'Retirement party with classic backdrop and timeless props' },
-    { src: '/20250804_193822216.jpg', description: 'New Year\'s Eve party with glittery backdrop and festive props' },
-    { src: '/20250804_200807927.jpg', description: 'Bridal shower with white and gold theme and delicate flowers' },
-    { src: '/20250804_204137279.jpg', description: 'Bar Mitzvah celebration with traditional and modern elements' },
-    { src: '/20250804_205236101.jpg', description: 'Company anniversary event with professional branding and setup' },
-    { src: '/20250804_210506449.jpg', description: 'Prom night setup with glamorous backdrop and elegant lighting' },
-    { src: '/20250804_204450963.jpg', description: 'Family reunion with multi-generational fun and classic props' },
-    { src: '/20250804_204900014.jpg', description: 'Fundraising event with branded backdrop and professional presentation' },
-    { src: '/20250804_194812971.jpg', description: 'Wedding anniversary with vintage-inspired backdrop and romantic ambiance' },
-    { src: '/20250804_212404754.jpg', description: 'Corporate holiday party with festive decorations and seasonal props' },
-    { src: '/20250804_212404754.jpg', description: 'Professional event setup with premium lighting and backdrop' },
-    { src: '/20250804_210722523.jpg', description: 'Guests enjoying the interactive photobooth experience' },
-    { src: '/20250804_210332810.jpg', description: 'Behind the scenes of our professional event service' },
-    { src: '/20250804_210043845.jpg', description: 'Event highlights showcasing memorable guest interactions' },
-    { src: '/20250804_205655968.jpg', description: 'Professional photography capturing special moments at the event' },
-    { src: '/20250804_214331446.jpg', description: 'Behind the scenes of our photobooth experience in action' },
-    { src: '/DSC_0376 2.JPG', description: 'Professional event setup showcasing our premium service quality' },
-    { src: '/20250804_213017940.jpg', description: 'Event highlights capturing memorable moments and guest interactions' }
-  ];
-
-  const openModal = (index: number) => {
-    setSelectedImage(index);
+  const toggleMobilePhotos = () => {
+    setMobilePhotosOpen(!mobilePhotosOpen);
+    setMobileRentalsOpen(false); // Close other dropdown
   };
 
-  const closeModal = () => {
-    setSelectedImage(null);
+  const toggleMobileRentals = () => {
+    setMobileRentalsOpen(!mobileRentalsOpen);
+    setMobilePhotosOpen(false); // Close other dropdown
   };
 
-  const nextImage = () => {
-    if (selectedImage !== null) {
-      setSelectedImage((selectedImage + 1) % galleryImages.length);
-    }
-  };
-
-  const prevImage = () => {
-    if (selectedImage !== null) {
-      setSelectedImage((selectedImage - 1 + galleryImages.length) % galleryImages.length);
-    }
+  const closeMobileMenu = () => {
+    setIsOpen(false);
+    setMobilePhotosOpen(false);
+    setMobileRentalsOpen(false);
   };
 
   return (
-    <div className="pt-24">
-      {/* Hero Section */}
-      <section className="relative h-96">
-        <link rel="preload" as="image" href="/20250804_192508408.jpg" />
-        <img
-          src="/20250804_192508408.jpg"
-          alt="Gallery Hero"
-          className="w-full h-full object-cover"
-          loading="eager"
-          decoding="sync"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="max-w-4xl px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">GALLERY</h1>
-            <p className="text-xl md:text-2xl">
-              Explore our collection of memorable moments and stunning setups
-            </p>
-          </div>
+    <nav className="bg-white shadow-lg fixed w-full z-50">
+      {/* Top bar with contact info */}
+      <div className="bg-[#B5A99A] text-white py-2 hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 flex justify-end items-center space-x-6 text-sm">
+          <a href="tel:647-957-2057" className="flex items-center space-x-1 hover:text-[#F7E7CE]">
+            <span>647-957-2057</span>
+          </a>
+          <a href="mailto:info@projectpartyproductions.com" className="flex items-center space-x-1 hover:text-[#F7E7CE]">
+            <span>info@projectpartyproductions.com</span>
+          </a>
         </div>
-      </section>
+      </div>
 
-      {/* Gallery Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Preload first few gallery images */}
-          <link rel="preload" as="image" href={galleryImages[0].src} fetchpriority="high" />
-          <link rel="preload" as="image" href={galleryImages[1].src} fetchpriority="high" />
-          <link rel="preload" as="image" href={galleryImages[2].src} fetchpriority="high" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
-                onClick={() => openModal(index)}
-              >
-                <div className="relative overflow-hidden rounded-2xl shadow-lg">
-                  <img
-                    src={image.src}
-                    alt={`Gallery ${index + 1}`}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                    fetchpriority={index < 6 ? "high" : "auto"}
-                    loading={index < 6 ? "eager" : "lazy"}
-                    decoding={index < 6 ? "sync" : "async"}
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Modal */}
-      {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl max-h-full">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
+          <Link to="/" className="flex-shrink-0">
             <img
-              src={galleryImages[selectedImage].src}
-              alt={`Gallery ${selectedImage + 1}`}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              className="h-16 w-auto"
+              src="/full-logo-black.png"
+              alt="Project Party Productions"
             />
-            
-            {/* Close Button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 bg-black bg-opacity-60 hover:bg-opacity-80 text-white p-3 rounded-full transition-all border-2 border-white shadow-lg"
-            >
-              <X size={28} />
-            </button>
+          </Link>
 
-            {/* Navigation Buttons */}
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
-            >
-              <ChevronRight size={24} />
-            </button>
+          {/* Desktop Menu */}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-8">
+              <Link to="/" className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors">
+                HOME
+              </Link>
+              <Link to="/backdrops" className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors">
+                BACKDROPS
+              </Link>
+              
+              {/* Photobooths Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setPhotosDropdownOpen(true)}
+                onMouseLeave={() => setPhotosDropdownOpen(false)}
+              >
+                <button className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                  PHOTOBOOTHS
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </button>
+                {photosDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md py-2 z-50">
+                    <Link
+                      to="/360-photobooth"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      360 PHOTOBOOTH
+                    </Link>
+                    <Link
+                      to="/mobile-photobooth"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      MOBILE PHOTOBOOTH
+                    </Link>
+                  </div>
+                )}
+              </div>
 
-            {/* Image Description */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-70 text-white px-6 py-4 rounded-lg max-w-md text-center">
-              <p className="text-sm mb-2">{galleryImages[selectedImage].description}</p>
-              <p className="text-xs opacity-75">{selectedImage + 1} / {galleryImages.length}</p>
+              <Link to="/gallery" className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors">
+                GALLERY
+              </Link>
+              <Link to="/faq" className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors">
+                FAQ
+              </Link>
+              <Link to="/about-us" className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors">
+                ABOUT US
+              </Link>
+              
+              {/* Other Rentals Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setRentalsDropdownOpen(true)}
+                onMouseLeave={() => setRentalsDropdownOpen(false)}
+              >
+                <button className="text-gray-800 hover:text-[#B5A99A] px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                  OTHER RENTALS
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </button>
+                {rentalsDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md py-2 z-50">
+                    <Link
+                      to="/speakers"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      SPEAKERS
+                    </Link>
+                    <Link
+                      to="/stanchions"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      STANCHIONS + RED CARPET
+                    </Link>
+                    <Link
+                      to="/power-station"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      POWER STATION
+                    </Link>
+                    <Link
+                      to="/props"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      PROPS
+                    </Link>
+                    <Link
+                      to="/lighting"
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#F7E7CE] hover:text-gray-800 transition-colors"
+                    >
+                      LIGHTING
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                to="/book-now"
+                className="bg-[#B5A99A] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#F7E7CE] hover:text-black transition-all duration-300"
+              >
+                BOOK NOW
+              </Link>
             </div>
           </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-800 hover:text-[#B5A99A] focus:outline-none focus:text-[#B5A99A] p-2"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
-      )}
-    </div>
+
+        {/* Mobile menu */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+              <Link
+                to="/"
+                onClick={closeMobileMenu}
+                className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors"
+              >
+                HOME
+              </Link>
+              <Link
+                to="/backdrops"
+                onClick={closeMobileMenu}
+                className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors"
+              >
+                BACKDROPS
+              </Link>
+              
+              {/* Mobile Photobooths Dropdown */}
+              <div>
+                <button
+                  onClick={toggleMobilePhotos}
+                  className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors w-full text-left flex items-center justify-between"
+                >
+                  PHOTOBOOTHS
+                  <ChevronDown className={`h-4 w-4 transition-transform ${mobilePhotosOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobilePhotosOpen && (
+                  <div className="pl-6">
+                    <Link
+                      to="/360-photobooth"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      360 Photobooth
+                    </Link>
+                    <Link
+                      to="/mobile-photobooth"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Mobile Photobooth
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                to="/gallery"
+                onClick={closeMobileMenu}
+                className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors"
+              >
+                GALLERY
+              </Link>
+              <Link
+                to="/faq"
+                onClick={closeMobileMenu}
+                className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors"
+              >
+                FAQ
+              </Link>
+              
+              {/* Mobile Other Rentals Dropdown */}
+              <div>
+                <button
+                  onClick={toggleMobileRentals}
+                  className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors w-full text-left flex items-center justify-between"
+                >
+                  OTHER RENTALS
+                  <ChevronDown className={`h-4 w-4 transition-transform ${mobileRentalsOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileRentalsOpen && (
+                  <div className="pl-6">
+                    <Link
+                      to="/speakers"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Speakers
+                    </Link>
+                    <Link
+                      to="/stanchions"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Stanchions + Red Carpet
+                    </Link>
+                    <Link
+                      to="/power-station"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Power Station
+                    </Link>
+                    <Link
+                      to="/props"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Props
+                    </Link>
+                    <Link
+                      to="/lighting"
+                      onClick={closeMobileMenu}
+                      className="text-gray-600 hover:text-[#B5A99A] block px-3 py-2 text-sm transition-colors"
+                    >
+                      Lighting
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                to="/about-us"
+                onClick={closeMobileMenu}
+                className="text-gray-800 hover:text-[#B5A99A] block px-3 py-2 text-base font-medium transition-colors"
+              >
+                ABOUT US
+              </Link>
+              
+              <Link
+                to="/book-now"
+                onClick={closeMobileMenu}
+                className="bg-[#B5A99A] text-white block px-6 py-3 rounded-full text-base font-medium hover:bg-[#F7E7CE] hover:text-black transition-all duration-300 mx-3 mt-4 text-center"
+              >
+                BOOK NOW
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
   );
 };
 
-export default Gallery;
+export default Header;
