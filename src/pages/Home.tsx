@@ -301,7 +301,7 @@ const Home = () => {
 
           {/* 360 Videobooth */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+            <div className="relative order-2 lg:order-none">
               <img
                 src="/360 Photobooth setup MCA-G.jpg"
                 alt="360 Videobooth"
@@ -310,7 +310,7 @@ const Home = () => {
                 decoding="sync"
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-none">
               <h3 className="font-bold text-gray-800 mb-4 px-1" style={{ 
                 fontSize: 'clamp(1.4rem, 4.5vw, 2.8rem)',
                 lineHeight: '1.2'
