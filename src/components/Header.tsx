@@ -147,7 +147,7 @@ const Header = () => {
                     className="block px-4 py-2 text-gray-700 hover:bg-[#F7E7CE] hover:text-white transition-colors"
                     onClick={() => setActiveDropdown(null)}
                   >
-                    360 Photobooth
+                    360 Videobooth
                   </Link>
                   <Link
                     to="/mobile-photobooth"
@@ -261,7 +261,7 @@ const Header = () => {
                       className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      360 Photobooth
+                      360 Videobooth
                     </Link>
                     <Link
                       to="/mobile-photobooth"

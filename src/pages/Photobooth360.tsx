@@ -38,7 +38,7 @@ const Photobooth360 = () => {
         <link rel="preload" as="image" href="/360.jpg" />
         <img
           src="/360.jpg"
-          alt="360 Photobooth"
+          alt="360 Videobooth"
           className="w-full h-full object-cover"
           loading="eager"
           decoding="sync"
@@ -46,7 +46,7 @@ const Photobooth360 = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="max-w-4xl px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">360 PHOTOBOOTH</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">360 VIDEOBOOTH</h1>
             <p className="text-xl md:text-2xl mb-8">
               Experience the ultimate 360-degree video booth that captures every angle
             </p>
@@ -126,7 +126,7 @@ const Photobooth360 = () => {
               <link rel="preload" as="image" href="/360-1.jpg" />
               <img
                 src="/360-1.jpg"
-                alt="360 Photobooth Experience"
+                alt="360 Videobooth Experience"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
                 decoding="sync"
@@ -165,7 +165,7 @@ const Photobooth360 = () => {
           <div className="relative max-w-4xl max-h-full">
             <img
               src={galleryImages[selectedImage]}
-              alt={`360 Photobooth Gallery ${selectedImage + 1}`}
+              alt={`360 Videobooth Gallery ${selectedImage + 1}`}
               className="max-w-full max-h-full object-contain rounded-lg"
             />
             

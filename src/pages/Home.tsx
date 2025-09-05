@@ -97,7 +97,7 @@ const Home = () => {
       description: 'Props for every occasion including custom options.'
     },
     {
-      image: '/Fully-insured-picture.JPG',
+      image: '/We-are-fully-insured-and-incorporated.jpg',
       title: 'We are fully insured and incorporated and have a $2 million dollar insurance liability.',
       description: 'Complete insurance coverage and professional business standing.'
     },
@@ -321,6 +321,93 @@ const Home = () => {
               }}>
                 Our 360 Video Booth platform is the biggest in the industry at 46 inches (117CM), and can easily fit over 6+ people. Just like the Mobile Photobooth our 360 Videobooth is also completely wireless!
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+          <h2 className="font-bold text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 px-1" style={{ 
+            fontSize: 'clamp(1.6rem, 5.1vw, 3.2rem)',
+            lineHeight: '1.2'
+          }}>OUR SERVICES</h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="font-bold text-gray-800 mb-8 px-1" style={{ 
+                fontSize: 'clamp(1.4rem, 4.5vw, 2.4rem)',
+                lineHeight: '1.2'
+              }}>WE OFFER A VAST RANGE OF CUSTOMIZABLE SERVICES</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>360 VIDEO BOOTH</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Capture stunning 360-degree videos with our state-of-the-art equipment</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>MOBILE PHOTOBOOTH</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Professional photography with instant prints and digital sharing</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>PREMIUM BACKDROPS</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Choose from 30+ stunning backdrops or create custom designs</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>CUSTOM EXPERIENCE</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Tailored packages with props, lighting, and personalized templates</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img
+                src="/King-Queen.jpg"
+                alt="Our Services"
+                className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+              />
             </div>
           </div>
         </div>
