@@ -299,7 +299,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 360 Videobooth */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-none">
               <img
@@ -419,9 +418,9 @@ const Home = () => {
              
              <div className="relative">
                <img
-                 src="/King-Queen.jpg"
+                 src="/king-queen2.jpg"
                  alt="Our Services"
-                className="w-full rounded-2xl shadow-lg object-cover"
+                className="w-full rounded-2xl shadow-lg"
                  loading="eager"
                  decoding="sync"
                />
