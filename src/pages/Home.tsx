@@ -301,6 +301,15 @@ const Home = () => {
 
           {/* 360 Videobooth */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img
+                src="/360 Photobooth setup MCA-G.jpg"
+                alt="360 Videobooth"
+                className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+              />
+            </div>
             <div>
               <h3 className="font-bold text-gray-800 mb-4 px-1" style={{ 
                 fontSize: 'clamp(1.4rem, 4.5vw, 2.8rem)',
@@ -312,15 +321,6 @@ const Home = () => {
               }}>
                 Our 360 Video Booth platform is the biggest in the industry at 46 inches (117CM), and can easily fit over 6+ people. Just like the Mobile Photobooth our 360 Videobooth is also completely wireless!
               </p>
-            </div>
-            <div className="relative">
-              <img
-                src="/360 Photobooth setup MCA-G.jpg"
-                alt="360 Videobooth"
-                className="w-full rounded-2xl shadow-lg"
-                loading="eager"
-                decoding="sync"
-              />
             </div>
           </div>
         </div>
