@@ -414,6 +414,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
