@@ -299,7 +299,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 360 Videobooth */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-none">
               <img
@@ -345,7 +344,11 @@ const Home = () => {
             <div className="space-y-4">
              <div className="space-y-4">
                <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                 <div className="flex items-start space-x-4">
+                  <img 
+                    src="/wedding-camera.png" 
+                    alt="Wedding Services" 
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
                    <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
                    <div>
                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
@@ -360,7 +363,11 @@ const Home = () => {
                
                <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
                  <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <img 
+                    src="/corporate-events-photo.png" 
+                    alt="Corporate Events" 
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
                    <div>
                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
@@ -374,7 +381,11 @@ const Home = () => {
                
                <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
                  <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <img 
+                    src="/private-parties-album.png" 
+                    alt="Private Parties" 
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
                    <div>
                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
@@ -388,7 +399,11 @@ const Home = () => {
                
                <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
                  <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <img 
+                    src="/custom-experiences-album.png" 
+                    alt="Custom Experiences" 
+                    className="w-8 h-8 flex-shrink-0 mt-1"
+                  />
                    <div>
                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
@@ -403,10 +418,9 @@ const Home = () => {
              
              <div className="relative">
                <img
-                 src="/King-Queen.jpg"
+                 src="/king-queen2.jpg"
                  alt="Our Services"
-                 className="w-full rounded-2xl shadow-lg transform scale-110 object-cover"
-                 style={{ transform: 'scale(1.49)', transformOrigin: '30% 35%' }}
+                className="w-full rounded-2xl shadow-lg"
                  loading="eager"
                  decoding="sync"
                />
@@ -478,7 +492,6 @@ const Home = () => {
                 </p>
               </div>
             </div>
-
             {/* Testimonial Controls */}
             <button
               onClick={prevTestimonial}
