@@ -342,67 +342,60 @@ const Home = () => {
               }}>WE OFFER A VAST RANGE OF CUSTOMIZABLE SERVICES</h3>
               
               <div className="space-y-6">
-                <div className="border-2 border-gray-200 rounded-lg p-4 bg-white shadow-sm">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                      <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                      }}>WEDDINGS</h4>
-                      <p className="text-gray-600" style={{ 
-                        fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                      }}>Engaging photography services for your special wedding day and celebrations</p>
-                    </div>
+            <div className="space-y-4">
+              <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>WEDDINGS</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Engaging photography services for your special wedding day and celebrations</p>
                   </div>
                 </div>
-                
-                <div className="border-2 border-gray-200 rounded-lg p-4 bg-white shadow-sm">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                      <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                      }}>CORPORATE EVENTS</h4>
-                      <p className="text-gray-600" style={{ 
-                        fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                      }}>Our professional photography services are perfect for corporate functions and business events</p>
-                    </div>
+              </div>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>CORPORATE EVENTS</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Our professional photography services are perfect for corporate functions and business events</p>
                   </div>
                 </div>
-                
-                <div className="border-2 border-gray-200 rounded-lg p-4 bg-white shadow-sm">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                      <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                      }}>PRIVATE PARTIES</h4>
-                      <p className="text-gray-600" style={{ 
-                        fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                      }}>Fun activities, props, and entertainment for private celebrations and gatherings</p>
-                    </div>
+              </div>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>PRIVATE PARTIES</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Fun activities, props, and entertainment for private celebrations and gatherings</p>
                   </div>
                 </div>
-                
-                <div className="border-2 border-gray-200 rounded-lg p-4 bg-white shadow-sm">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                      <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                        fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                      }}>CUSTOM EXPERIENCES</h4>
-                      <p className="text-gray-600" style={{ 
-                        fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                      }}>Tailored packages and personalized touches that fit your specific event and style</p>
-                    </div>
+              </div>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>CUSTOM EXPERIENCES</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Tailored packages and personalized touches that fit your specific event and style</p>
+                  </div>
                   </div>
                 </div>
               </div>
