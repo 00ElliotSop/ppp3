@@ -405,7 +405,7 @@ const Home = () => {
                 src="/King-Queen.jpg"
                 alt="Our Services"
                 className="w-full rounded-2xl shadow-lg transform scale-110 object-cover"
-                style={{ transform: 'scale(1.19)' }}
+                style={{ transform: 'scale(1.19)', transformOrigin: '30% center' }}
                 loading="eager"
                 decoding="sync"
               />
