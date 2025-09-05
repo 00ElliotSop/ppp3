@@ -492,7 +492,6 @@ const Home = () => {
                 </p>
               </div>
             </div>
-
             {/* Testimonial Controls */}
             <button
               onClick={prevTestimonial}
