@@ -14,7 +14,6 @@ const TermsOfService = () => {
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-8">Last Updated: [Insert Date]</p>
             <p className="text-gray-600 mb-8">Last Updated: August 27, 2025</p>
 
             <p className="mb-8 leading-relaxed text-gray-700">
