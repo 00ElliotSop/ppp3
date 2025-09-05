@@ -15,6 +15,7 @@ const TermsOfService = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 mb-8">Last Updated: [Insert Date]</p>
+            <p className="text-gray-600 mb-8">Last Updated: August 27, 2025</p>
 
             <p className="mb-8 leading-relaxed text-gray-700">
               Welcome to Project Party Productions ("Company," "we," "us," "our"). These Terms of Service ("Terms") govern the use of our website, booking services, and the rental and operation of our photo booths, 360 video booths, and related services (collectively, the "Services"). By accessing our website, booking our Services, or attending an event where our Services are provided, you ("Client," "you," "your," "user," or "guests") agree to be bound by these Terms.
