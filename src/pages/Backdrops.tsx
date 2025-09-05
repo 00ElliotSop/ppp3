@@ -255,23 +255,12 @@ const Backdrops = () => {
 
   return (
     <div className="pt-24">
-      {/* Hero Section */}
-      <section className="relative h-96">
-        <link rel="preload" as="image" href="/20250804_213815473.jpg" fetchpriority="high" />
-        <img
-          src="/20250804_213815473.jpg"
-          alt="Backdrops"
-          className="w-full h-full object-cover scale-125 object-left-center"
-          fetchpriority="high"
-          loading="eager"
-          decoding="sync"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="max-w-4xl px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">BACKDROPS</h1>
-            <p className="text-xl md:text-2xl">Choose from our stunning collection of professional backdrops</p>
-          </div>
+      {/* Header Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6">BACKDROPS</h1>
+          <p className="text-lg text-gray-600 mb-4">We currently offer 30+ backdrops and can provide custom backdrops with notice</p>
+          <p className="text-xl text-gray-700">Choose from our stunning collection of professional tension backdrops</p>
         </div>
       </section>
 

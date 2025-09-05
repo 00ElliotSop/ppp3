@@ -266,6 +266,66 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Our Photobooths Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+          <h2 className="font-bold text-center text-gray-800 mb-8 sm:mb-12 md:mb-16 px-1" style={{ 
+            fontSize: 'clamp(1.6rem, 5.1vw, 3.2rem)',
+            lineHeight: '1.2'
+          }}>OUR PHOTOBOOTHS</h2>
+          
+          {/* Mobile Photobooth */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 className="font-bold text-gray-800 mb-4 px-1" style={{ 
+                fontSize: 'clamp(1.4rem, 4.5vw, 2.8rem)',
+                lineHeight: '1.2'
+              }}>Mobile Photobooth</h3>
+              <p className="text-gray-600 leading-relaxed px-1" style={{ 
+                fontSize: 'clamp(0.95rem, 2.6vw, 1.3rem)',
+                lineHeight: '1.4'
+              }}>
+                Our Mobile Photobooth is unlike any other in the market. We require no electricity, because we supply our own. We have no wires on the floor, this eliminates any chance of a tripping hazard. Our printer is completely wireless too! We can print a picture in less than 10 seconds! We also work with you to customize your experience!
+              </p>
+            </div>
+            <div className="relative">
+              <img
+                src="/DSC_0376 2.JPG"
+                alt="Mobile Photobooth"
+                className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+              />
+            </div>
+          </div>
+
+          {/* 360 Videobooth */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="font-bold text-gray-800 mb-4 px-1" style={{ 
+                fontSize: 'clamp(1.4rem, 4.5vw, 2.8rem)',
+                lineHeight: '1.2'
+              }}>360 Videobooth</h3>
+              <p className="text-gray-600 leading-relaxed px-1" style={{ 
+                fontSize: 'clamp(0.95rem, 2.6vw, 1.3rem)',
+                lineHeight: '1.4'
+              }}>
+                Our 360 Video Booth platform is the biggest in the industry at 46 inches (117CM), and can easily fit over 6+ people. Just like the Mobile Photobooth our 360 Videobooth is also completely wireless!
+              </p>
+            </div>
+            <div className="relative">
+              <img
+                src="/360 Photobooth setup MCA-G.jpg"
+                alt="360 Videobooth"
+                className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-2 sm:px-4">
