@@ -174,42 +174,42 @@ const Backdrops = () => {
     { 
       id: 24, 
       name: 'Toronto Skyline', 
-      image: '/360.jpg', 
+      image: '/tdot.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 25, 
       name: 'Flower wall going down white brick', 
-      image: '/360-1.jpg', 
+      image: '/hanging-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 26, 
       name: 'Gold shimmers going down', 
-      image: '/360.jpg', 
+      image: '/gold-hanging.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 27, 
       name: 'Red shimmer wall', 
-      image: '/360-1.jpg', 
+      image: '/red-shimmers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 28, 
       name: 'White roses flower wall', 
-      image: '/360.jpg', 
+      image: '/white-f-wall.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 29, 
       name: 'Gold shimmer wall', 
-      image: '/360-1.jpg', 
+      image: '/gold-wall-7x7.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
