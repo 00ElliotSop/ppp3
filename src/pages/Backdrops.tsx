@@ -81,28 +81,28 @@ const Backdrops = () => {
     { 
       id: 11, 
       name: 'White and pink flower wall', 
-      image: '/360-1.jpg', 
+      image: '/w-p-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 12, 
       name: 'VIP hollywood red carpet', 
-      image: '/360.jpg', 
+      image: '/vip.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 13, 
       name: 'Red roses flowerwall', 
-      image: '/360-1.jpg', 
+      image: '/roses-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 14, 
       name: 'White and pink flower wall', 
-      image: '/360.jpg', 
+      image: '/white-f-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
@@ -116,14 +116,14 @@ const Backdrops = () => {
     { 
       id: 16, 
       name: 'Pink roses flower wall', 
-      image: '/360.jpg', 
+      image: '/pink-roses.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 17, 
       name: 'Presents in front of fireplace and Christmas tree', 
-      image: '/360-1.jpg', 
+      image: '/christmas.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
