@@ -130,7 +130,7 @@ const Backdrops = () => {
     { 
       id: 18, 
       name: 'Red carpet going up stairs to Christmas tree', 
-      image: '/360.jpg', 
+      image: '/stairs-christmas.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
@@ -139,35 +139,35 @@ const Backdrops = () => {
     { 
       id: 19, 
       name: 'Green Screen', 
-      image: '/360-1.jpg', 
+      image: '/green-screen.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 20, 
       name: 'Green leaves heart', 
-      image: '/360.jpg', 
+      image: '/green-heart.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 21, 
       name: 'Purple, blue, white, and pink flower wall', 
-      image: '/360-1.jpg', 
+      image: '/purple-blue-white-f.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 22, 
       name: 'Blue and white flower wall', 
-      image: '/360.jpg', 
+      image: '/blue-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 23, 
       name: 'White, pink, blue, and purple flower wall', 
-      image: '/360-1.jpg', 
+      image: '/white-pink-blue-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
