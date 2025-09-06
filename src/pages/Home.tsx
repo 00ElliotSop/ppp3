@@ -299,6 +299,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* 360 Videobooth */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-none">
               <img
@@ -341,96 +342,77 @@ const Home = () => {
               }}>WE OFFER A VAST RANGE OF CUSTOMIZABLE SERVICES</h3>
               
               <div className="space-y-6">
-            <div className="space-y-4">
-             <div className="space-y-4">
-               <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                  <img 
-                    src="/wedding-camera.png" 
-                    alt="Wedding Services" 
-                    className="w-8 h-8 flex-shrink-0 mt-1"
-                  />
-                   <div className="w-6 h-6 bg-[#B5A99A] rounded flex-shrink-0 mt-1"></div>
-                   <div>
-                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                     }}>WEDDINGS</h4>
-                     <p className="text-gray-600" style={{ 
-                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                     }}>Engaging photography services for your special wedding day and celebrations</p>
-                   </div>
-                 </div>
-               </div>
-               
-               <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                 <div className="flex items-start space-x-4">
-                  <img 
-                    src="/corporate-events-photo.png" 
-                    alt="Corporate Events" 
-                    className="w-8 h-8 flex-shrink-0 mt-1"
-                  />
-                   <div>
-                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                     }}>CORPORATE EVENTS</h4>
-                     <p className="text-gray-600" style={{ 
-                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                     }}>Our professional photography services are perfect for corporate functions and business events</p>
-                   </div>
-                 </div>
-               </div>
-               
-               <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                 <div className="flex items-start space-x-4">
-                  <img 
-                    src="/private-parties-album.png" 
-                    alt="Private Parties" 
-                    className="w-8 h-8 flex-shrink-0 mt-1"
-                  />
-                   <div>
-                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                     }}>PRIVATE PARTIES</h4>
-                     <p className="text-gray-600" style={{ 
-                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                     }}>Fun activities, props, and entertainment for private celebrations and gatherings</p>
-                   </div>
-                 </div>
-               </div>
-               
-               <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                 <div className="flex items-start space-x-4">
-                  <img 
-                    src="/custom-experiences-album.png" 
-                    alt="Custom Experiences" 
-                    className="w-8 h-8 flex-shrink-0 mt-1"
-                  />
-                   <div>
-                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                     }}>CUSTOM EXPERIENCES</h4>
-                     <p className="text-gray-600" style={{ 
-                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                     }}>Tailored packages and personalized touches that fit your specific event and style</p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             
-             <div className="relative">
-               <img
-                 src="/king-queen2.jpg"
-                 alt="Our Services"
-                className="w-full rounded-2xl shadow-lg"
-                 loading="eager"
-                 decoding="sync"
-               />
-             </div>
-           </div>
-         </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>360 VIDEO BOOTH</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Capture stunning 360-degree videos with our state-of-the-art equipment</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>MOBILE PHOTOBOOTH</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Professional photography with instant prints and digital sharing</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>PREMIUM BACKDROPS</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Choose from 30+ stunning backdrops or create custom designs</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
+                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
+                    }}>CUSTOM EXPERIENCE</h4>
+                    <p className="text-gray-600" style={{ 
+                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
+                    }}>Tailored packages with props, lighting, and personalized templates</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img
+                src="/King-Queen.jpg"
+                alt="Our Services"
+                className="w-full rounded-2xl shadow-lg transform scale-110 object-cover"
+                style={{ transform: 'scale(1.19)', transformOrigin: '30% center' }}
+                loading="eager"
+                decoding="sync"
+              />
             </div>
           </div>
         </div>
-       </section>
+      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
@@ -492,6 +474,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
+
             {/* Testimonial Controls */}
             <button
               onClick={prevTestimonial}
