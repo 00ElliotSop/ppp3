@@ -402,7 +402,7 @@ const Home = () => {
             
             <div className="relative">
               <img
-                src="/King-Queen.jpg"
+                src="/king-queen2.jpg"
                 alt="Our Services"
                 className="w-full rounded-2xl shadow-lg transform scale-110 object-cover"
                 style={{ transform: 'scale(1.19)', transformOrigin: '30% center' }}
