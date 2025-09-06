@@ -11,35 +11,35 @@ const Backdrops = () => {
     { 
       id: 1, 
       name: 'White', 
-      image: '/360.jpg', 
+      image: '/white.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 2, 
       name: 'White marble', 
-      image: '/360.jpg', 
+      image: '/white-m.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 3, 
       name: 'Black', 
-      image: '/360-1.jpg', 
+      image: '/black.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 4, 
       name: 'Black with PPP logo', 
-      image: '/360.jpg', 
+      image: '/ppp-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 5, 
       name: 'Pink roses in enchanted forest', 
-      image: '/360-1.jpg', 
+      image: '/p-e.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
