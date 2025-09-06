@@ -108,27 +108,20 @@ const Backdrops = () => {
     },
     { 
       id: 15, 
-      name: 'Yellow, purple, and pink flower wall', 
-      image: '/360-1.jpg', 
-      category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
-    },
-    { 
-      id: 16, 
       name: 'Pink roses flower wall', 
       image: '/pink-roses.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 17, 
+      id: 16, 
       name: 'Presents in front of fireplace and Christmas tree', 
       image: '/christmas.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 18, 
+      id: 17, 
       name: 'Red carpet going up stairs to Christmas tree', 
       image: '/stairs-christmas.jpg', 
       category: '8ft x 8ft',
@@ -137,98 +130,98 @@ const Backdrops = () => {
     
     // 7ft x 7ft Backdrops
     { 
-      id: 19, 
+      id: 18, 
       name: 'Green Screen', 
       image: '/green-screen.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 20, 
+      id: 19, 
       name: 'Green leaves heart', 
       image: '/green-heart.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 21, 
+      id: 20, 
       name: 'Purple, blue, white, and pink flower wall', 
       image: '/purple-blue-white-f.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 22, 
+      id: 21, 
       name: 'Blue and white flower wall', 
       image: '/blue-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 23, 
+      id: 22, 
       name: 'White, pink, blue, and purple flower wall', 
       image: '/white-pink-blue-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 24, 
+      id: 23, 
       name: 'Toronto Skyline', 
       image: '/tdot.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 25, 
+      id: 24, 
       name: 'Flower wall going down white brick', 
       image: '/hanging-flowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 26, 
+      id: 25, 
       name: 'Gold shimmers going down', 
       image: '/gold-hanging.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 27, 
+      id: 26, 
       name: 'Red shimmer wall', 
       image: '/red-shimmers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 28, 
+      id: 27, 
       name: 'White roses flower wall', 
       image: '/white-f-wall.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 29, 
+      id: 28, 
       name: 'Gold shimmer wall', 
       image: '/gold-wall-7x7.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 30, 
+      id: 29, 
       name: 'Silver shimmer wall', 
       image: '/silver-wall.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
-      id: 31, 
+      id: 30, 
       name: 'Ornaments from tree and wood', 
       image: '/ornaments.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
-      id: 32, 
+      id: 31, 
       name: 'Gold lights around wood boards', 
       image: '/gold-over-wood.jpg', 
       category: '7ft x 7ft',
