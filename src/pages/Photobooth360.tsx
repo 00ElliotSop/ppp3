@@ -66,7 +66,7 @@ const Photobooth360 = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/20250808_221148916-ezgif.com-video-to-gif-converter (2).gif"
+                src="/ultimate-360.gif"
                 alt="360 Booth Demo"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
@@ -123,9 +123,9 @@ const Photobooth360 = () => {
               </p>
             </div>
             <div className="relative">
-              <link rel="preload" as="image" href="/360-1.jpg" />
+              <link rel="preload" as="image" href="/capture-moments-all-sides.gif" />
               <img
-                src="/360-1.jpg"
+                src="/capture-moments-all-sides.gif"
                 alt="360 Videobooth Experience"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
