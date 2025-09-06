@@ -42,9 +42,9 @@ const MobilePhotobooth = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <link rel="preload" as="image" href="/ultimate-mobile.gif" />
+              <link rel="preload" as="image" href="/ultimate-mobile2.gif" />
               <img
-                src="/ultimate-mobile.gif"
+                src="/ultimate-mobile2.gif"
                 alt="Mobile Photobooth Setup"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
