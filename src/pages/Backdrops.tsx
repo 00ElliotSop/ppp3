@@ -216,21 +216,21 @@ const Backdrops = () => {
     { 
       id: 30, 
       name: 'Silver shimmer wall', 
-      image: '/360.jpg', 
+      image: '/silver-wall.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 31, 
       name: 'Ornaments from tree and wood', 
-      image: '/360-1.jpg', 
+      image: '/ornaments.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 32, 
       name: 'Gold lights around wood boards', 
-      image: '/360.jpg', 
+      image: '/gold-over-wood.jpg', 
       category: '7ft x 7ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     }
