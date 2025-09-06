@@ -12,7 +12,7 @@ const MobilePhotobooth = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <link rel="preload" as="image" href="/360.jpg" />
+        <link rel="preload" as="image" href="/Mobile-PhotoBooth-Hero.jpg" />
         <img
           src="/Mobile-PhotoBooth-Hero.jpg"
           alt="Mobile Photobooth"
