@@ -46,35 +46,35 @@ const Backdrops = () => {
     { 
       id: 6, 
       name: 'White, pink and purple flowerwall', 
-      image: '/360.jpg', 
+      image: '/w-p.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 7, 
       name: 'White and pink flowers with green leaves', 
-      image: '/360-1.jpg', 
+      image: '/w-p-g.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 8, 
       name: 'Flowers around wedding arch', 
-      image: '/360.jpg', 
+      image: '/wedd.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 9, 
       name: 'Gold shimmer wall', 
-      image: '/360-1.jpg', 
+      image: '/gold-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 10, 
       name: 'Rose gold shimmer wall', 
-      image: '/360.jpg', 
+      image: '/rose-b.jpg', 
       category: '8ft x 8ft',
       gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
     },
