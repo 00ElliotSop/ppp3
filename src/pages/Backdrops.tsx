@@ -134,7 +134,7 @@ const Backdrops = () => {
       name: 'Green Screen', 
       image: '/green-screen.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/green-screen1.JPG', '/green-screen2.JPG', '/green-screen3.JPG', '/green-screen4.JPG']
     },
     { 
       id: 19, 
