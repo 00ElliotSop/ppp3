@@ -349,10 +349,10 @@ const Home = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>360 VIDEO BOOTH</h4>
+                    }}>WEDDINGS</h4>
                     <p className="text-gray-600" style={{ 
                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Capture stunning 360-degree videos with our state-of-the-art equipment</p>
+                    }}>Create magical moments for you and your guests.</p>
                   </div>
                 </div>
                 
@@ -363,10 +363,10 @@ const Home = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>MOBILE PHOTOBOOTH</h4>
+                    }}>CORPORATE EVENTS</h4>
                     <p className="text-gray-600" style={{ 
                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Professional photography with instant prints and digital sharing</p>
+                    }}>Add fun and engagement to your brand activations.</p>
                   </div>
                 </div>
                 
@@ -377,10 +377,10 @@ const Home = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>PREMIUM BACKDROPS</h4>
+                    }}>PRIVATE PARTIES</h4>
                     <p className="text-gray-600" style={{ 
                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Choose from 30+ stunning backdrops or create custom designs</p>
+                    }}>Make birthday parties, baby showers, and anniversaries unforgettable.</p>
                   </div>
                 </div>
                 
@@ -391,10 +391,10 @@ const Home = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2" style={{ 
                       fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>CUSTOM EXPERIENCE</h4>
+                    }}>CUSTOM EXPERIENCES</h4>
                     <p className="text-gray-600" style={{ 
                       fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Tailored packages with props, lighting, and personalized templates</p>
+                    }}>Tailored to your event theme, from backdrops to props.</p>
                   </div>
                 </div>
               </div>
