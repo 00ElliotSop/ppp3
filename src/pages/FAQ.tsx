@@ -163,7 +163,7 @@ const FAQ = () => {
                 <div className="text-gray-800 font-bold text-lg">G</div>
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Google Business</h3>
-              <a href="#" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors">
+              <a href="https://share.google/VArZF5bOJjrN8uNCH" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors">
                 View Our Reviews
               </a>
             </div>
