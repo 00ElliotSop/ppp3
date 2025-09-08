@@ -114,7 +114,7 @@ const Footer = () => {
             © 2024 Project Party Productions. Developed and Designed by <a href="https://elliotsop.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">ElliotSop</a>.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-[#F7E7CE] text-sm transition-colors">Privacy Policy</a>
+            
             <Link to="/terms-of-service" className="text-gray-400 hover:text-[#F7E7CE] text-sm transition-colors">Terms of Service</Link>
           </div>
         </div>
