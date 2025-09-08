@@ -4,8 +4,9 @@ const AboutUs = () => {
   const teamMembers = [
     {
       name: "Sasha R",
-      image: "/Sasha.JPG",
-      quote: "OWNER & PHOTOBOOTH OPERATOR - EVERY GUEST GETS TREATED LIKE FAMILY.",
+      image: "/Sasha1.JPG",
+      quote: "OWNER & PHOTOBOOTH OPERATOR",
+      quote: "'EVERY GUEST GETS TREATED LIKE FAMILY.'",
       description: "I’m Sasha, and I started Project Party Productions because I noticed something was missing in the world of photo booths. Most of them are fun to look at, but they don’t bring energy or excitement to the party. I wanted to change that. I don’t just operate the booth, I’m part of the entertainment! Every detail is carefully thought out to make sure guests are laughing, having fun, and feeling included. We’re all about giving exceptional value and making sure every event is unforgettable. And we’re fully mobile! Whether it’s an indoor or outdoor wedding, a backyard, a field, the beach, or anywhere there are people ready to have a party, Project Party Productions will be there. I’m bubbly, quirky, and full of energy, and I’m backed by an amazing team that makes every event run smoothly. For us, it’s more than just about photos or 360 videos, it’s about creating an experience that everyone remembers long after the party ends. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
@@ -16,7 +17,7 @@ const AboutUs = () => {
     },
     {
       name: "Sarah R",
-      image: "/Sarah.jpg",
+      image: "/Sarah1.jpg",
       quote: "CHIEF MARKETING OFFICER & PHOTOBOOTH OPERATOR - TO INFINITY AND BEYOND.",
       description: "Hi online world, my name is Sarah! I’m a creative at heart who loves bringing energy and excitement to every event with Project Party Productions. Whether I’m running our 360 photo booth or our mobile photo booth, I thrive on creating unforgettable experiences and making sure every guest has a blast. What I love most about what I do is seeing the pure joy on people’s faces when they step into the booth and let loose—it’s those candid smiles and fun memories that make it all worthwhile. Being part of a team that turns celebrations into lasting moments is such a privilege, and I can’t wait to keep spreading that same joy at every event we’re a part of."
     },
@@ -28,7 +29,7 @@ const AboutUs = () => {
     },
     {
       name: "Havisha S",
-      image: "/Havisha.jpg",
+      image: "/Havisha1.jpg",
       quote: "PHOTOBOOTH OPERATOR - WE CAN'T HELP EVERYONE, BUT EVERYONE CAN HELP SOMEONE.",
       description: "I’m Havi and I’m someone who loves adventure. I love trying new things, creating moments to laugh about later, and enjoying life as it comes. Too often we get caught up in the rush of routines and the weight of responsibilities, and we forget that joy is what truly connects us. That’s why I love what I do at Project Party Productions. Our booth is a little reminder that life is best enjoyed when we let ourselves play, be silly, and connect with the people around us. What makes my work special is the interaction I get to have with every single person who steps in front of the camera. Whether it’s sparking a laugh, helping someone who’s camera-shy feel comfortable, or encouraging a group to get a little silly with props, I love being able to provide our guests with a collection of moments that last a lifetime."
     },
@@ -40,7 +41,7 @@ const AboutUs = () => {
     },
     {
       name: "Keval N",
-      image: "/Keval.jpg",
+      image: "/Keval1.jpg",
       quote: "PHOTOBOOTH OPERATOR - UNSHAKEN WHEN THE WORLD IS SHAKEN.",
       description: "Husband, father and friend. Building strength through family, discipline, and growth. Guided by stoic calm, fueled by curiosity, and committed to rising stronger each day. At Project Party Production, I bring the same commitments from my personal life to the team. Ensuring that everything runs smoothly with a keen eye and attention to detail. Whether it is the photo booth, 360 video, or any of our other attractions, we are here to ensure it is a fun, memorable, and stress-free experience."
     }
