@@ -5,8 +5,7 @@ const AboutUs = () => {
     {
       name: "Sasha R",
       image: "/Sasha1.JPG",
-      quote: "OWNER & PHOTOBOOTH OPERATOR",
-      quote: "'EVERY GUEST GETS TREATED LIKE FAMILY.'",
+      quote: "OWNER & PHOTOBOOTH OPERATOR - EVERY GUEST GETS TREATED LIKE FAMILY.",
       description: "I’m Sasha, and I started Project Party Productions because I noticed something was missing in the world of photo booths. Most of them are fun to look at, but they don’t bring energy or excitement to the party. I wanted to change that. I don’t just operate the booth, I’m part of the entertainment! Every detail is carefully thought out to make sure guests are laughing, having fun, and feeling included. We’re all about giving exceptional value and making sure every event is unforgettable. And we’re fully mobile! Whether it’s an indoor or outdoor wedding, a backyard, a field, the beach, or anywhere there are people ready to have a party, Project Party Productions will be there. I’m bubbly, quirky, and full of energy, and I’m backed by an amazing team that makes every event run smoothly. For us, it’s more than just about photos or 360 videos, it’s about creating an experience that everyone remembers long after the party ends. Because at the end of the day, your celebration deserves more than just a photo booth—it deserves an experience!"
     },
     {
