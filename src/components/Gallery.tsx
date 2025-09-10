@@ -5,14 +5,14 @@ export type MediaItem = {
   id: string | number;
   type: 'image' | 'video';
   src: string;
-  thumb?: string;        // optional thumbnail for videos/images
+  thumb?: string;
   alt?: string;
-  poster?: string;       // video poster
+  poster?: string;
 };
 
 type GalleryProps = {
   items: MediaItem[];
-  columns?: number; // default responsive grid
+  columns?: number;
   title?: string;
 };
 
@@ -72,15 +72,7 @@ const Gallery: React.FC<GalleryProps> = ({ items, columns = 3, title }) => {
           </button>
         ))}
       </div>
-
-      <Lightbox
-        isOpen={open}
-        onClose={close}
-        src={current?.src || ''}
-        alt={current?.alt}
-        type={current?.type || 'image'}
-        poster={current?.poster}
-      />
+      <Lightbox isOpen={open} onClose={close} src={current?.src || ''} alt={current?.alt} type={current?.type || 'image'} poster={current?.poster} />
     </section>
   );
 };
