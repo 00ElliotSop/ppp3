@@ -12,10 +12,10 @@ const Header = () => {
   // Preload critical page images
   useEffect(() => {
     const criticalImages = [
-      '/20250804_204800341.jpg',
-      '/DSC_0161.JPG',
-      '/360.jpg',
-      '/360-1.jpg'
+      '/profile/20250804_204800341.jpg',
+      '/profile/DSC_0161.JPG',
+      '/profile/360.jpg',
+      '/profile/360-1.jpg'
     ];
     criticalImages.forEach(src => {
       const link = document.createElement('link');
@@ -42,9 +42,7 @@ const Header = () => {
 
   // Close dropdown when mobile menu closes
   useEffect(() => {
-    if (!isMenuOpen) {
-      setActiveDropdown(null);
-    }
+    if (!isMenuOpen) setActiveDropdown(null);
   }, [isMenuOpen]);
 
   // Close menus/dropdowns when clicking outside
@@ -78,9 +76,7 @@ const Header = () => {
 
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    if (isMenuOpen) {
-      setActiveDropdown(null);
-    }
+    if (isMenuOpen) setActiveDropdown(null);
   };
 
   return (
@@ -117,12 +113,12 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white px-4 py-4" ref={navRef}>
+      <nav className="bg-white px-4 py-4 overflow-x-hidden" ref={navRef}>
         <div className="max-w-7xl mx-auto flex justify-between items-center px-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/full-logo-black.png"
+              src="/profile/full-logo-black.png"
               alt="Project Party Productions"
               className="h-12 sm:h-16 md:h-[67px] w-auto rounded-full"
               fetchpriority="high"
@@ -150,7 +146,7 @@ const Header = () => {
                 <ChevronDown size={16} />
               </button>
               {activeDropdown === 'photobooths' && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border overflow-hidden">
                   <Link to="/360-videobooth" className="block px-4 py-2 text-gray-700 hover:bg-[#F7E7CE] hover:text-white transition-colors" onClick={() => setActiveDropdown(null)}>
                     360 Videobooth
                   </Link>
@@ -178,7 +174,7 @@ const Header = () => {
                 <ChevronDown size={16} />
               </button>
               {activeDropdown === 'rentals' && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border overflow-hidden">
                   <Link to="/speakers" className="block px-4 py-2 text-gray-700 hover:bg-[#F7E7CE] hover:text-white transition-colors" onClick={() => setActiveDropdown(null)}>
                     Speakers
                   </Link>
@@ -198,7 +194,10 @@ const Header = () => {
               )}
             </div>
 
-            <Link to="/book-now" className="bg-[#B5A99A] text-white px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-black transition-colors font-medium text-center">
+            <Link
+              to="/book-now"
+              className="bg-[#B5A99A] text-red-600 px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-red-700 transition-colors font-medium text-center"
+            >
               BOOK NOW
             </Link>
           </div>
@@ -206,7 +205,10 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={toggleMobileMenu}
-            className="lg:hidden bg-[#B5A99A] text-white px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-black transition-colors font-medium"
+            className="lg:hidden bg-[#B5A99A] text-red-600 px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-red-700 transition-colors font-medium"
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -214,19 +216,19 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t">
+          <div id="mobile-menu" className="lg:hidden mt-4 pb-4 border-t">
             <div className="flex flex-col space-y-4 pt-4">
               <Link to="/" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">HOME</Link>
               <Link to="/backdrops" className="text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">BACKDROPS</Link>
 
               {/* Photobooths Dropdown - Mobile */}
               <div className="relative">
-                <button onClick={() => toggleDropdown('photobooths')} className="flex items-center justify-between w-full text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
+                <button onClick={() => toggleDropdown('photobooths')} className="flex items-center justify-between w-full text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium" aria-expanded={activeDropdown === 'photobooths'} aria-controls="dd-photobooths">
                   <span>PHOTOBOOTHS</span>
                   <ChevronDown size={16} />
                 </button>
                 {activeDropdown === 'photobooths' && (
-                  <div className="mt-2 ml-4 space-y-2">
+                  <div id="dd-photobooths" className="mt-2 ml-4 space-y-2">
                     <Link to="/360-videobooth" className="block text-gray-600 hover:text-[#F7E7CE] transition-colors" onClick={() => setActiveDropdown(null)}>360 Videobooth</Link>
                     <Link to="/mobile-photobooth" className="block text-gray-600 hover:text-[#F7E7CE] transition-colors" onClick={() => setActiveDropdown(null)}>Mobile Photobooth</Link>
                   </div>
@@ -238,12 +240,12 @@ const Header = () => {
 
               {/* Other Rentals Dropdown - Mobile */}
               <div className="relative">
-                <button onClick={() => toggleDropdown('rentals')} className="flex items-center justify-between w-full text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium">
+                <button onClick={() => toggleDropdown('rentals')} className="flex items-center justify-between w-full text-gray-700 hover:text-[#F7E7CE] transition-colors font-medium" aria-expanded={activeDropdown === 'rentals'} aria-controls="dd-rentals">
                   <span>OTHER RENTALS</span>
                   <ChevronDown size={16} />
                 </button>
                 {activeDropdown === 'rentals' && (
-                  <div className="mt-2 ml-4 space-y-2">
+                  <div id="dd-rentals" className="mt-2 ml-4 space-y-2">
                     <Link to="/speakers" className="block text-gray-600 hover:text-[#F7E7CE] transition-colors" onClick={() => setActiveDropdown(null)}>Speakers</Link>
                     <Link to="/stanchions" className="block text-gray-600 hover:text-[#F7E7CE] transition-colors" onClick={() => setActiveDropdown(null)}>Stanchions + Red Carpet</Link>
                     <Link to="/power-station" className="block text-gray-600 hover:text-[#F7E7CE] transition-colors" onClick={() => setActiveDropdown(null)}>Power Station</Link>
@@ -253,7 +255,12 @@ const Header = () => {
                 )}
               </div>
 
-              <Link to="/book-now" className="bg-[#B5A99A] text-white px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-gray-900 transition-colors font-medium text-center">BOOK NOW</Link>
+              <Link
+                to="/book-now"
+                className="bg-[#B5A99A] text-red-600 px-6 py-2 rounded-full hover:bg-[#F7E7CE] hover:text-red-700 transition-colors font-medium text-center"
+              >
+                BOOK NOW
+              </Link>
             </div>
           </div>
         )}
