@@ -125,7 +125,7 @@ const Backdrops = () => {
       name: 'Red carpet going up stairs to Christmas tree', 
       image: '/stairs-christmas.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/stairs-christmas1.jpg', '/stairs-christmas2.jpg']
     },
     
     // 7ft x 7ft Backdrops
@@ -148,7 +148,7 @@ const Backdrops = () => {
       name: 'Purple, blue, white, and pink flower wall', 
       image: '/purple-blue-white-f.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/purple-blue-white-f1.jpg', '/purple-blue-white-f2.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/purple-blue-white-f1.jpg', '/purple-blue-white-f2.jpg']
     },
     { 
       id: 21, 
