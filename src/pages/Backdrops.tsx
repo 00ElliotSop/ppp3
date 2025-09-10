@@ -20,7 +20,7 @@ const Backdrops = () => {
       name: 'White marble', 
       image: '/white-m.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/white-m1.jpg', '/white-m2.jpg']
     },
     { 
       id: 3, 
