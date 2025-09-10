@@ -27,21 +27,21 @@ const Backdrops = () => {
       name: 'Black', 
       image: '/black.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/black1.jpg', '/black2.jpg']
     },
     { 
       id: 4, 
       name: 'Black with PPP logo', 
       image: '/ppp-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/ppp-b1.jpg', '/ppp-b2.jpg', '/ppp-b3.jpg']
     },
     { 
       id: 5, 
       name: 'Pink roses in enchanted forest', 
       image: '/p-e.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/p-e1.jpg', '/p-e2.jpg']
     },
     { 
       id: 6, 
