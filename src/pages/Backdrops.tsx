@@ -141,7 +141,7 @@ const Backdrops = () => {
       name: 'Green leaves heart', 
       image: '/green-heart.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/green-wall-1.jpg', '/green-wall-2.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 20, 
