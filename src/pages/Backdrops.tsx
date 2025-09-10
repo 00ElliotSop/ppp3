@@ -104,7 +104,7 @@ const Backdrops = () => {
       name: 'White and pink flower wall', 
       image: '/white-f-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/white-f-b1.jpg', '/white-f-b2.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 15, 
