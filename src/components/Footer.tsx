@@ -13,18 +13,8 @@ const Footer = () => {
     alert('Thank you for subscribing to our newsletter!');
   };
 
-  // Always jump to the top of the page (no smooth scrolling)
-  const scrollToTop = () => {
-    try {
-      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-    } catch {
-      // Fallback for older browsers
-      window.scrollTo(0, 0);
-    }
-  };
-
   return (
-    <footer className="bg-gray-900 text-white overflow-x-hidden">
+    <footer className="bg-gray-900 text-white">
       {/* Newsletter Section */}
       <div className="bg-[#F7E7CE] text-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
@@ -66,12 +56,7 @@ const Footer = () => {
               Creating unforgettable moments with professional photobooth services and event rentals.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://instagram.com/projectpartyproductions"
-                className="text-gray-300 hover:text-[#F7E7CE] transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://instagram.com/projectpartyproductions" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -81,11 +66,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link to="/" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Home</Link></li>
-              <li><Link to="/about-us" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">About Us</Link></li>
-              <li><Link to="/backdrops" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Backdrops</Link></li>
-              <li><Link to="/360-videobooth" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">360 Videobooth</Link></li>
-              <li><Link to="/mobile-photobooth" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Mobile Photobooth</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Home</Link></li>
+              <li><Link to="/about-us" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">About Us</Link></li>
+              <li><Link to="/backdrops" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Backdrops</Link></li>
+              <li><Link to="/360-photobooth" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">360 Videobooth</Link></li>
+              <li><Link to="/mobile-photobooth" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Mobile Photobooth</Link></li>
             </ul>
           </div>
 
@@ -93,11 +78,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><Link to="/faq" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">FAQ</Link></li>
-              <li><Link to="/gallery" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Gallery</Link></li>
-              <li><Link to="/book-now" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Book Now</Link></li>
-              <li><Link to="/speakers" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Speakers</Link></li>
-              <li><Link to="/props" onClick={scrollToTop} className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Props</Link></li>
+              <li><Link to="/faq" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">FAQ</Link></li>
+              <li><Link to="/gallery" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Gallery</Link></li>
+              <li><Link to="/book-now" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Book Now</Link></li>
+              <li><Link to="/speakers" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Speakers</Link></li>
+              <li><Link to="/props" className="text-gray-300 hover:text-[#F7E7CE] transition-colors">Props</Link></li>
             </ul>
           </div>
 
@@ -126,20 +111,11 @@ const Footer = () => {
       <div className="border-t border-gray-800 py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © 2024 Project Party Productions. Developed and Designed by{' '}
-            <a
-              href="https://elliotsop.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#F7E7CE] transition-colors"
-            >
-              ElliotSop
-            </a>.
+            © 2024 Project Party Productions. Developed and Designed by <a href="https://elliotsop.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">ElliotSop</a>.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/terms-of-service" onClick={scrollToTop} className="text-gray-400 hover:text-[#F7E7CE] text-sm transition-colors">
-              Terms of Service
-            </Link>
+            
+            <Link to="/terms-of-service" className="text-gray-400 hover:text-[#F7E7CE] text-sm transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
