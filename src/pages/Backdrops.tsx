@@ -190,14 +190,14 @@ const Backdrops = () => {
       name: 'Red shimmer wall', 
       image: '/red-shimmers.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/red-shimmers1.jpg', '/red-shimmers2.jpg']
     },
     { 
       id: 27, 
       name: 'White roses flower wall', 
       image: '/white-f-wall.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/white-f-wall1.jpg', '/white-f-wall2.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/white-f-wall1.jpg', '/white-f-wall2.jpg']
     },
     { 
       id: 28, 
