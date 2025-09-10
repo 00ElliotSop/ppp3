@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 const MobilePhotobooth = () => {
   const galleryImages = [
-    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg',
-    '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg',
-    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg'
+    '/m1.jpg', '/m2.jpg', '/m3.jpg', '/m4.jpg', '/m5.jpg',
+    '/m6.jpg', '/m7.jpg', '/m8.jpg', '/m9.jpg', '/m10.jpg',
+    '/m11.jpg', '/m12.jpg', '/m13.jpg', '/m4.jpg', '/m15.jpg', '/m16.jpg', '/m17.jpg', '/m18.jpg', '/m19.jpg',
+    '/m20.jpg', '/m21.jpg', '/m22.jpg', '/m23.jpg', '/m24.jpg',
+    '/m25.jpg', '/m26.jpg', '/m27.jpg', '/m28.jpg', '/m29.jpg', '/m30.jpg'
   ];
 
   return (
