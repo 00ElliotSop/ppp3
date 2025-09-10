@@ -162,7 +162,7 @@ const Backdrops = () => {
       name: 'White, pink, blue, and purple flower wall', 
       image: '/white-pink-blue-flowers.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/white-pink-blue-flowers1.jpg', '/white-pink-blue-flowers2.jpg']
     },
     { 
       id: 23, 
@@ -176,7 +176,7 @@ const Backdrops = () => {
       name: 'Flower wall going down white brick', 
       image: '/hanging-flowers.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/hanging-flowers1.jpg', '/hanging-flowers2.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/hanging-flowers1.jpg', '/hanging-flowers2.jpg']
     },
     { 
       id: 25, 
