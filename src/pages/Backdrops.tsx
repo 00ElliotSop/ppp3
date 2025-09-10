@@ -197,7 +197,7 @@ const Backdrops = () => {
       name: 'White roses flower wall', 
       image: '/white-f-wall.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/white-f-wall1.jpg', '/white-f-wall2.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 28, 
