@@ -83,14 +83,14 @@ const Backdrops = () => {
       name: 'White and pink flower wall', 
       image: '/w-p-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/w-p-b1.jpg', '/w-p-b2.jpg']
     },
     { 
       id: 12, 
       name: 'VIP hollywood red carpet', 
       image: '/vip.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/vip1.jpg', '/vip2.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/vip1.jpg', '/vip2.jpg']
     },
     { 
       id: 13, 
