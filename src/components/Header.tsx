@@ -257,7 +257,7 @@ const Header = () => {
                 {activeDropdown === 'photobooths' && (
                   <div className="mt-2 ml-4 space-y-2">
                     <Link
-                      to="/360-photobooth"
+                      to="/360-videobooth"
                       className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
                       onClick={() => setActiveDropdown(null)}
                     >
