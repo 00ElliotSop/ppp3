@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Lightbox from '../components/Lightbox';
 
 const MobilePhotobooth = () => {
   const galleryImages = [
@@ -11,17 +10,8 @@ const MobilePhotobooth = () => {
     '/m25.jpg', '/m26.jpg', '/m27.jpg', '/m28.jpg', '/m29.jpg', '/m30.jpg'
   ];
 
-  // Lightbox state (images only here; videos supported by Lightbox if added later)
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentSrc, setCurrentSrc] = useState<string>('');
-
-  const openImg = (src: string) => {
-    setCurrentSrc(src);
-    setIsOpen(true);
-  };
-
   return (
-    <div className="pt-24 overflow-x-hidden">
+    <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-screen">
         <link rel="preload" as="image" href="/Mobile-PhotoBooth-Hero.jpg" />
@@ -49,7 +39,7 @@ const MobilePhotobooth = () => {
         </div>
       </section>
 
-      {/* Ultimate Experience Section (kept exactly) */}
+      {/* Ultimate Experience Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -88,27 +78,27 @@ const MobilePhotobooth = () => {
                 </div>
                  <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" className="hover:text-[#F7E7CE] transition-colors">Bright wireless RGB lighting</a></p>
+                  <p className="text-gray-700"><a href="/lighting" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Bright wireless RGB lighting</a></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" className="hover:text-[#F7E7CE] transition-colors">LED signage and LED party lights</a></p>
+                  <p className="text-gray-700"><a href="/lighting" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">LED signage and LED party lights</a></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/props" className="hover:text-[#F7E7CE] transition-colors">Lots of props!</a></p>
+                  <p className="text-gray-700"><a href="/props" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Lots of props!</a></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/stanchions" className="hover:text-[#F7E7CE] transition-colors">Stanchions and red carpet</a></p>
+                  <p className="text-gray-700"><a href="/stanchions" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Stanchions and red carpet</a></p>
                 </div>
                    <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/speakers" className="hover:text-[#F7E7CE] transition-colors">2x Wireless party speakers (200W) that come with 4 wireless mics</a></p>
+                  <p className="text-gray-700">Optional: <a href="/speakers" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">2x Wireless party speakers (200W) that come with 4 wireless mics</a></p>
                 </div>
                    <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/power-station" className="hover:text-[#F7E7CE] transition-colors">Portable 1024wh power station (Ecoflow Delta 3)</a></p>
+                  <p className="text-gray-700">Optional: <a href="/power-station" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Portable 1024wh power station (Ecoflow Delta 3)</a></p>
                 </div>
               </div>
             </div>
@@ -116,47 +106,13 @@ const MobilePhotobooth = () => {
         </div>
       </section>
 
-      {/* NEW: High Quality Prints, Printed Instantly */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">High Quality Prints, Printed Instantly</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Media (mobile first) */}
-            <div className="order-1 md:order-2">
-              <img
-                src="/dnp-ds620a-printer.gif"
-                alt="High quality instant prints"
-                className="w-full rounded-2xl shadow-lg"
-                loading="eager"
-                decoding="sync"
-              />
-            </div>
-            {/* Text */}
-            <div className="order-2 md:order-1">
-              <ul className="list-disc pl-5 space-y-3 text-gray-800">
-                <li>The printer that we use is the <strong>DNP DS620A</strong>, the best and quickest in the market</li>
-                <li>Print in multiple formats (<strong>2x3</strong>, <strong>4x6</strong>, <strong>5x7</strong>, <strong>6x8</strong>, and much more!)</li>
-                <li>Multiple picture finishes (<strong>Glossy</strong>, <strong>semi-glossy</strong>, <strong>matte</strong>, <strong>metallic</strong>, and <strong>pearl</strong>)</li>
-                <li>All pictures come with a protective sleeve</li>
-                <li>Just like our photobooth, our printer can be set up anywhere</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section (kept), now clickable to open Lightbox; no autoplay */}
+      {/* Gallery Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">GALLERY</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {galleryImages.map((image, index) => (
-              <button
-                key={index}
-                className="group cursor-pointer block focus:outline-none focus:ring-2 focus:ring-[#B5A99A] rounded-md"
-                onClick={() => openImg(image)}
-                aria-label={`Open image ${index + 1}`}
-              >
+              <div key={index} className="group cursor-pointer">
                 <img
                   src={image}
                   alt={`Gallery ${index + 1}`}
@@ -164,13 +120,11 @@ const MobilePhotobooth = () => {
                   loading="eager"
                   decoding="sync"
                 />
-              </button>
+              </div>
             ))}
           </div>
         </div>
       </section>
-
-      <Lightbox isOpen={isOpen} onClose={() => setIsOpen(false)} src={currentSrc} type="image" />
     </div>
   );
 };
