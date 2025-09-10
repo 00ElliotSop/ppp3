@@ -204,14 +204,14 @@ const Backdrops = () => {
       name: 'Gold shimmer wall', 
       image: '/gold-wall-7x7.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/gold-wall-7x71.jpg', '/gold-wall-7x72.jpg']
     },
     { 
       id: 29, 
       name: 'Silver shimmer wall', 
       image: '/silver-wall.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/silver-wall1.jpg', '/silver-wall2.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/silver-wall1.jpg', '/silver-wall2.jpg']
     },
     { 
       id: 30, 
