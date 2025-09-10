@@ -55,21 +55,21 @@ const Backdrops = () => {
       name: 'White and pink flowers with green leaves', 
       image: '/w-p-g.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/w-p-g1.jpg', '/w-p-g2.jpg']
     },
     { 
       id: 8, 
       name: 'Flowers around wedding arch', 
       image: '/wedd.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/wedd1.jpg', '/wedd2.jpg', '/wedd3.jpg']
     },
     { 
       id: 9, 
       name: 'Gold shimmer wall', 
       image: '/gold-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/gold-b1.jpg', '/gold-b2.jpg']
     },
     { 
       id: 10, 
