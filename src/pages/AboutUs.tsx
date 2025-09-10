@@ -103,7 +103,7 @@ const AboutUs = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-4xl font-bold text-gray-800 mb-6 text-left">{member.name}</h3>
+                    <h3 className="text-4xl font-bold text-gray-800 mb-2 text-left">{member.name}</h3>
                   <p className="text-[#B5A99A] text-x1 font-semibold mb-6 leading-tight text-left">
                       {member.title}
                     </p>

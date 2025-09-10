@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Phone, Mail, MapPin } from 'lucide-react';
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+  const [openQuestions, setOpenQuestions] = useState<number[]>([]);
 
   const faqs = [
     {
@@ -71,7 +71,11 @@ const FAQ = () => {
   ];
 
   const toggleQuestion = (index: number) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+    setOpenQuestions(prev => 
+      prev.includes(index) 
+        ? prev.filter(q => q !== index)
+        : [...prev, index]
+    );
   };
 
   return (
@@ -106,13 +110,13 @@ const FAQ = () => {
                   className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
                 >
                   <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
-                  {openQuestion === index ? (
+                  {openQuestions.includes(index) ? (
                     <ChevronUp className="text-[#B5A99A]" size={24} />
                   ) : (
                     <ChevronDown className="text-[#B5A99A]" size={24} />
                   )}
                 </button>
-                {openQuestion === index && (
+                {openQuestions.includes(index) && (
                   <div className="px-6 py-4 bg-white">
                     {faq.image && index < 3 && (
                       <img
@@ -156,7 +160,7 @@ const FAQ = () => {
                 <Mail className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600">info@projectpartyproductions.com</p>
+              <p className="text-gray-600 break-all text-sm lg:text-base">info@projectpartyproductions.com</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">

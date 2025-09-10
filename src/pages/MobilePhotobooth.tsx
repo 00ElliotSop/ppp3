@@ -78,28 +78,66 @@ const MobilePhotobooth = () => {
                 </div>
                  <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Bright wireless RGB lighting</a></p>
+                  <p className="text-gray-700"><Link to="/lighting" className="hover:text-[#F7E7CE] transition-colors">Bright wireless RGB lighting</Link></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">LED signage and LED party lights</a></p>
+                  <p className="text-gray-700"><Link to="/lighting" className="hover:text-[#F7E7CE] transition-colors">LED signage and LED party lights</Link></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/props" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Lots of props!</a></p>
+                  <p className="text-gray-700"><Link to="/props" className="hover:text-[#F7E7CE] transition-colors">Lots of props!</Link></p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/stanchions" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Stanchions and red carpet</a></p>
+                  <p className="text-gray-700"><Link to="/stanchions" className="hover:text-[#F7E7CE] transition-colors">Stanchions and red carpet</Link></p>
                 </div>
                    <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/speakers" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">2x Wireless party speakers (200W) that come with 4 wireless mics</a></p>
+                  <p className="text-gray-700">Optional: <Link to="/speakers" className="hover:text-[#F7E7CE] transition-colors">2x Wireless party speakers (200W) that come with 4 wireless mics</Link></p>
                 </div>
                    <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/power-station" target="_blank" rel="noopener noreferrer" className="hover:text-[#F7E7CE] transition-colors">Portable 1024wh power station (Ecoflow Delta 3)</a></p>
+                  <p className="text-gray-700">Optional: <Link to="/power-station" className="hover:text-[#F7E7CE] transition-colors">Portable 1024wh power station (Ecoflow Delta 3)</Link></p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* High Quality Prints Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-4xl font-bold text-gray-800 mb-8">High Quality Prints, Printed Instantly</h2>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">The printer that we use is the DNP DS620A, the best and quickest in the market</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Print in multiple formats (2x3, 4x6, 5x7, 6x8, and much more!)</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Multiple picture finishes (Glossy, semi-glossy, matte, metallic, and pearl)</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">All pictures come with a protective sleeve</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
+                  <p className="text-gray-700">Just like our photobooth, our printer can be set up anywhere</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative order-1 lg:order-2">
+              <div className="w-full h-64 bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center">
+                <p className="text-gray-500">Image Placeholder - High Quality Prints</p>
               </div>
             </div>
           </div>

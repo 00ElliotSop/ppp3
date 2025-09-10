@@ -148,8 +148,14 @@ const Speakers = () => {
 
       {/* Modal */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl max-h-full">
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={closeModal}
+        >
+          <div 
+            className="relative max-w-4xl max-h-full"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={galleryImages[selectedImage]}
               alt={`Speaker System ${selectedImage + 1}`}
