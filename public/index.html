@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Party Productions</title>
+
+    <!-- ✅ Preload critical images for instant loading -->
+    <link rel="preload" as="image" href="/full-logo-black.png">
+    <link rel="preload" as="image" href="/Logo-wide-white-footer.png">
+    <link rel="preload" as="image" href="/main.JPG">
+    <link rel="preload" as="image" href="/Mobile-PhotoBooth-Hero.jpg">
+    <link rel="preload" as="image" href="/360.jpg">
+
+    <!-- Add Tailwind (if using Vite/CRA this may already be injected) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
