@@ -76,7 +76,7 @@ const Backdrops = () => {
       name: 'Rose gold shimmer wall', 
       image: '/rose-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/gold-rose-w1.jpg', '/gold-rose-w2.jpg']
     },
     { 
       id: 11, 
@@ -111,7 +111,7 @@ const Backdrops = () => {
       name: 'Pink roses flower wall', 
       image: '/pink-roses.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/pink-rose2.jpg', '/pink-rose3.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 16, 
@@ -134,7 +134,7 @@ const Backdrops = () => {
       name: 'Green Screen', 
       image: '/green-screen.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/green-screen1.JPG', '/green-screen2.JPG', '/green-screen3.JPG', '/green-screen4.JPG']
+      gallery: ['/green-screen3.JPG', '/green-screen4.JPG']
     },
     { 
       id: 19, 
@@ -169,7 +169,7 @@ const Backdrops = () => {
       name: 'Toronto Skyline', 
       image: '/tdot.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/tdot1.jpg', '/tdot2.jpg']
     },
     { 
       id: 24, 
