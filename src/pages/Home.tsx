@@ -141,15 +141,15 @@ const Home = () => {
   };
 
   return (
-    <div className="pt-24 overflow-x-hidden">
+    <div className="pt-24">
       {/* Hero Section with Carousel */}
       <section className="relative h-screen overflow-hidden">
         {/* Preload critical images */}
-        {heroImages.map((src, i) => (
-          <link key={i} rel="preload" as="image" href={src} fetchpriority="high" />
-        ))}
-        <link rel="preload" as="image" href="/meet-da-team.gif" fetchpriority="high" />
-
+        <link rel="preload" as="image" href={heroImages[0]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[1]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[2]} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImages[3]} fetchpriority="high" />
+        <link rel="preload" as="image" href="/Meetdateam.gif" fetchpriority="high" />
         <div className="relative w-full h-full">
           {heroImages.map((image, index) => (
             <div
