@@ -1,131 +1,74 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Gallery, { MediaItem } from '../components/Gallery';
 
-const MobilePhotobooth = () => {
-  const galleryImages = [
-    '/m1.jpg', '/m2.jpg', '/m3.jpg', '/m4.jpg', '/m5.jpg',
-    '/m6.jpg', '/m7.jpg', '/m8.jpg', '/m9.jpg', '/m10.jpg',
-    '/m11.jpg', '/m12.jpg', '/m13.jpg', '/m14.jpg', '/m15.jpg', '/m16.jpg', '/m17.jpg', '/m18.jpg', '/m19.jpg',
-    '/m20.jpg', '/m21.jpg', '/m22.jpg', '/m23.jpg', '/m24.jpg',
-    '/m25.jpg', '/m26.jpg', '/m27.jpg', '/m28.jpg', '/m29.jpg', '/m30.jpg'
+const MobilePhotobooth: React.FC = () => {
+  // Example gallery items (update to your real media paths in /profile)
+  const galleryItems: MediaItem[] = [
+    { id: 1, type: 'image', src: '/profile/mobile-1.jpg', alt: 'Mobile Photobooth 1' },
+    { id: 2, type: 'image', src: '/profile/mobile-2.jpg', alt: 'Mobile Photobooth 2' },
+    { id: 3, type: 'video', src: '/profile/mobile-demo.mp4', poster: '/profile/mobile-demo-poster.jpg', alt: 'Mobile demo' },
   ];
 
   return (
-    <div className="pt-24">
-      {/* Hero Section */}
-      <section className="relative h-screen">
-        <link rel="preload" as="image" href="/Mobile-PhotoBooth-Hero.jpg" />
-        <img
-          src="/Mobile-PhotoBooth-Hero.jpg"
-          alt="Mobile Photobooth"
-          className="w-full h-full object-cover"
-          loading="eager"
-          decoding="sync"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="max-w-4xl px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">MOBILE PHOTOBOOTH</h1>
-            <p className="text-xl md:text-2xl mb-8">
-              Professional mobile photobooth with instant prints and endless fun
-            </p>
-            <Link
-              to="/book-now"
-              className="bg-[#B5A99A] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F7E7CE] hover:text-black transition-all duration-300 inline-block"
-            >
-              BOOK NOW
-            </Link>
-          </div>
+    <main className="pt-[110px] overflow-x-hidden">
+      {/* HERO */}
+      <section className="w-full bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+          <h1 className="font-extrabold leading-tight"
+              style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3rem)' }}>
+            Ultimate Mobile Photobooth
+          </h1>
+          <p className="mt-4 text-gray-700" style={{ fontSize: 'clamp(1rem, 2.6vw, 1.125rem)' }}>
+            Portable, fast, and built for incredible guest experiences—anywhere.
+          </p>
         </div>
       </section>
 
-      {/* Ultimate Experience Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <link rel="preload" as="image" href="/ultimate-mobile2.gif" />
+      {/* NEW SECTION: High Quality Prints, Printed Instantly */}
+      <section className="w-full bg-white">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            High Quality Prints, Printed Instantly
+          </h2>
+
+          {/* Desktop: text left / media right; Mobile: media first */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Media (mobile first) */}
+            <div className="order-1 md:order-2">
+              {/* Replace with your GIF or image path in /profile */}
               <img
-                src="/ultimate-mobile2.gif"
-                alt="Mobile Photobooth Setup"
-                className="w-full rounded-2xl shadow-lg"
-                loading="eager"
-                decoding="sync"
+                src="/profile/dnp-ds620a-printer.gif"
+                alt="High quality instant prints"
+                className="w-full h-auto rounded-lg shadow"
+                loading="lazy"
+                decoding="async"
               />
             </div>
-            <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-8">The Ultimate Mobile Photo Booth Experience</h2>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Our mobile photobooth is completely different from anything else in the market. We can setup anywhere and print anywhere (indoors or outdoors), because we have access to our own power</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Print in multiple formats (2x3, 4x6, 5x7, 6x8, and much more!) {/* Maybe include picture of different formats */}</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">We use a DSLR camera for our pictures for the best and highest quality</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">The printer that we use is the DNP DS620A, the best and quickest in the market</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Customizable overlays and song of choice (we work with you to ensure that the overlay we create, fits your theme and aesthetics)</p>
-                </div>
-                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" className="hover:text-[#F7E7CE] transition-colors">Bright wireless RGB lighting</a></p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/lighting" className="hover:text-[#F7E7CE] transition-colors">LED signage and LED party lights</a></p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/props" className="hover:text-[#F7E7CE] transition-colors">Lots of props!</a></p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700"><a href="/stanchions" className="hover:text-[#F7E7CE] transition-colors">Stanchions and red carpet</a></p>
-                </div>
-                   <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/speakers" className="hover:text-[#F7E7CE] transition-colors">2x Wireless party speakers (200W) that come with 4 wireless mics</a></p>
-                </div>
-                   <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
-                  <p className="text-gray-700">Optional: <a href="/power-station" className="hover:text-[#F7E7CE] transition-colors">Portable 1024wh power station (Ecoflow Delta 3)</a></p>
-                </div>
-              </div>
+
+            {/* Text */}
+            <div className="order-2 md:order-1">
+              <p className="text-gray-700 mb-4">
+                We use professional-grade printers to deliver studio-quality prints in seconds.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 text-gray-800">
+                <li>The printer that we use is the <strong>DNP DS620A</strong>, the best and quickest in the market</li>
+                <li>Print in multiple formats (<strong>2x3</strong>, <strong>4x6</strong>, <strong>5x7</strong>, <strong>6x8</strong>, and much more!)</li>
+                <li>Multiple picture finishes (<strong>Glossy</strong>, <strong>semi-glossy</strong>, <strong>matte</strong>, <strong>metallic</strong>, and <strong>pearl</strong>)</li>
+                <li>All pictures come with a protective sleeve</li>
+                <li>Just like our photobooth, our printer can be set up anywhere</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">GALLERY</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="group cursor-pointer">
-                <img
-                  src={image}
-                  alt={`Gallery ${index + 1}`}
-                  className="w-full h-48 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105"
-                  loading="eager"
-                  decoding="sync"
-                />
-              </div>
-            ))}
-          </div>
+      {/* GALLERY (mixed media; click to open, no autoplay) */}
+      <section className="w-full bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+          <Gallery items={galleryItems} title="Mobile Photobooth Gallery" />
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
