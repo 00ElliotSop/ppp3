@@ -111,7 +111,7 @@ const Backdrops = () => {
       name: 'Pink roses flower wall', 
       image: '/pink-roses.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/pink-rose2.jpg', '/pink-rose3.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/pink-rose2.jpg', '/pink-rose3.jpg']
     },
     { 
       id: 16, 
@@ -225,7 +225,7 @@ const Backdrops = () => {
       name: 'Gold lights around wood boards', 
       image: '/gold-over-wood.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/gold-over-wood1.jpg', '/gold-over-wood2.jpg']
     }
   ];
 
