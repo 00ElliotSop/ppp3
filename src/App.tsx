@@ -28,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/backdrops" element={<Backdrops />} />
-            <Route path="/360-photobooth" element={<Photobooth360 />} />
+            <Route path="/360-videobooth" element={<Photobooth360 />} />
             <Route path="/mobile-photobooth" element={<MobilePhotobooth />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/faq" element={<FAQ />} />
