@@ -8,7 +8,7 @@ const Home = () => {
 
   const heroImages = [
     '/main.JPG',
-    '/group-girls.jpg',
+    '/groupgirls.jpg',
     '/20250804_204445724.jpg'
   ];
 
