@@ -183,7 +183,7 @@ const Backdrops = () => {
       name: 'Gold shimmers going down', 
       image: '/gold-hanging.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/gold-hanging1.jpg', '/gold-hanging2.jpg']
     },
     { 
       id: 26, 
