@@ -218,7 +218,7 @@ const Backdrops = () => {
       name: 'Ornaments from tree and wood', 
       image: '/ornaments.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/ornaments1.jpg', '/ornaments2.jpg']
     },
     { 
       id: 31, 
