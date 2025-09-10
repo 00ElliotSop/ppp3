@@ -90,21 +90,21 @@ const Backdrops = () => {
       name: 'VIP hollywood red carpet', 
       image: '/vip.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/vip1.jpg', '/vip2.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 13, 
       name: 'Red roses flowerwall', 
       image: '/roses-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/roses-b1.jpg', '/roses-b2.jpg']
     },
     { 
       id: 14, 
       name: 'White and pink flower wall', 
       image: '/white-f-b.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/white-f-b1.jpg', '/white-f-b2.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/white-f-b1.jpg', '/white-f-b2.jpg']
     },
     { 
       id: 15, 
