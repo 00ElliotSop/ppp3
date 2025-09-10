@@ -143,7 +143,7 @@ const Header = () => {
               {activeDropdown === 'photobooths' && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border">
                   <Link
-                    to="/360-photobooth"
+                    to="/360-videobooth"
                     className="block px-4 py-2 text-gray-700 hover:bg-[#F7E7CE] hover:text-white transition-colors"
                     onClick={() => setActiveDropdown(null)}
                   >
@@ -257,7 +257,7 @@ const Header = () => {
                 {activeDropdown === 'photobooths' && (
                   <div className="mt-2 ml-4 space-y-2">
                     <Link
-                      to="/360-photobooth"
+                      to="/360-videobooth"
                       className="block text-gray-600 hover:text-[#F7E7CE] transition-colors"
                       onClick={() => setActiveDropdown(null)}
                     >
