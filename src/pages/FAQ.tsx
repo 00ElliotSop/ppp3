@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Phone, Mail, MapPin } from 'lucide-react';
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+  // Allow multiple open items (object map rather than single index)
+  const [openMap, setOpenMap] = useState<Record<number, boolean>>({});
 
   const faqs = [
     {
@@ -70,12 +71,12 @@ const FAQ = () => {
     }
   ];
 
-  const toggleQuestion = (index: number) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+  const toggle = (index: number) => {
+    setOpenMap((prev) => ({ ...prev, [index]: !prev[index] }));
   };
 
   return (
-    <div className="pt-24">
+    <div className="pt-24 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-96">
         <link rel="preload" as="image" href="/360.jpg" />
@@ -102,17 +103,18 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <div key={index} className="border border-gray-200 rounded-2xl overflow-hidden">
                 <button
-                  onClick={() => toggleQuestion(index)}
+                  onClick={() => toggle(index)}
                   className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+                  aria-expanded={!!openMap[index]}
                 >
                   <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
-                  {openQuestion === index ? (
+                  {openMap[index] ? (
                     <ChevronUp className="text-[#B5A99A]" size={24} />
                   ) : (
                     <ChevronDown className="text-[#B5A99A]" size={24} />
                   )}
                 </button>
-                {openQuestion === index && (
+                {openMap[index] && (
                   <div className="px-6 py-4 bg-white">
                     {faq.image && index < 3 && (
                       <img
@@ -123,7 +125,7 @@ const FAQ = () => {
                         decoding="sync"
                       />
                     )}
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-600 leading-relaxed break-words">{faq.answer}</p>
                   </div>
                 )}
               </div>
@@ -156,7 +158,7 @@ const FAQ = () => {
                 <Mail className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600">info@projectpartyproductions.com</p>
+              <p className="text-gray-600 break-all">info@projectpartyproductions.com</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
