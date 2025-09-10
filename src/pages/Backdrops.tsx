@@ -118,7 +118,7 @@ const Backdrops = () => {
       name: 'Presents in front of fireplace and Christmas tree', 
       image: '/christmas.jpg', 
       category: '8ft x 8ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/christmas1.jpg', '/christmas2.jpg']
     },
     { 
       id: 17, 
