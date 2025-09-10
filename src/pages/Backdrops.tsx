@@ -211,7 +211,7 @@ const Backdrops = () => {
       name: 'Silver shimmer wall', 
       image: '/silver-wall.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/silver-wall1.jpg', '/silver-wall2.jpg', '/360.jpg', '/360-1.jpg']
     },
     { 
       id: 30, 
