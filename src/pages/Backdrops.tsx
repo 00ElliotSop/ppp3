@@ -141,14 +141,14 @@ const Backdrops = () => {
       name: 'Green leaves heart', 
       image: '/green-heart.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/green-wall-1.jpg', '/green-wall-2.jpg', '/360.jpg', '/360-1.jpg']
+      gallery: ['/green-wall-3.jpg', '/green-wall-2.jpg', '/green-wall-1.jpg']
     },
     { 
       id: 20, 
       name: 'Purple, blue, white, and pink flower wall', 
       image: '/purple-blue-white-f.jpg', 
       category: '7ft x 7ft',
-      gallery: ['/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg']
+      gallery: ['/purple-blue-white-f1.jpg', '/purple-blue-white-f2.jpg', '/360-1.jpg', '/360.jpg']
     },
     { 
       id: 21, 
