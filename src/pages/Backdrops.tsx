@@ -32,7 +32,7 @@ const Backdrops = () => {
     { 
       id: 4, 
       name: 'Black with PPP logo', 
-      image: '/ppp-b.jpg', 
+      image: '/pppb.jpg', 
       category: '8ft x 8ft',
       gallery: ['/ppp-b1.jpg', '/ppp-b2.jpg', '/ppp-b3.jpg']
     },
