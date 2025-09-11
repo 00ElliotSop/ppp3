@@ -6,7 +6,7 @@ const Stanchions = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/stanz1.gif', '/stanz2.gif', '/stanz3.gif', '/stanz4.jpg', '/stanz5.jpg', '/stanz6.heif'
+    '/stanz1.gif', '/stanz2.gif', '/stanz3.gif', '/stanz4.jpg', '/stanz5.jpg', '/stanz6.jpg'
   ];
 
   const openModal = (index: number) => {
