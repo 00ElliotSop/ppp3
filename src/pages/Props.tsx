@@ -6,7 +6,7 @@ const Props = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg'
+    '/propz1.gif', '/propz2.jpg', '/propz3.jpg'
   ];
 
   const openModal = (index: number) => {
@@ -33,9 +33,9 @@ const Props = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/360.jpg" />
+        <link rel="preload" as="image" href="/propz.jpg" />
         <img
-          src="/360.jpg"
+          src="/propz.jpg"
           alt="Fun Props"
           className="w-full h-full object-cover"
           loading="eager"
