@@ -153,7 +153,7 @@ const Backdrops = () => {
     { 
       id: 21, 
       name: 'Blue and white flower wall', 
-      image: '/blue-flowers.jpg', 
+      image: '/bluexflowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/blue-flowers1.jpg', '/blue-flowers2.jpg']
     },
