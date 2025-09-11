@@ -33,9 +33,9 @@ const Speakers = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/speakerz.jpg" />
+        <link rel="preload" as="image" href="/spkz.jpg" />
         <img
-          src="/speakerz.jpg"
+          src="/spkz.jpg"
           alt="Professional Speakers"
           className="w-full h-full object-cover"
           loading="eager"
