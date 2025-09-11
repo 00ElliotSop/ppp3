@@ -6,7 +6,7 @@ const PowerStation = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg', '/360.jpg', '/360-1.jpg'
+    '/ecoflow1.png', '/ecoflow2.png', '/ecoflow3.png', '/ecoflow4.png', '/ecoflow5.png', '/ecoflow6.png'
   ];
 
   const openModal = (index: number) => {
@@ -33,9 +33,9 @@ const PowerStation = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-96">
-        <link rel="preload" as="image" href="/360.jpg" />
+        <link rel="preload" as="image" href="/ecoflow.png" />
         <img
-          src="/360.jpg"
+          src="/ecoflow.png"
           alt="Power Station"
           className="w-full h-full object-cover"
           loading="eager"
