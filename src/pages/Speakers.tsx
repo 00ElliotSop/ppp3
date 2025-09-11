@@ -6,7 +6,7 @@ const Speakers = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/speakz3.gif', '/speakz2.gif', '/speakz1.gif', '/speakerz4.png', '/3speakz5.JPG', '/speakz6.jpg'
+    '/speak1.gif', '/speak2.gif', '/speak3.gif', '/speakerz4.png', '/speak5.jpg', '/speakz6.jpg'
   ];
 
   const openModal = (index: number) => {
@@ -35,7 +35,7 @@ const Speakers = () => {
       <section className="relative h-96">
         <link rel="preload" as="image" href="/speakerz.jpg" />
         <img
-          src="/360.jpg"
+          src="/speakerz.jpg"
           alt="Professional Speakers"
           className="w-full h-full object-cover"
           loading="eager"
