@@ -123,7 +123,7 @@ const Backdrops = () => {
     { 
       id: 17, 
       name: 'Red carpet going up stairs to Christmas tree', 
-      image: '/stairs-christmas.jpg', 
+      image: '/stairsxchristmas.jpg', 
       category: '8ft x 8ft',
       gallery: ['/stairs-christmas1.jpg', '/stairs-christmas2.jpg']
     },
@@ -132,21 +132,21 @@ const Backdrops = () => {
     { 
       id: 18, 
       name: 'Green Screen', 
-      image: '/green-screen.jpg', 
+      image: '/greenxscreen.jpg', 
       category: '7ft x 7ft',
       gallery: ['/green-screen3.JPG', '/green-screen4.JPG']
     },
     { 
       id: 19, 
       name: 'Green leaves heart', 
-      image: '/green-heart.jpg', 
+      image: '/greenxheart.jpg', 
       category: '7ft x 7ft',
       gallery: ['/green-wall-3.jpg', '/green-wall-2.jpg', '/green-wall-1.jpg']
     },
     { 
       id: 20, 
       name: 'Purple, blue, white, and pink flower wall', 
-      image: '/purple-blue-white-f.jpg', 
+      image: '/purplexbluexwhitexf.jpg', 
       category: '7ft x 7ft',
       gallery: ['/purple-blue-white-f1.jpg', '/purple-blue-white-f2.jpg']
     },
@@ -174,7 +174,7 @@ const Backdrops = () => {
     { 
       id: 24, 
       name: 'Flower wall going down white brick', 
-      image: '/hanging-flowers.jpg', 
+      image: '/hangingxflowers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/hanging-flowers1.jpg', '/hanging-flowers2.jpg']
     },
