@@ -202,14 +202,14 @@ const Backdrops = () => {
     { 
       id: 28, 
       name: 'Gold shimmer wall', 
-      image: '/gold-wall-7x7.jpg', 
+      image: '/goldxshimmers.jpg', 
       category: '7ft x 7ft',
       gallery: ['/gold-wall-7x71.jpg', '/gold-wall-7x72.jpg']
     },
     { 
       id: 29, 
       name: 'Silver shimmer wall', 
-      image: '/silver-wall.jpg', 
+      image: '/silverxwall.jpg', 
       category: '7ft x 7ft',
       gallery: ['/silver-wall1.jpg', '/silver-wall2.jpg']
     },
@@ -223,7 +223,7 @@ const Backdrops = () => {
     { 
       id: 31, 
       name: 'Gold lights around wood boards', 
-      image: '/gold-over-wood.jpg', 
+      image: '/goldxxwood.jpg', 
       category: '7ft x 7ft',
       gallery: ['/gold-over-wood1.jpg', '/gold-over-wood2.jpg']
     }
