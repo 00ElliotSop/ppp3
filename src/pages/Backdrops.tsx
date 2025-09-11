@@ -67,7 +67,7 @@ const Backdrops = () => {
     { 
       id: 9, 
       name: 'Gold shimmer wall', 
-      image: '/gold-b.jpg', 
+      image: '/goldb.jpg', 
       category: '8ft x 8ft',
       gallery: ['/gold-b1.jpg', '/gold-b2.jpg']
     },
