@@ -6,7 +6,7 @@ const Speakers = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/speak1.gif', '/speak2.gif', '/speak3.gif', '/speakerz4.png', '/speak5.jpg', '/speakz6.jpg'
+    '/speak1.gif', '/speak2.gif', '/speak3.gif', '/speakz4.png', '/speak5.jpg', '/speakz6.jpg'
   ];
 
   const openModal = (index: number) => {
