@@ -104,16 +104,7 @@ const MobilePhotobooth = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <link rel="preload" as="image" href="/Hiiighqualtiy.gif" />
-              <img
-                src="/Hiiighqualtiy.gif"
-                alt="Mobile Photobooth Setup"
-                className="w-full rounded-2xl shadow-lg"
-                loading="eager"
-                decoding="sync"
-              />
-            </div>
+           
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-8">High Quality Prints, Printed Instantly</h2>
               <div className="space-y-4">
@@ -137,7 +128,16 @@ const MobilePhotobooth = () => {
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
                   <p className="text-gray-700">Just like our photobooth, our printer can be set up anywhere</p>
                 </div>
-
+ <div className="relative">
+              <link rel="preload" as="image" href="/Hiiighqualtiy.gif" />
+              <img
+                src="/Hiiighqualtiy.gif"
+                alt="Mobile Photobooth Setup"
+                className="w-full rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="sync"
+              />
+            </div>
               </div>
             </div>
           </div>
