@@ -109,30 +109,11 @@ const Lighting = () => {
         </div>
       </section>
 
+
+
+      
       {/* Gallery Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Lighting Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
-              <div 
-                key={index} 
-                className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
-                onClick={() => openModal(index)}
-              >
-                <img
-                  src={image}
-                  alt={`Lighting Setup ${index + 1}`}
-                  className="w-full h-64 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110"
-                 loading="eager"
-                 decoding="sync"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-2xl" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Modal */}
       {selectedImage !== null && (
