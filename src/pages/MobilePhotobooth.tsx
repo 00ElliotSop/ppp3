@@ -6,8 +6,8 @@ const MobilePhotobooth = () => {
     '/mpg1.jpg', '/mpg2.jpg', '/mpg3.jpg', '/m5.jpg',
     '/m6.jpg', '/m7.jpg', '/m8.jpg', '/m9.jpg', '/mpg10.jpg',
     '/mpg11.jpg', '/mpg12.jpg', '/mpg13.jpg', '/mpg14.jpg', '/mpg15.jpg', '/mpg16.jpg', '/mpg17.jpg', '/mpg18.jpg', '/mpg19.jpg',
-    '/mpg20.jpg', '/mpg21.jpg', '/mpg22.jpg', '/mpg23.jpg', '/mpg24.jpg',
-    '/mpg25.jpg', '/mpg26.jpg', '/mpg27.jpg', '/mpg28.jpg', '/mpg29.jpg', '/m30.jpg'
+    '/mpg20.jpg', '/mpg21.jpg', '/mpg22.jpg', '/mpg23.jpg', 
+    '/mpg25.jpg', '/mpg26.jpg', '/mpg27.jpg', '/mpg28.jpg', '/mpg29.jpg', '/mpg24.jpg', '/m30.jpg'
   ];
 
   return (
