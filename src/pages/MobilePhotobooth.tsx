@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const MobilePhotobooth = () => {
   const galleryImages = [
-    '/mpg1.jpg', '/mpg2.jpg', '/mpg3.jpg', '/mpg4.jpg', '/m5.jpg',
-    '/m6.jpg', '/m7.jpg', '/m8.jpg', '/m9.jpg', '/m10.jpg',
-    '/m11.jpg', '/m12.jpg', '/m13.jpg', '/m14.jpg', '/m15.jpg', '/m16.jpg', '/m17.jpg', '/m18.jpg', '/m19.jpg',
-    '/m20.jpg', '/m21.jpg', '/m22.jpg', '/m23.jpg', '/m24.jpg',
-    '/m25.jpg', '/m26.jpg', '/m27.jpg', '/m28.jpg', '/m29.jpg', '/m30.jpg'
+    '/mpg1.jpg', '/mpg2.jpg', '/mpg3.jpg', '/m5.jpg',
+    '/m6.jpg', '/m7.jpg', '/m8.jpg', '/m9.jpg', '/mpg10.jpg',
+    '/mpg11.jpg', '/mpg12.jpg', '/mpg13.jpg', '/mpg14.jpg', '/mpg15.jpg', '/mpg16.jpg', '/mpg17.jpg', '/mpg18.jpg', '/mpg19.jpg',
+    '/mpg20.jpg', '/mpg21.jpg', '/mpg22.jpg', '/mpg23.jpg', '/mpg24.jpg',
+    '/mpg25.jpg', '/mpg26.jpg', '/mpg27.jpg', '/mpg28.jpg', '/mpg29.jpg', '/m30.jpg'
   ];
 
   return (
