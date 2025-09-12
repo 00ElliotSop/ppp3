@@ -130,7 +130,9 @@ const MobilePhotobooth = () => {
                 </div>
 
             </div>
-               <div className="relative">
+     
+              </div>
+                      <div className="relative">
               <link rel="preload" as="image" href="/Hiiighqualtiy.gif" />
               <img
                 src="/Hiiighqualtiy.gif"
@@ -139,7 +141,6 @@ const MobilePhotobooth = () => {
                 loading="eager"
                 decoding="sync"
               />
-              </div>
             </div>
           </div>
         </div>
