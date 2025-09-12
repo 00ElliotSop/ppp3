@@ -14,9 +14,9 @@ const MobilePhotobooth = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <link rel="preload" as="image" href="/Mobile-PhotoBooth-Hero.jpg" />
+        <link rel="preload" as="image" href="/mpbhero.jpg" />
         <img
-          src="/MobilePhotoBoothHero.jpg"
+          src="/mpbhero.jpg"
           alt="Mobile Photobooth"
           className="w-full h-full object-cover"
           loading="eager"
