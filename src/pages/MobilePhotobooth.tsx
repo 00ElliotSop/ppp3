@@ -128,7 +128,9 @@ const MobilePhotobooth = () => {
                   <div className="w-2 h-2 bg-[#F7E7CE] rounded-full mt-2"></div>
                   <p className="text-gray-700">Just like our photobooth, our printer can be set up anywhere</p>
                 </div>
- <div className="relative">
+
+            </div>
+               <div className="relative">
               <link rel="preload" as="image" href="/Hiiighqualtiy.gif" />
               <img
                 src="/Hiiighqualtiy.gif"
@@ -137,7 +139,6 @@ const MobilePhotobooth = () => {
                 loading="eager"
                 decoding="sync"
               />
-            </div>
               </div>
             </div>
           </div>
