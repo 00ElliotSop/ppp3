@@ -336,65 +336,113 @@ const Home = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="font-bold text-gray-800 mb-8 px-1" style={{ 
-                fontSize: 'clamp(1.4rem, 4.5vw, 2.4rem)',
+              <h3 className="font-bold text-gray-800 mb-8 px-1 text-center" style={{ 
+                fontSize: 'clamp(0.87rem, 2.8vw, 1.49rem)',
                 lineHeight: '1.2'
               }}>WE OFFER A VAST RANGE OF CUSTOMIZABLE SERVICES</h3>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>WEDDINGS</h4>
-                    <p className="text-gray-600" style={{ 
-                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Create magical moments for you and your guests.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>CORPORATE EVENTS</h4>
-                    <p className="text-gray-600" style={{ 
-                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Add fun and engagement to your brand activations.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/weddingxcamera.png" 
+                        alt="Weddings" 
+                        className="w-12 h-12 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                        fontSize: 'clamp(0.91rem, 2.66vw, 1.16rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>WEDDINGS</h4>
+                      <p className="text-gray-600" style={{ 
+                        fontSize: 'clamp(0.75rem, 1.99vw, 0.91rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>Create magical moments for you and your guests.</p>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>PRIVATE PARTIES</h4>
-                    <p className="text-gray-600" style={{ 
-                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Make birthday parties, baby showers, and anniversaries unforgettable.</p>
+                <div className="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/CorporatexEvents.png" 
+                        alt="Corporate Events" 
+                        className="w-12 h-12 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                        fontSize: 'clamp(0.91rem, 2.66vw, 1.16rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>CORPORATE EVENTS</h4>
+                      <p className="text-gray-600" style={{ 
+                        fontSize: 'clamp(0.75rem, 1.99vw, 0.91rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>Add fun and engagement to your brand activations.</p>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#F7E7CE] p-3 rounded-lg flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#B5A99A] rounded"></div>
+                <div className="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/PrivatexParties.png" 
+                        alt="Private Parties" 
+                        className="w-12 h-12 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                        fontSize: 'clamp(0.91rem, 2.66vw, 1.16rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>PRIVATE PARTIES</h4>
+                      <p className="text-gray-600" style={{ 
+                        fontSize: 'clamp(0.75rem, 1.99vw, 0.91rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>Make birthday parties, baby showers, and anniversaries unforgettable.</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2" style={{ 
-                      fontSize: 'clamp(1.1rem, 3.2vw, 1.4rem)'
-                    }}>CUSTOM EXPERIENCES</h4>
-                    <p className="text-gray-600" style={{ 
-                      fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)'
-                    }}>Tailored to your event theme, from backdrops to props.</p>
+                </div>
+                
+                <div className="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/CustomxExperiences.png" 
+                        alt="Custom Experiences" 
+                        className="w-12 h-12 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 mb-2" style={{ 
+                        fontSize: 'clamp(0.91rem, 2.66vw, 1.16rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>CUSTOM EXPERIENCES</h4>
+                      <p className="text-gray-600" style={{ 
+                        fontSize: 'clamp(0.75rem, 1.99vw, 0.91rem)',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word'
+                      }}>Tailored to your event theme, from backdrops to props.</p>
+                    </div>
                   </div>
                 </div>
               </div>
