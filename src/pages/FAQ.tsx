@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Phone, Mail, MapPin } from 'lucide-react';
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+  const [openQuestions, setOpenQuestions] = useState<Set<number>>(new Set());
 
   const faqs = [
     {
@@ -71,7 +71,15 @@ const FAQ = () => {
   ];
 
   const toggleQuestion = (index: number) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+    setOpenQuestions(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -106,13 +114,13 @@ const FAQ = () => {
                   className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
                 >
                   <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
-                  {openQuestion === index ? (
+                  {openQuestions.has(index) ? (
                     <ChevronUp className="text-[#B5A99A]" size={24} />
                   ) : (
                     <ChevronDown className="text-[#B5A99A]" size={24} />
                   )}
                 </button>
-                {openQuestion === index && (
+                {openQuestions.has(index) && (
                   <div className="px-6 py-4 bg-white">
                     {faq.image && index < 3 && (
                       <img
@@ -136,36 +144,38 @@ const FAQ = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">How to Get in Touch with Us</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12">
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Address</h3>
-              <p className="text-gray-600">Toronto, ON<br />Canada</p>
+              <p className="text-gray-600 text-sm">Toronto, ON<br />Canada</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
-              <p className="text-gray-600">647-957-2057</p>
+              <p className="text-gray-600 text-sm">647-957-2057</p>
             </div>
-            <div className="text-center">
+            <div className="text-center lg:transform lg:-translate-x-[16%]">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="text-gray-800" size={24} />
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600">info@projectpartyproductions.com</p>
+              <p className="text-gray-600 text-sm lg:transform lg:-translate-x-[8%]">info@projectpartyproductions.com</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F7E7CE] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="text-gray-800 font-bold text-lg">G</div>
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">Google Business</h3>
-              <a href="https://share.google/VArZF5bOJjrN8uNCH" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors">
-                View Our Reviews
-              </a>
+              <div className="mt-4">
+                <a href="https://share.google/VArZF5bOJjrN8uNCH" className="text-[#B5A99A] hover:text-[#F7E7CE] transition-colors text-sm">
+                  View Our Reviews
+                </a>
+              </div>
             </div>
           </div>
         </div>
