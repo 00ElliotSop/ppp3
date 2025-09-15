@@ -110,7 +110,7 @@ Event Details Received:
 - Venue: ${venue || 'Not specified'}
 
 If you have any immediate questions, please don't hesitate to contact us:
-Phone: 416-616-1121
+Phone: 647-957-2057
 Email: info@projectpartyproductions.com
 
 We look forward to making your event unforgettable!
@@ -132,6 +132,128 @@ Project Party Productions Team
     res.status(500).json({
       success: false,
       message: 'There was an error submitting your inquiry. Please try again or contact us directly.'
+    });
+  }
+});
+
+// Newsletter subscription endpoint
+app.post('/api/newsletter-subscribe', async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    // Validate email
+    if (!email || !email.includes('@')) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid email address'
+      });
+    }
+
+    // Email content for confirmation
+    const emailContent = `
+Thank you for subscribing to Project Party Productions Newsletter!
+
+We're excited to have you join our community! You'll now receive:
+
+• Latest news and updates about our services
+• Special offers and promotions
+• Event inspiration and tips
+• Behind-the-scenes content from our team
+
+Stay tuned for amazing content coming your way!
+
+Best regards,
+The Project Party Productions Team
+
+---
+If you no longer wish to receive these emails, please contact us at info@projectpartyproductions.com
+    `;
+
+    // Email options for subscriber
+    const mailOptions = {
+      from: process.env.EMAIL_FROM,
+      to: email,
+      subject: 'Welcome to Project Party Productions Newsletter!',
+      text: emailContent
+    };
+
+    // Send confirmation email
+    await transporter.sendMail(mailOptions);
+
+    // Optional: Send notification to admin about new subscriber
+    const adminNotification = {
+      from: process.env.EMAIL_FROM,
+      to: process.env.EMAIL_TO,
+      subject: 'New Newsletter Subscription',
+      text: `New newsletter subscription from: ${email}`
+    };
+
+    await transporter.sendMail(adminNotification);
+
+    res.json({
+      success: true,
+      message: 'Successfully subscribed to newsletter!'
+    });
+
+  } catch (error) {
+    console.error('Error processing newsletter subscription:', error);
+    res.status(500).json({
+      success: false,
+      message: 'There was an error subscribing to our newsletter. Please try again.'
+    });
+  }
+});
+
+// Password reset code endpoint
+app.post('/api/send-reset-code', async (req, res) => {
+  try {
+    const { email, code } = req.body;
+
+    // Validate email domain
+    if (!email.endsWith('@projectpartyproductions.com')) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid email domain'
+      });
+    }
+
+    // Email content
+    const emailContent = `
+Password Reset Request - Project Party Productions Admin
+
+You have requested to reset your admin password.
+
+Your verification code is: ${code}
+
+This code will expire in 10 minutes.
+
+If you did not request this password reset, please ignore this email.
+
+---
+Project Party Productions Admin System
+    `;
+
+    // Email options
+    const mailOptions = {
+      from: process.env.EMAIL_FROM,
+      to: email,
+      subject: 'Admin Password Reset - Verification Code',
+      text: emailContent
+    };
+
+    // Send email
+    await transporter.sendMail(mailOptions);
+
+    res.json({
+      success: true,
+      message: 'Verification code sent successfully'
+    });
+
+  } catch (error) {
+    console.error('Error sending reset code:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to send verification code'
     });
   }
 });
