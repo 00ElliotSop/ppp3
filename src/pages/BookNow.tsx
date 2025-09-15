@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
 
 const BookNow = () => {
+  const [availability, setAvailability] = useState({
+    unavailableDates: [] as string[],
+    message: 'We are currently booking events! Contact us to check availability for your date.'
+  });
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,11 +16,54 @@ const BookNow = () => {
     guestCount: '',
     venue: '',
     message: '',
-    agreeToTexts: false
+    agreeToTermsAndTexts: false
   });
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupType, setPopupType] = useState<'success' | 'error'>('success');
+  const [popupMessage, setPopupMessage] = useState('');
+  const [showUnavailableDatePopup, setShowUnavailableDatePopup] = useState(false);
+
+  // Load availability data on component mount
+  useEffect(() => {
+    const savedAvailability = localStorage.getItem('siteAvailability');
+    if (savedAvailability) {
+      setAvailability(JSON.parse(savedAvailability));
+    }
+  }, []);
+
+  // Check if a date is unavailable
+  const isDateUnavailable = (date: string) => {
+    return availability.unavailableDates.includes(date);
+  };
+
+  // Get the minimum date (today)
+  const getMinDate = () => {
+    return new Date().toISOString().split('T')[0];
+  };
+
+  const showSuccessPopup = () => {
+    setPopupType('success');
+    setPopupMessage('Your booking inquiry has been received! We will get back to you within 24 hours.');
+    setShowPopup(true);
+  };
+
+  const showErrorPopup = (message: string) => {
+    setPopupType('error');
+    setPopupMessage(message);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
+  const closeUnavailableDatePopup = () => {
+    setShowUnavailableDatePopup(false);
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
+    
     setFormData(prev => ({
       ...prev,
       [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
@@ -24,12 +72,25 @@ const BookNow = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Check if user agreed to terms and texts
+    if (!formData.agreeToTermsAndTexts) {
+      alert('Please agree to the Terms of Service and text message consent to continue.');
+      return;
+    }
+    
+    // Check if selected date is unavailable
+    if (isDateUnavailable(formData.eventDate)) {
+      setShowUnavailableDatePopup(true);
+      return;
+    }
+    
     submitBookingForm();
   };
 
   const submitBookingForm = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/book-now', {
+      const response = await fetch('/api/book-now', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,10 +98,15 @@ const BookNow = () => {
         body: JSON.stringify(formData),
       });
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const result = await response.json();
 
       if (result.success) {
-        alert(result.message);
+        // Show success popup
+        showSuccessPopup();
         // Reset form
         setFormData({
           name: '',
@@ -51,43 +117,76 @@ const BookNow = () => {
           guestCount: '',
           venue: '',
           message: '',
-          agreeToTexts: false
+          agreeToTermsAndTexts: false
         });
       } else {
-        alert(result.message || 'There was an error submitting your inquiry. Please try again.');
+        showErrorPopup(result.message || 'There was an error submitting your inquiry. Please try again.');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      // Fallback: create mailto link if backend is not available
-      const subject = encodeURIComponent(`Booking Inquiry - ${formData.name} (${formData.eventDate})`);
-      const body = encodeURIComponent(`
-New Booking Inquiry - Project Party Productions
-
-CONTACT INFORMATION:
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-
-EVENT DETAILS:
-Event Date: ${formData.eventDate}
-Event Type: ${formData.eventType}
-Expected Guest Count: ${formData.guestCount || 'Not specified'}
-Venue/Location: ${formData.venue || 'Not specified'}
-
-ADDITIONAL DETAILS:
-${formData.message || 'No additional details provided'}
-
-TEXT MESSAGE CONSENT:
-${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No, customer does not want text messages'}
-      `);
-      
-      window.location.href = `mailto:info@projectpartyproductions.com?subject=${subject}&body=${body}`;
-      alert('Opening your email client to send the inquiry. If this doesn\'t work, please contact us directly at info@projectpartyproductions.com');
+      if (error.message.includes('Failed to fetch') || error.message.includes('ECONNREFUSED')) {
+        showErrorPopup('Unable to connect to our booking system. Please try again in a moment or contact us directly at 647-957-2057 or info@projectpartyproductions.com');
+      } else {
+        showErrorPopup('There was an error submitting your inquiry. Please try again or contact us directly at info@projectpartyproductions.com');
+      }
     }
+  };
+
+  // Generate CSS for unavailable dates
+  const generateUnavailableDateStyles = () => {
+    if (availability.unavailableDates.length === 0) return '';
+    
+    const styles = availability.unavailableDates.map(date => {
+      return `input[type="date"]::-webkit-calendar-picker-indicator ~ * [data-date="${date}"],
+              input[type="date"]::-webkit-calendar-picker-indicator ~ * [aria-label*="${new Date(date).toLocaleDateString()}"] {
+                background-color: #fee2e2 !important;
+                color: #dc2626 !important;
+               pointer-events: none !important;
+             }
+             
+             input[type="date"]::-webkit-calendar-picker-indicator ~ * [data-date="${date}"]:hover,
+             input[type="date"]::-webkit-calendar-picker-indicator ~ * [aria-label*="${new Date(date).toLocaleDateString()}"]:hover,
+             input[type="date"] [data-date="${date}"]:hover,
+             input[type="date"] [aria-label*="${new Date(date).toLocaleDateString()}"]:hover {
+               background-color: #fecaca !important;
+               color: #dc2626 !important;
+               cursor: not-allowed !important;
+             }
+             
+             /* Override default blue hover for unavailable dates */
+             input[type="date"]::-webkit-calendar-picker-indicator ~ * [data-date="${date}"]:hover,
+             input[type="date"]::-webkit-calendar-picker-indicator ~ * [aria-label*="${new Date(date).toLocaleDateString()}"]:hover {
+               background-color: #fecaca !important;
+               color: #dc2626 !important;
+               border-color: #f87171 !important;
+             }`;
+    }).join('\n');
+    
+    return styles;
   };
 
   return (
     <div className="pt-24">
+      {/* Dynamic styles for unavailable dates */}
+      <style>
+        {`
+          /* Style unavailable dates in date picker */
+          ${generateUnavailableDateStyles()}
+          
+          /* Additional styling for better visibility */
+          input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: none;
+          }
+          
+          /* Custom styling for unavailable dates */
+          .date-unavailable {
+            background-color: #fee2e2 !important;
+            color: #dc2626 !important;
+            text-decoration: line-through;
+          }
+        `}
+      </style>
+      
       {/* Hero Section */}
       <section className="relative h-96">
         <link rel="preload" as="image" href="/360.jpg" />
@@ -166,9 +265,22 @@ ${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No,
                       name="eventDate"
                       value={formData.eventDate}
                       onChange={handleInputChange}
+                      min={getMinDate()}
+                      max={new Date(Date.now() + 2 * 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F7E7CE] focus:border-transparent"
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#F7E7CE] focus:border-transparent ${
+                        formData.eventDate && isDateUnavailable(formData.eventDate) 
+                          ? 'border-red-300 bg-red-50' 
+                          : 'border-gray-300'
+                      }`}
+                      style={{
+                        backgroundImage: availability.unavailableDates.length > 0 ? 
+                          `linear-gradient(to right, transparent 0%, transparent 100%)` : 'none'
+                      }}
                     />
+                    {formData.eventDate && isDateUnavailable(formData.eventDate) && (
+                      <p className="text-red-600 text-sm mt-1">This date is not available. Please select a different date.</p>
+                    )}
                   </div>
                 </div>
 
@@ -237,13 +349,22 @@ ${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No,
                 <div className="flex items-start space-x-3">
                   <input
                     type="checkbox"
-                    name="agreeToTexts"
-                    checked={formData.agreeToTexts}
+                    name="agreeToTermsAndTexts"
+                   id="agreeToTermsAndTexts"
+                    checked={formData.agreeToTermsAndTexts}
                     onChange={handleInputChange}
+                    required
                     className="mt-1 h-4 w-4 text-[#F7E7CE] focus:ring-[#F7E7CE] border-gray-300 rounded"
                   />
-                  <label className="text-sm text-gray-600">
-                    I agree to receive text messages from Project Party Productions regarding my booking and event updates.
+                 <label htmlFor="agreeToTermsAndTexts" className="text-sm text-gray-600 cursor-pointer">
+                    I agree to receive text messages from Project Party Productions regarding my booking and event updates, and I agree to the{' '}
+                    <a 
+                      href="/terms-of-service" 
+                      className="text-[#B5A99A] hover:text-[#F7E7CE] underline transition-colors"
+                    >
+                      Terms of Service
+                    </a>
+                    . *
                   </label>
                 </div>
 
@@ -330,6 +451,78 @@ ${formData.agreeToTexts ? 'Yes, customer agrees to receive text messages' : 'No,
           </div>
         </div>
       </section>
+
+      {/* Success/Error Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full mx-4">
+            <div className="p-6">
+              <div className="text-center">
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
+                  popupType === 'success' ? 'bg-green-100' : 'bg-red-100'
+                }`}>
+                  {popupType === 'success' ? (
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  )}
+                </div>
+                <h3 className={`text-xl font-bold mb-4 ${
+                  popupType === 'success' ? 'text-green-800' : 'text-red-800'
+                }`}>
+                  {popupType === 'success' ? 'Inquiry Received!' : 'Error'}
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  {popupMessage}
+                </p>
+                <button
+                  onClick={closePopup}
+                  className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors ${
+                    popupType === 'success' 
+                      ? 'bg-green-600 text-white hover:bg-green-700' 
+                      : 'bg-red-600 text-white hover:bg-red-700'
+                  }`}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Unavailable Date Popup */}
+      {showUnavailableDatePopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full mx-4">
+            <div className="p-6">
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-red-100">
+                  <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-red-800">
+                  Date Unavailable
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Sorry, the selected date is not available. Please choose a different date for your event.
+                </p>
+                <button
+                  onClick={closeUnavailableDatePopup}
+                  className="w-full py-3 px-4 rounded-lg font-semibold transition-colors bg-red-600 text-white hover:bg-red-700"
+                >
+                  Choose Another Date
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
