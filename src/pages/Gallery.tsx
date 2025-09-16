@@ -71,7 +71,7 @@ const Gallery = () => {
     { src: '/videob40.mp4', type: 'video' as const },
     { src: '/videob41.mp4', type: 'video' as const },
     { src: '/videob42.jpg', type: 'image' as const },
-    { src: '/videob43.jpg', type: 'image' as const },
+    { src: '/videob43.mp4', type: 'video' as const },
     { src: '/videob44.jpg', type: 'image' as const },
     { src: '/videob45.mp4', type: 'video' as const },
   ];
