@@ -70,6 +70,18 @@ const Photobooth360 = () => {
     }
   };
 
+  // Add escape key listener
+  React.useEffect(() => {
+    const handleEscapeKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && selectedMedia !== null) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscapeKey);
+    return () => document.removeEventListener('keydown', handleEscapeKey);
+  }, [selectedMedia]);
+
   const nextImage = () => {
     if (selectedMedia !== null) {
       const newIndex = (selectedMedia.index + 1) % galleryMedia.length;
@@ -213,12 +225,13 @@ const Photobooth360 = () => {
                 <div className="relative">
                   {media.type === 'video' ? (
                     <>
-                      <img
-                        src={media.src + '#t=0.1'}
-                        alt={`Video ${index + 1} preview`}
+                      <video
+                        src={media.src}
                         className="w-full h-48 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110"
-                        loading="lazy"
-                        decoding="async"
+                        preload="metadata"
+                        muted
+                        playsInline
+                        style={{ pointerEvents: 'none' }}
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-black bg-opacity-60 rounded-full p-3">
