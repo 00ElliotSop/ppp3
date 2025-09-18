@@ -6,7 +6,7 @@ const Props = () => {
   const [selectedImage, setSelectedImage] = React.useState<number | null>(null);
 
   const galleryImages = [
-    '/propz1.gif', '/propz2.jpg', '/propz3.jpg'
+    '/photoz1.jpg', '/photoz2.jpg', '/photoz3.jpg',  '/photoz4.jpg', '/photoz5.jpg', '/photoz6.jpg',  '/photoz7.jpg', '/photoz8.jpg', '/photoz9.jpg'
   ];
 
   const openModal = (index: number) => {
